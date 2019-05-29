@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>程序设计模式——单例设计模式 | yuebanquan的博客</title>
+  <title>MarkDown使用笔记 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="单例设计模式概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息">
-<meta name="keywords" content="随笔,设计模式">
+  <meta name="description" content="MarkDown使用笔记[TOC]  ” Markdown 是一种轻量级标记语言，创始人是约翰·格鲁伯（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。”">
+<meta name="keywords" content="随笔,MarkDown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="程序设计模式——单例设计模式">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/程序设计模式——单例设计模式/index.html">
+<meta property="og:title" content="MarkDown使用笔记">
+<meta property="og:url" content="http://yoursite.com/2019/05/30/MarkDown使用笔记/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
-<meta property="og:description" content="单例设计模式概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息">
+<meta property="og:description" content="MarkDown使用笔记[TOC]  ” Markdown 是一种轻量级标记语言，创始人是约翰·格鲁伯（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。”">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-29T17:34:03.719Z">
+<meta property="og:image" content="https://pic2.zhimg.com/50/v2-e9f903e8ef9f9cb3505e0d1961af089c_fhd.jpg">
+<meta property="og:updated_time" content="2019-05-29T17:55:41.431Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="程序设计模式——单例设计模式">
-<meta name="twitter:description" content="单例设计模式概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息">
+<meta name="twitter:title" content="MarkDown使用笔记">
+<meta name="twitter:description" content="MarkDown使用笔记[TOC]  ” Markdown 是一种轻量级标记语言，创始人是约翰·格鲁伯（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。”">
+<meta name="twitter:image" content="https://pic2.zhimg.com/50/v2-e9f903e8ef9f9cb3505e0d1961af089c_fhd.jpg">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -155,101 +157,214 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-程序设计模式——单例设计模式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MarkDown使用笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      程序设计模式——单例设计模式
+      MarkDown使用笔记
     </h1>
   
 
         
-        <a href="/2019/05/30/程序设计模式——单例设计模式/" class="archive-article-date">
-  	<time datetime="2019-05-29T16:53:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
+        <a href="/2019/05/30/MarkDown使用笔记/" class="archive-article-date">
+  	<time datetime="2019-05-29T17:51:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="单例设计模式"><a href="#单例设计模式" class="headerlink" title="单例设计模式"></a>单例设计模式</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息</p>
+        <h1 id="MarkDown使用笔记"><a href="#MarkDown使用笔记" class="headerlink" title="MarkDown使用笔记"></a>MarkDown使用笔记</h1><p>[TOC]</p>
+<blockquote>
+<p>” <strong>Markdown</strong> 是一种<strong>轻量级</strong>标记语言，创始人是<strong>约翰·格鲁伯</strong>（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。”</p>
+</blockquote>
 <a id="more"></a>
 
-<h2 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
-<li>private构造方法</li>
-<li>设计一个private static的当前类的对象，并new</li>
-<li>提供一个static方法，返回一个当前类的对象</li>
-</ol>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式</span></span><br><span class="line"><span class="comment"> * 饿汉式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        User user = User.getInstance();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//测试部分</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            User u = User.getInstance();</span><br><span class="line">            <span class="keyword">if</span>(u != user)&#123;</span><br><span class="line">                System.out.println(<span class="string">"一个新的类被实例化了"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"程序结束"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 作为一个单例模式，使其在程序中有且只能有一个实例</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="comment">//1.private构造方法，类外不能new</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">User</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.设计一个private static的当前类的对象，并new</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> User instance = <span class="keyword">new</span> User();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*static &#123;</span></span><br><span class="line"><span class="comment">        User instance = new User();</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//3.提供一个static方法，可以返回给调用方一个当前类的对象</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> User <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-基本操作"><a href="#1-基本操作" class="headerlink" title="1. 基本操作"></a>1. 基本操作</h2><h3 id="1-1-内容目录"><a href="#1-1-内容目录" class="headerlink" title="1.1 内容目录"></a>1.1 内容目录</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[toc]</span><br></pre></td></tr></table></figure>
 
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ol>
-<li><p>25行：<code>private User() {}</code>为什么要<code>private</code>?</p>
-<p>防止<code>User user = new User();</code>,实例化多个不同的对象</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>30行：<code>private static User instance = new User();</code>中为什么要<code>private</code>和<code>static</code>?</p>
-<p><code>private</code>:</p>
+<h3 id="1-2-标题"><a href="#1-2-标题" class="headerlink" title="1.2 标题"></a>1.2 标题</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#		一级标题</span></span><br><span class="line"><span class="section">##		二级标题</span></span><br><span class="line"><span class="section">###     三级标题    </span></span><br><span class="line"><span class="section">####    四级标题    </span></span><br><span class="line"><span class="section">#####   五级标题    </span></span><br><span class="line"><span class="section">######  六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-引用"><a href="#1-3-引用" class="headerlink" title="1.3 引用"></a>1.3 引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用内容1</span><br><span class="line">&gt; 引用内容2</span><br><span class="line">&gt;&gt; 引用内容3</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<blockquote>
+<p>引用内容1</p>
+<blockquote>
+<p>引用内容2</p>
+<blockquote>
+<blockquote>
+<p>引用内容3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="2-代码"><a href="#2-代码" class="headerlink" title="2. 代码"></a>2. 代码</h2><h3 id="2-1-单行代码"><a href="#2-1-单行代码" class="headerlink" title="2.1 单行代码"></a>2.1 单行代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`String str1 = &quot;hello&quot;;`</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p><code>String str1 = &quot;hello&quot;;</code></p>
+<h3 id="2-2多行代码"><a href="#2-2多行代码" class="headerlink" title="2.2多行代码"></a>2.2多行代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~~</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```c</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">效果</span><br><span class="line"></span><br><span class="line">​~~~java</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">20</span>;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3. 列表"></a>3. 列表</h2><h3 id="3-1-无序列表"><a href="#3-1-无序列表" class="headerlink" title="3.1 无序列表"></a>3.1 无序列表</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>无序列表1</span><br><span class="line"><span class="bullet">+ </span>无序列表2</span><br><span class="line"><span class="bullet">- </span>无序列表3</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
 <ul>
-<li>防止在<code>main</code>中：<code>User user = null;</code></li>
+<li>无序列表</li>
 </ul>
-<p><code>static</code>:</p>
 <ul>
-<li><p>static<code>的</code>instance`存在静态存储区，每次调用时，都指向的同一个对象,保证单例;</p>
-</li>
-<li><p>通过<code>static</code>的<code>getInstance</code>方法获取<code>instance</code>,如果<code>instance</code>非静态，无法被<code>getInstance</code>调用；</p>
+<li>无序列表</li>
+</ul>
+<ul>
+<li>无序列表</li>
+</ul>
+<h3 id="3-2-多行无需列表"><a href="#3-2-多行无需列表" class="headerlink" title="3.2 多行无需列表"></a>3.2 多行无需列表</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>多行无序列表1</span><br><span class="line">TAB * 多行无序列表2</span><br><span class="line">TAB TAB * 多行无序列表3</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<ul>
+<li>多行无序列表1<ul>
+<li>多行无序列表2<ul>
+<li>多行无序列表3</li>
+</ul>
 </li>
 </ul>
 </li>
-</ol>
-<ol start="3">
-<li><p>38行:<code>public static User getInstance(){}</code>中为什么要<code>static</code>?</p>
-<p><code>instance</code>是<code>static</code>的</p>
-</li>
-</ol>
-<h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><ol>
-<li>只想用这个类的一些静态方法，还不想用这个对象时，第7行：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User instance = <span class="keyword">new</span> User();</span><br></pre></td></tr></table></figure>
+</ul>
+<h3 id="3-3-有序列表"><a href="#3-3-有序列表" class="headerlink" title="3.3 有序列表"></a>3.3 有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 有序列表1</span><br><span class="line">2. 有序列表2</span><br><span class="line">3. 有序列表3</span><br></pre></td></tr></table></figure>
 
-<p>​    程序开始就实例化好了，造成了不必要的性能损耗与空间损耗；</p>
-<h2 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h2><h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><ol>
-<li>private构造方法</li>
-<li>设计一个private static的当前类的对象</li>
-<li>提供一个static方法，如果对象为null，就new，然后返回一个当前类的对象</li>
+<p>效果</p>
+<ol>
+<li>有序列表1</li>
+<li>有序列表2</li>
+<li>有序列表3</li>
 </ol>
-<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式</span></span><br><span class="line"><span class="comment"> * 懒汉式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">        Teacher teacher = Teacher.getInstance();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line">    <span class="comment">//1.private构造方法</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Teacher</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//测试</span></span><br><span class="line">        System.out.println(<span class="string">"实例化了一个新的对象"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.设计一个private static的当前类的对象</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Teacher instance;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//3.设计一个static方法，若对象为null，则new，然后返回该对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Teacher <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> Teacher();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-4-多行有序列表"><a href="#3-4-多行有序列表" class="headerlink" title="3.4 多行有序列表"></a>3.4 多行有序列表</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>多行有序列表1</span><br><span class="line"><span class="bullet">2. </span>多行有序列表2</span><br><span class="line"><span class="bullet">   1. </span>多行有序列表2-1</span><br><span class="line"><span class="bullet">   2. </span>多行有序列表2-2</span><br><span class="line"><span class="bullet">3. </span>多行有序列表3</span><br><span class="line"><span class="bullet">   1. </span>多行有序列表3-1</span><br><span class="line"><span class="bullet">      1. </span>多行有序列表3-1-1</span><br></pre></td></tr></table></figure>
 
-<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
-<li>相较于饿汉式，省性能与空间</li>
+<p>效果</p>
+<ol>
+<li>多行有序列表1</li>
+<li>多行有序列表2<ol>
+<li>多行有序列表2-1</li>
+<li>多行有序列表2-2</li>
 </ol>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
-<li>线程不安全</li>
+</li>
+<li>多行有序列表3<ol>
+<li>多行有序列表3-1<ol>
+<li>多行有序列表3-1-1</li>
 </ol>
-<h2 id="多线程版"><a href="#多线程版" class="headerlink" title="多线程版"></a>多线程版</h2><h3 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤"></a>步骤</h3><ol>
-<li><p>private构造方法</p>
-</li>
-<li><p>设计一个private static的当前类的对象</p>
-</li>
-<li><p>提供一个synchronized static方法，如果对象为null，就new，然后返回一个当前类的对象</p>
 </li>
 </ol>
-<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.yuebanquan.singleton;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program3</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            Thread t = <span class="keyword">new</span> Thread(() -&gt;&#123;</span><br><span class="line">               Chairman chairman = Chairman.getInstance();</span><br><span class="line">            &#125;);</span><br><span class="line">            t.start();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chairman</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Chairman</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"一个新的对象被实例化了"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Chairman instance;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//线程同步，防止线程不安全</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Chairman <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> Chairman();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="3-5-任务列表"><a href="#3-5-任务列表" class="headerlink" title="3.5 任务列表"></a>3.5 任务列表</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//注意空格</span><br><span class="line"><span class="bullet">- </span>[ ] 学习</span><br><span class="line"><span class="bullet">- </span>[x] 看书</span><br><span class="line"><span class="bullet">- </span>[ ] 睡觉</span><br></pre></td></tr></table></figure>
 
-<h3 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h3><ol>
-<li><p>第23行<code>public static synchronized Chairman getInstance()</code>中，为什么要用<code>synchronized</code>?</p>
-<p>因为synchronized`使得后续的线程需要使用该方法时需要等待，直到前面的线程运行完该方法，防止线程不安全</p>
+<p>效果</p>
+<ul>
+<li><input disabled type="checkbox"> <p>学习</p>
 </li>
-</ol>
-<h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3><ol>
-<li><p>相较于饿汉式，省性能与空间</p>
+<li><input checked disabled type="checkbox"> <p>看书</p>
 </li>
-<li><p>在懒汉式基础上改进，防止了线程不安全</p>
+<li><input disabled type="checkbox"> <p>睡觉</p>
 </li>
-</ol>
+</ul>
+<h3 id="3-6-表格"><a href="#3-6-表格" class="headerlink" title="3.6 表格"></a>3.6 表格</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//ctrl+t</span><br><span class="line">|姓名|性别|</span><br><span class="line">|:---|:--:|</span><br><span class="line">|张三|男|</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th>性别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">张三</td>
+<td>男</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4. 链接"></a>4. 链接</h2><h3 id="4-1-本地图片"><a href="#4-1-本地图片" class="headerlink" title="4.1 本地图片"></a>4.1 本地图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![abatear](C:\Users\caida\Pictures\Saved Pictures\1.png)</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>![abatear](C:\Users\caida\Pictures\Saved Pictures\1.png)</p>
+<h3 id="4-2-网络图片"><a href="#4-2-网络图片" class="headerlink" title="4.2 网络图片"></a>4.2 网络图片</h3><p>效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![avatar](https://pic2.zhimg.com/50/v2-e9f903e8ef9f9cb3505e0d1961af089c_fhd.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic2.zhimg.com/50/v2-e9f903e8ef9f9cb3505e0d1961af089c_fhd.jpg" alt="avatar"></p>
+<h3 id="4-3-超链接"><a href="#4-3-超链接" class="headerlink" title="4.3 超链接"></a>4.3 超链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[百度][https://www.baidu.com/]</span><br><span class="line">&lt;www.github.com&gt;</span><br><span class="line"></span><br><span class="line">我使用 [Google][1] 进行学术搜索多一些,使用 [百度][2]进行日常搜索多一些，很少使用[Bing][3] .</span><br><span class="line">我不能一边使用 [百度搜索][2] 一边骂他不如 [Google][1]，我们需要学会的是利用资源。</span><br><span class="line">[1]: https://www.google.com/ &quot;Google&quot;</span><br><span class="line">[2]: https://www.baidu.com/ &quot;Baidu Search&quot;</span><br><span class="line">[3]: https://cn.bing.com/ &quot;Bing Search&quot;</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>[百度][<a href="https://www.baidu.com/]" target="_blank" rel="noopener">https://www.baidu.com/]</a></p>
+<p>&lt;<a href="http://www.github.com&gt;" target="_blank" rel="noopener">www.github.com&gt;</a></p>
+<p>我使用 <a href="https://www.google.com/" title="Google" target="_blank" rel="noopener">Google</a> 进行学术搜索多一些,使用 <a href="https://www.baidu.com/" title="Baidu Search" target="_blank" rel="noopener">百度</a>进行日常搜索多一些，很少使用<a href="https://cn.bing.com/" title="Bing Search" target="_blank" rel="noopener">Bing</a> .<br>我不能一边使用 <a href="https://www.baidu.com/" title="Baidu Search" target="_blank" rel="noopener">百度搜索</a> 一边骂他不如 <a href="https://www.google.com/" title="Google" target="_blank" rel="noopener">Google</a>，我们需要学会的是利用资源。</p>
+<hr>
+<h2 id="5-其他"><a href="#5-其他" class="headerlink" title="5. 其他"></a>5. 其他</h2><h3 id="5-1-斜体"><a href="#5-1-斜体" class="headerlink" title="5.1 斜体"></a>5.1 斜体</h3><p>···</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//ctrl+i</span><br><span class="line">*斜体*</span><br><span class="line">_斜体_</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p><em>斜体1</em></p>
+<p>_斜体_1</p>
+<h3 id="5-2-加粗"><a href="#5-2-加粗" class="headerlink" title="5.2 加粗"></a>5.2 加粗</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctrl+b</span><br><span class="line">**加粗1**</span><br><span class="line">__加粗2__</span><br></pre></td></tr></table></figure>
+
+<p><strong>加粗1</strong></p>
+<p><strong>加粗2</strong></p>
+<h3 id="5-3-下划线"><a href="#5-3-下划线" class="headerlink" title="5.3 下划线"></a>5.3 下划线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//ctrl+u</span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<p><u>下划线</u></p>
+<h3 id="5-4-删除线"><a href="#5-4-删除线" class="headerlink" title="5.4 删除线"></a>5.4 删除线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p><del>删除线</del></p>
+<h3 id="5-5-分割线"><a href="#5-5-分割线" class="headerlink" title="5.5 分割线"></a>5.5 分割线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">---</span><br><span class="line">___</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<hr>
+<hr>
+<hr>
+<h3 id="5-6-注脚"><a href="#5-6-注脚" class="headerlink" title="5.6 注脚"></a>5.6 注脚</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Typora[^1]</span><br><span class="line">A markdown editor[^2]</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>Typora[^1]</p>
+<p>A markdown editor[^2]</p>
+<h3 id="5-7-上下标"><a href="#5-7-上下标" class="headerlink" title="5.7 上下标"></a>5.7 上下标</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$3^2=9$</span><br><span class="line">$3^&#123;(3-1)&#125;=9$</span><br><span class="line">$H_2SO_4$</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>$3^2 = 9$</p>
+<p>$3^{(3-1)}$</p>
+<p>$H_2SO_4$</p>
+<h3 id="5-8-符号的输入"><a href="#5-8-符号的输入" class="headerlink" title="5.8 符号的输入"></a>5.8 符号的输入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\\   反斜线</span><br><span class="line">\`   反引号</span><br><span class="line">\*   星号</span><br><span class="line">\_   底线</span><br><span class="line">\&#123; \&#125;  花括号</span><br><span class="line">\[ \]  方括号</span><br><span class="line">\( \)  括弧</span><br><span class="line">\#   井字号</span><br><span class="line">\+   加号</span><br><span class="line">\-   减号</span><br><span class="line">\.   英文句点</span><br><span class="line">\!   惊叹号</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{ }  花括号<br>[ ]  方括号<br>( )  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
+<h3 id="5-9-特殊字符"><a href="#5-9-特殊字符" class="headerlink" title="5.9 特殊字符"></a>5.9 特殊字符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&amp;copy;      版权      </span><br><span class="line">&amp;reg;       注册商标</span><br><span class="line">&amp;trade;     商标</span><br><span class="line">&amp;nbsp;      空格</span><br><span class="line">&amp;amp;       和号</span><br><span class="line">&amp;quot;      引号</span><br><span class="line">&amp;apos;      撇号</span><br><span class="line">&amp;lt;        小于号</span><br><span class="line">&amp;gt;        大于号</span><br><span class="line">&amp;ne;        不等号</span><br><span class="line">&amp;le;        小于等于</span><br><span class="line">&amp;ge;        大于等于</span><br><span class="line">&amp;cent;      分</span><br><span class="line">&amp;pound;     磅</span><br><span class="line">&amp;euro;      欧元</span><br><span class="line">&amp;yen;       元</span><br><span class="line">&amp;sect;      节</span><br><span class="line">&amp;times;     乘号</span><br><span class="line">&amp;divide;    除号</span><br><span class="line">&amp;plusmn;    正负号</span><br></pre></td></tr></table></figure>
+
+<p>效果</p>
+<p>&copy;<br>&reg;<br>&trade;<br>&nbsp;<br>&amp;<br>&quot;<br>&apos;<br>&lt;<br>&gt;<br>&ne;<br>&le;<br>&ge;<br>&cent;<br>&pound;<br>&euro;<br>&yen;<br>&sect;<br>&times;<br>&divide;</p>
+<p>&plusmn;</p>
+<hr>
+<h2 id="6-Typora快捷键"><a href="#6-Typora快捷键" class="headerlink" title="6. Typora快捷键"></a>6. Typora快捷键</h2><blockquote>
+<p>标题：ctrl+数字</p>
+<p>表格：ctrl+t</p>
+<p>选中一整行：ctrl+l</p>
+<p>选中单词：ctrl+d</p>
+<p>选中相同格式的文字：ctrl+e</p>
+<p>跳转到文章开头：ctrl+home</p>
+<p>跳转到文章结尾：ctrl+end</p>
+<p>搜索：ctrl+f</p>
+<p>替换：ctrl+h</p>
+<p>代码块：ctrl+alt+f</p>
+<p>加粗：ctrl+b</p>
+<p>倾斜：ctrl+i</p>
+<p>下划线：ctrl+u</p>
+<p>删除线：alt+shift+5</p>
+<p>插入图片：直接拖动到指定位置即可或者ctrl+shift+i</p>
+<p>插入链接：ctrl+k</p>
+</blockquote>
 
       
 
@@ -288,7 +403,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">MarkDown</a>
         		</li>
       		
 		</ul>
@@ -344,7 +459,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/程序设计模式——单例设计模式/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/MarkDown使用笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -358,18 +473,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/30/MarkDown使用笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MarkDown使用笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/05/30/程序设计模式——单例设计模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">程序设计模式——单例设计模式</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -388,19 +494,6 @@
             </div>
         </div>
         
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#单例设计模式"><span class="toc-number">1.</span> <span class="toc-text">单例设计模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#概述"><span class="toc-number">1.1.</span> <span class="toc-text">概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#饿汉式"><span class="toc-number">2.</span> <span class="toc-text">饿汉式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤"><span class="toc-number">2.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-number">2.2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意"><span class="toc-number">2.3.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缺点："><span class="toc-number">2.4.</span> <span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#懒汉式"><span class="toc-number">3.</span> <span class="toc-text">懒汉式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤-1"><span class="toc-number">3.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-1"><span class="toc-number">3.2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优点"><span class="toc-number">3.3.</span> <span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缺点"><span class="toc-number">3.4.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多线程版"><span class="toc-number">4.</span> <span class="toc-text">多线程版</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤-2"><span class="toc-number">4.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-2"><span class="toc-number">4.2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意-1"><span class="toc-number">4.3.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优点-1"><span class="toc-number">4.4.</span> <span class="toc-text">优点</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
         
     </div>
 </aside>
