@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>程序设计模式——单例设计模式 | yuebanquan的博客</title>
+  <title>一个视频的笔记 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息。">
-<meta name="keywords" content="随笔,设计模式">
+  <meta name="description" content="微服务架构是入门级知识 传统行业 -&amp;gt; SSM，数据库  互联网企业 -&amp;gt; 微服务架构，分布式系统开发，高可用、高性能、高并发">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="程序设计模式——单例设计模式">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/程序设计模式——单例设计模式/index.html">
+<meta property="og:title" content="一个视频的笔记">
+<meta property="og:url" content="http://yoursite.com/2019/05/31/一个视频的笔记/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
-<meta property="og:description" content="概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息。">
+<meta property="og:description" content="微服务架构是入门级知识 传统行业 -&amp;gt; SSM，数据库  互联网企业 -&amp;gt; 微服务架构，分布式系统开发，高可用、高性能、高并发">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-30T23:22:11.100Z">
+<meta property="og:updated_time" content="2019-05-30T23:22:52.370Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="程序设计模式——单例设计模式">
-<meta name="twitter:description" content="概述​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息。">
+<meta name="twitter:title" content="一个视频的笔记">
+<meta name="twitter:description" content="微服务架构是入门级知识 传统行业 -&amp;gt; SSM，数据库  互联网企业 -&amp;gt; 微服务架构，分布式系统开发，高可用、高性能、高并发">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -147,102 +147,92 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-程序设计模式——单例设计模式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-一个视频的笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      程序设计模式——单例设计模式
+      一个视频的笔记
     </h1>
   
 
         
-        <a href="/2019/05/30/程序设计模式——单例设计模式/" class="archive-article-date">
-  	<time datetime="2019-05-29T16:53:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
+        <a href="/2019/05/31/一个视频的笔记/" class="archive-article-date">
+  	<time datetime="2019-05-30T23:15:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3><span id="概述">概述</span></h3><p>​    某个类有且只能有一个对象，如：用这个对象记录只有一个用户的信息。</p>
+        <h3><span id="微服务架构是入门级知识">微服务架构是入门级知识</span></h3><ul>
+<li><p>传统行业 -&gt; SSM，数据库</p>
+</li>
+<li><p>互联网企业 -&gt; 微服务架构，分布式系统开发，高可用、高性能、高并发</p>
+</li>
+</ul>
 <a id="more"></a>
 
-<h2><span id="饿汉式">饿汉式</span></h2><h3><span id="步骤">步骤</span></h3><ol>
-<li>private构造方法</li>
-<li>设计一个private static的当前类的对象，并new</li>
-<li>提供一个static方法，返回一个当前类的对象</li>
-</ol>
-<h3><span id="代码">代码</span></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式</span></span><br><span class="line"><span class="comment"> * 饿汉式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        User user = User.getInstance();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//测试部分</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            User u = User.getInstance();</span><br><span class="line">            <span class="keyword">if</span>(u != user)&#123;</span><br><span class="line">                System.out.println(<span class="string">"一个新的类被实例化了"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"程序结束"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 作为一个单例模式，使其在程序中有且只能有一个实例</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="comment">//1.private构造方法，类外不能new</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">User</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.设计一个private static的当前类的对象，并new</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> User instance = <span class="keyword">new</span> User();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*static &#123;</span></span><br><span class="line"><span class="comment">        User instance = new User();</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//3.提供一个static方法，可以返回给调用方一个当前类的对象</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> User <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="注意">注意</span></h3><ol>
-<li><p>25行：<code>private User() {}</code>为什么要<code>private</code>?</p>
-<p>防止<code>User user = new User();</code>,实例化多个不同的对象</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>30行：<code>private static User instance = new User();</code>中为什么要<code>private</code>和<code>static</code>?</p>
-<p><code>private</code>:</p>
-<ul>
-<li>防止在<code>main</code>中：<code>User user = null;</code></li>
+<h3><span id="面向对象实现">面向对象实现</span></h3><ol>
+<li>万物皆对象</li>
+<li>高内聚、低耦合</li>
+<li>面向对象设计原则：<ul>
+<li>开口合里最单依</li>
 </ul>
-<p><code>static</code>:</p>
-<ul>
-<li><p>static<code>的</code>instance`存在静态存储区，每次调用时，都指向的同一个对象,保证单例;</p>
 </li>
-<li><p>通过<code>static</code>的<code>getInstance</code>方法获取<code>instance</code>,如果<code>instance</code>非静态，无法被<code>getInstance</code>调用；</p>
-</li>
+<li>重构原则：重改：改善既有代码的设计<ul>
+<li>事不过三，三者重构</li>
 </ul>
 </li>
 </ol>
-<ol start="3">
-<li><p>38行:<code>public static User getInstance(){}</code>中为什么要<code>static</code>?</p>
-<p><code>instance</code>是<code>static</code>的</p>
+<h3><span id="flag">Flag</span></h3><ol>
+<li><p>5G开始普及</p>
+<ul>
+<li>物物相连，联所未连</li>
+</ul>
+</li>
+<li><p>大数据</p>
+<p>不光是数据量大，更是维度广</p>
+</li>
+<li><p>数据挖掘</p>
+<ol>
+<li>用户行为数据</li>
+<li>ETL -&gt; Kettle</li>
+<li>盈利，赚钱 -&gt; BI</li>
+</ol>
+</li>
+<li><p>AI</p>
+</li>
+<li><p>区块链 </p>
+<ul>
+<li>分布式存储系统，异地多活分布式存储系统</li>
+</ul>
+</li>
+<li><p>云计算</p>
+</li>
+<li><p>用户体验 -&gt; 前端</p>
 </li>
 </ol>
-<h3><span id="缺点">缺点：</span></h3><ol>
-<li>只想用这个类的一些静态方法，还不想用这个对象时，第7行：</li>
+<p>### </p>
+<h3><span id="全栈工程师">全栈工程师</span></h3><p>​    拥有多种技能，并能利用多种技能完成产品的人</p>
+<p>​    你懂的我也懂——知识</p>
+<p>​    你不懂的我也懂——技术</p>
+<p>图灵：计算机的本质——输入、处理、输出</p>
+<p>基础知识：计算机基础、==计算机网络基础==</p>
+<h3><span id="微服务架构的三条方案">微服务架构的三条方案</span></h3><ol>
+<li>Spring Boot + Spring Cloud Netflix    //停止开发</li>
+<li>Spring Boot + Dubbo + Zookeeper</li>
+<li>Spring Boot + Spring Cloud Alibaba</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User instance = <span class="keyword">new</span> User();</span><br></pre></td></tr></table></figure>
-
-<p>​    程序开始就实例化好了，造成了不必要的性能损耗与空间损耗；</p>
-<h2><span id="懒汉式">懒汉式</span></h2><h3><span id="步骤">步骤</span></h3><ol>
-<li>private构造方法</li>
-<li>设计一个private static的当前类的对象</li>
-<li>提供一个static方法，如果对象为null，就new，然后返回一个当前类的对象</li>
+<h3><span id="微服务解决的四个问题">微服务解决的四个问题</span></h3><ol>
+<li>客户端如何访问</li>
+<li>每个服务之间如何通信</li>
+<li>如此多的服务如何管理</li>
+<li>服务挂了，怎么办</li>
 </ol>
-<h3><span id="代码">代码</span></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式</span></span><br><span class="line"><span class="comment"> * 懒汉式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">        Teacher teacher = Teacher.getInstance();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line">    <span class="comment">//1.private构造方法</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Teacher</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//测试</span></span><br><span class="line">        System.out.println(<span class="string">"实例化了一个新的对象"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.设计一个private static的当前类的对象</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Teacher instance;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//3.设计一个static方法，若对象为null，则new，然后返回该对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Teacher <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> Teacher();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="优点">优点</span></h3><ol>
-<li>相较于饿汉式，省性能与空间</li>
-</ol>
-<h3><span id="缺点">缺点</span></h3><ol>
-<li>线程不安全</li>
-</ol>
-<h2><span id="多线程版">多线程版</span></h2><h3><span id="步骤">步骤</span></h3><ol>
-<li><p>private构造方法</p>
-</li>
-<li><p>设计一个private static的当前类的对象</p>
-</li>
-<li><p>提供一个synchronized static方法，如果对象为null，就new，然后返回一个当前类的对象</p>
-</li>
-</ol>
-<h3><span id="代码">代码</span></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.yuebanquan.singleton;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Program3</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            Thread t = <span class="keyword">new</span> Thread(() -&gt;&#123;</span><br><span class="line">               Chairman chairman = Chairman.getInstance();</span><br><span class="line">            &#125;);</span><br><span class="line">            t.start();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chairman</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Chairman</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"一个新的对象被实例化了"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Chairman instance;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//线程同步，防止线程不安全</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Chairman <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> Chairman();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="注意">注意</span></h3><ol>
-<li><p>第23行<code>public static synchronized Chairman getInstance()</code>中，为什么要用<code>synchronized</code>?</p>
-<p>因为synchronized`使得后续的线程需要使用该方法时需要等待，直到前面的线程运行完该方法，防止线程不安全</p>
-</li>
-</ol>
-<h3><span id="优点">优点</span></h3><ol>
-<li><p>相较于饿汉式，省性能与空间</p>
-</li>
-<li><p>在懒汉式基础上改进，防止了线程不安全</p>
-</li>
-</ol>
-
+<div class="bili_video"><embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid=NaN&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></div>
       
 
       
@@ -256,10 +246,6 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
         		</li>
       		
 		</ul>
@@ -315,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/程序设计模式——单例设计模式/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/31/一个视频的笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,18 +315,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/30/MarkDown使用笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MarkDown使用笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/05/30/MarkDown使用笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MarkDown使用笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -367,8 +344,8 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number"></span> <span class="toc-text">饿汉式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number"></span> <span class="toc-text">懒汉式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number"></span> <span class="toc-text">多线程版</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">优点</span></a></li></ol>
-                    </li></div>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">微服务架构是入门级知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">面向对象实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">Flag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">全栈工程师</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">微服务架构的三条方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">微服务解决的四个问题</span></a></li></ol>
+                    </div>
                 </span>
             </div>
         </div>
