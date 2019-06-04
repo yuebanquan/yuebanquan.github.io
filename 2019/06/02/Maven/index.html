@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | yuebanquan的博客</title>
+  <title>Maven | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="Maven 简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven 增加可重用性并负责建立相关的任务。">
+<meta name="keywords" content="随笔,Java单体应用合集">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/hello-world/index.html">
+<meta property="og:title" content="Maven">
+<meta property="og:url" content="http://yoursite.com/2019/06/02/Maven/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="Maven 简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven 增加可重用性并负责建立相关的任务。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-30T23:19:06.978Z">
+<meta property="og:updated_time" content="2019-06-04T15:04:17.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="Maven">
+<meta name="twitter:description" content="Maven 简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven 增加可重用性并负责建立相关的任务。">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -146,42 +147,111 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Maven" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Maven
     </h1>
   
 
         
-        <a href="/2019/05/30/hello-world/" class="archive-article-date">
-  	<time datetime="2019-05-29T16:50:11.460Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
+        <a href="/2019/06/02/Maven/" class="archive-article-date">
+  	<time datetime="2019-06-02T14:57:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <blockquote>
+<p>Maven 简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven 增加可重用性并负责建立相关的任务。</p>
+</blockquote>
 <a id="more"></a>
 
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2><span id="maven-简介">Maven 简介</span></h2><ol>
+<li>项目管理和综合工具</li>
+<li>构建一个完整的生命周期框架</li>
+<li>简化和标准化项目建设过程</li>
+<li>增加可重用性并负责建立相关的任务</li>
+</ol>
+<h2><span id="maven-安装配置">Maven 安装配置</span></h2><p>度娘</p>
+<h2><span id="maven-本地仓库">Maven 本地仓库</span></h2><h3><span id="概述">概述</span></h3><p>Maven 的本地资源库是用来存储所有项目的依赖关系(插件 Jar 和其他文件，这些文件被 Maven 下载)到本地文件夹。很简单，当你建立一个 Maven 项目，所有相关文件将被存储在你的 Maven 本地仓库。</p>
+<h2><span id="maven-中央仓库">Maven 中央仓库</span></h2><h3><span id="概述">概述</span></h3><p>建立一个 Maven 的项目，Maven 会检查你的 <code>pom.xml</code> 文件，以确定哪些依赖下载。首先，Maven 将从本地资源库获得 Maven 的本地资源库依赖资源，如果没有找到，然后把它会从默认的 Maven 中央存储库查找下载。</p>
+<h3><span id="依赖管理">依赖管理</span></h3><p><a href="http://repo1.maven.org/maven2/" target="_blank" rel="noopener">http://repo1.maven.org/maven2/</a></p>
+<h3><span id="mvnrepository">MVNrepository</span></h3><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
+<h2><span id="maven-依赖机制">Maven 依赖机制</span></h2><p>在 Maven 依赖机制的帮助下<u>自动</u>下载所有必需的依赖库，并保持自动版本升级</p>
+<h2><span id="maven-pom">Maven POM</span></h2><h3><span id="概述">概述</span></h3><ol>
+<li>POM 代表项目对象模型。它是 Maven 中工作的<u>基本单位</u>，这是一个 XML 文件。它始终保存在该项目基本目录中的 pom.xml 文件。</li>
+<li>POM 包含的项目是使用 Maven 来构建的，它用来包含各种<u>配置信息</u>。</li>
+<li></li>
+</ol>
+<h3><span id="pom-的例子">POM 的例子</span></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0</span></span></span><br><span class="line"><span class="tag"><span class="string">   http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.lusifer<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>project<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>注意:每个项目只有<u>一个</u> POM 文件</p>
+<ul>
+<li><p>所有的 POM 文件要项目元素<u>必须有</u>三个必填字段: </p>
+<ul>
+<li>groupId</li>
+<li>artifactId</li>
+<li>version</li>
+</ul>
+</li>
+<li><p>在库中的项目符号是：<code>groupId:artifactId:version</code></p>
+</li>
+<li><p><code>pom.xml</code> 的根元素是 project，它有三个主要的子节点。</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>groupId</td>
+<td>这是<u>项目组的编号</u>，需要<u>全球唯一</u>，否则会包冲突。 例如，一家银行集团 <code>com.company.bank</code> 拥有所有银行相关项目。</td>
+</tr>
+<tr>
+<td>artifactId</td>
+<td>这是<u>项目的 ID</u>。这通常是项目的名称。 例如，<code>consumer-banking</code>。 除了 groupId 之外，artifactId 还定义了 artifact 在存储库中的位置。</td>
+</tr>
+<tr>
+<td>version</td>
+<td>这是<u>项目的版本</u>。与 groupId 一起使用，artifact 在存储库中用于将版本彼此分离。 例如：<code>com.company.bank:consumer-banking:1.0</code>，<code>com.company.bank:consumer-banking:1.1</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<blockquote>
+<p>语义化版本规范</p>
+<blockquote>
+<p>1.0.0    </p>
+<p>1.0.1        </p>
+<p>1.1.0</p>
+</blockquote>
+<p>右边一位    修复BUG</p>
+<p>中间一位    增加或减少一个功能</p>
+<p>左边一位    结构变化</p>
+<p>另一种：逢十进一</p>
+</blockquote>
+<h2><span id="maven-插件">Maven 插件</span></h2><h2><span id="maven-快照">Maven 快照</span></h2><h3><span id="发行版">发行版</span></h3><p>发布了就不可修改</p>
+<h3><span id="快照版shapshot">快照版（SHAPSHOT）</span></h3><p><code>1.0.0-SNAPSHOT</code></p>
+<h2><span id="快照与版本">快照与版本</span></h2><p>在使用版本时，如果 Maven 下载所提到的版本为 <code>data-service:1.0</code>，那么它永远不会尝试在库中下载已经更新的版本 1.0。要下载更新的代码，data-service 的版本必须要升级到 1.1。</p>
+<p>在使用快照（SNAPSHOT）时，Maven 会在每次应用程序 UI 团队建立自己的项目时自动获取最新的快照（<code>data-service:1.0-SNAPSHOT</code>）。</p>
+<h2><span id="maven-常用命令">Maven 常用命令</span></h2><h3><span id="清除产生的项目">清除产生的项目</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3><span id="编译源代码">编译源代码</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn compile</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3><span id="打包">打包</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3><span id="只打包不测试跳过测试">只打包不测试（跳过测试）</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -dmaven.test.skip=true</span><br></pre></td></tr></table></figure>
 
+<h3><span id="安装到本地仓库">安装到本地仓库</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install</span><br></pre></td></tr></table></figure>
+
+<h3><span id="源码打包">源码打包</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvn source:jar</span><br><span class="line">或</span><br><span class="line">mvn source:jar-no-fork</span><br></pre></td></tr></table></figure>
       
 
       
@@ -189,6 +259,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Java单体应用合集</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -239,7 +324,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/02/Maven/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -253,15 +338,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/30/程序设计模式——单例设计模式/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/06/04/《漫画算法》笔记——第一章 算法概述/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          程序设计模式——单例设计模式
+          《漫画算法》笔记——第一章 算法概述
         
       </div>
     </a>
   
+  
+    <a href="/2019/06/01/程序员的玄学与佛学/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">程序员的玄学与佛学</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -286,7 +376,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Maven 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">Maven 安装配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">Maven 本地仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.</span> <span class="toc-text">概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">Maven 中央仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.2.</span> <span class="toc-text">依赖管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.</span> <span class="toc-text">MVNrepository</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">Maven 依赖机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">Maven POM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">6.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">6.2.</span> <span class="toc-text">POM 的例子</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">Maven 插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">8.</span> <span class="toc-text">Maven 快照</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">8.1.</span> <span class="toc-text">发行版</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">8.2.</span> <span class="toc-text">快照版（SHAPSHOT）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">9.</span> <span class="toc-text">快照与版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">10.</span> <span class="toc-text">Maven 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.1.</span> <span class="toc-text">清除产生的项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.2.</span> <span class="toc-text">编译源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.3.</span> <span class="toc-text">打包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.4.</span> <span class="toc-text">只打包不测试（跳过测试）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.5.</span> <span class="toc-text">安装到本地仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.6.</span> <span class="toc-text">源码打包</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
