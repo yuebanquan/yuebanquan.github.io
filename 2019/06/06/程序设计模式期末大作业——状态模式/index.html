@@ -8,21 +8,30 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>程程序设计模式期末大作业——状态模式 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一．应用场景与案例描述​        我们经常在课余时间玩游戏以放松身心，缓解压力。在很多游戏中英雄根据不同的体力值，可以做出不同的动作来面对敌人。">
+  <meta name="description" content="本篇博客为《程序提体系结构与设计模式》的期末大作业，我设计了一个状态模式的例子，并结合安卓开发，实现了游戏任务状态的切换与判定。 apk安装包与代码：">
 <meta name="keywords" content="随笔,设计模式,作业">
 <meta property="og:type" content="article">
 <meta property="og:title" content="程程序设计模式期末大作业——状态模式">
 <meta property="og:url" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
-<meta property="og:description" content="一．应用场景与案例描述​        我们经常在课余时间玩游戏以放松身心，缓解压力。在很多游戏中英雄根据不同的体力值，可以做出不同的动作来面对敌人。">
+<meta property="og:description" content="本篇博客为《程序提体系结构与设计模式》的期末大作业，我设计了一个状态模式的例子，并结合安卓开发，实现了游戏任务状态的切换与判定。 apk安装包与代码：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/F:%5Cblog%5Csource_posts%5C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A%E2%80%94%E2%80%94%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F%5C%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%5C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A%E2%80%94%E2%80%94%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F%5Capk.jpg">
-<meta property="og:updated_time" content="2019-06-06T04:31:32.312Z">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/apk.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/icon.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E4%BC%91%E6%81%AF1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E4%BC%91%E6%81%AF2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E9%98%B2%E5%BE%A11.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E9%98%B2%E5%BE%A12.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E6%99%AE%E9%80%9A%E6%94%BB%E5%87%BB1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E6%99%AE%E9%80%9A%E6%94%BB%E5%87%BB2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E6%8A%80%E8%83%BD%E6%94%BB%E5%87%BB1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E6%8A%80%E8%83%BD%E6%94%BB%E5%87%BB2.jpg">
+<meta property="og:updated_time" content="2019-06-06T04:52:33.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程程序设计模式期末大作业——状态模式">
-<meta name="twitter:description" content="一．应用场景与案例描述​        我们经常在课余时间玩游戏以放松身心，缓解压力。在很多游戏中英雄根据不同的体力值，可以做出不同的动作来面对敌人。">
-<meta name="twitter:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/F:%5Cblog%5Csource_posts%5C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A%E2%80%94%E2%80%94%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F%5C%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg">
+<meta name="twitter:description" content="本篇博客为《程序提体系结构与设计模式》的期末大作业，我设计了一个状态模式的例子，并结合安卓开发，实现了游戏任务状态的切换与判定。 apk安装包与代码：">
+<meta name="twitter:image" content="http://yoursite.com/2019/06/06/程序设计模式期末大作业——状态模式/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -170,20 +179,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2><span id="一应用场景与案例描述">一．应用场景与案例描述</span></h2><p>​        我们经常在课余时间玩游戏以放松身心，缓解压力。在很多游戏中英雄根据不同的体力值，可以做出不同的动作来面对敌人。</p>
+        <blockquote>
+<p>本篇博客为《程序提体系结构与设计模式》的期末大作业，我设计了一个状态模式的例子，并结合安卓开发，实现了游戏任务状态的切换与判定。</p>
+<p>apk安装包与代码：</p>
+</blockquote>
 <a id="more"></a>
 
+<h2><span id="一应用场景与案例描述">一．应用场景与案例描述</span></h2><p>​        我们经常在课余时间玩游戏以放松身心，缓解压力。在很多游戏中英雄根据不同的体力值，可以做出不同的动作来面对敌人。</p>
 <p>​        英雄可以进行休息、防御、普通攻击、技能攻击。而消耗或恢复的体力值是不同的，例如：</p>
-<ol>
-<li><p>休息：恢复体力值至最大，体力值为最大时无需休息；</p>
-</li>
-<li><p>防御：消耗10点体力值，没有体力值无法进行防御；</p>
-</li>
-<li><p>普通攻击：消耗15点体力值，没有体力值无法进行普通攻击；</p>
-</li>
-<li><p>技能攻击：消耗20点体力值，没有体力值无法进行技能攻击；</p>
-</li>
-</ol>
+<ul>
+<li>休息：恢复体力值至最大，体力值为最大时无需休息；</li>
+<li>防御：消耗10点体力值，没有体力值无法进行防御；</li>
+<li>普通攻击：消耗15点体力值，没有体力值无法进行普通攻击；</li>
+<li>技能攻击：消耗20点体力值，没有体力值无法进行技能攻击；</li>
+</ul>
 <h2><span id="二案例分析与解决问题">二．案例分析与解决问题</span></h2><p>​        倘若我们将这些操作逻辑都写在同一个类——英雄类中作为英雄的方法的话，会出现以下问题：</p>
 <ol>
 <li>后期如果操作逻辑（如消耗的体力值变化）有所改变就需要修改整个英雄类；</li>
@@ -200,28 +209,44 @@
 </ol>
 <p>我将英雄的操作抽象为状态，四种操作对应着四种不同的具体状态： </p>
 <ul>
-<li>RestState（休息状态）</li>
-<li>DefenseState（防御状态）</li>
-<li>NormalAttackState（普通攻击状态）</li>
-<li>SkillAttackState（技能攻击状态）</li>
+<li><p>RestState（休息状态）</p>
+</li>
+<li><p>DefenseState（防御状态）</p>
+</li>
+<li><p>NormalAttackState（普通攻击状态）</p>
+</li>
+<li><p>SkillAttackState（技能攻击状态）</p>
+</li>
 </ul>
 <h2><span id="三各个角色描述与uml图示">三．各个角色描述与UML图示</span></h2><h4><span id="角色描述">角色描述：</span></h4><ol>
 <li>环境（Context）：Hero类</li>
 <li>抽象状态（State）：State抽象类</li>
 <li>具体状态（Concrete State）：RestState、DefenseState、NormalAttackState和SkillAttackState类</li>
 </ol>
-<h4><span id="uml图">UML图：</span></h4><p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/F:%5Cblog%5Csource_posts%5C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A%E2%80%94%E2%80%94%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F%5C%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg" alt="UML图"></p>
+<h4><span id="uml图">UML图：</span></h4><p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FUML.jpg" alt="UML图"></p>
 <h2><span id="四-运行效果">四. 运行效果</span></h2><ol>
 <li>生成的apk</li>
 </ol>
-<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%5C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A%E2%80%94%E2%80%94%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F%5Capk.jpg" alt="apk"></p>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/apk.jpg" alt="apk"></p>
 <ol>
 <li>安装后的图标</li>
-<li>运行结果<ol>
-<li>进行休息：</li>
-<li>进行防御：</li>
-<li>普通攻击：</li>
-<li>技能攻击：</li>
+</ol>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/icon.jpg" alt="icon"></p>
+<ol>
+<li><p>运行结果</p>
+<ol>
+<li><p>进行休息：</p>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E4%BC%91%E6%81%AF1.jpg" alt="休息1">    <img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E4%BC%91%E6%81%AF2.jpg" alt="休息2"></p>
+</li>
+<li><p>进行防御：</p>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E9%98%B2%E5%BE%A11.jpg" alt="防御1">    <img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E9%98%B2%E5%BE%A12.jpg" alt="防御2"></p>
+</li>
+<li><p>普通攻击：</p>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E6%99%AE%E9%80%9A%E6%94%BB%E5%87%BB1.jpg" alt="普通攻击1">    <img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E6%99%AE%E9%80%9A%E6%94%BB%E5%87%BB2.jpg" alt="普通攻击2"></p>
+</li>
+<li><p>技能攻击：</p>
+<p><img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E6%8A%80%E8%83%BD%E6%94%BB%E5%87%BB1.jpg" alt="技能攻击1">    <img src="/2019/06/06/程序设计模式期末大作业——状态模式/%E6%8A%80%E8%83%BD%E6%94%BB%E5%87%BB2.jpg" alt="技能攻击2"></p>
+</li>
 </ol>
 </li>
 </ol>
@@ -260,7 +285,7 @@
 
 <h3><span id="7-android的buildgradle">7. Android的build.gradle</span></h3><p>位置在app/，指定生成的apk名称以及引入的模块，代码如下：</p>
 <p><strong>build.gradle</strong></p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">apply plugin: <span class="string">'com.android.application'</span></span><br><span class="line"></span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion <span class="number">28</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        applicationId <span class="string">"com.yuebanquan.statepattern"</span></span><br><span class="line">        minSdkVersion <span class="number">15</span></span><br><span class="line">        targetSdkVersion <span class="number">28</span></span><br><span class="line">        versionCode <span class="number">1</span></span><br><span class="line">        versionName <span class="string">"1.0"</span></span><br><span class="line">        testInstrumentationRunner <span class="string">"android.support.test.runner.AndroidJUnitRunner"</span></span><br><span class="line">        vectorDrawables.useSupportLibrary = <span class="keyword">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            proguardFiles getDefaultProguardFile(<span class="string">'proguard-android-optimize.txt'</span>), <span class="string">'proguard-rules.pro'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">android.applicationVariants.all &#123;</span><br><span class="line">    variant -&gt;</span><br><span class="line">        variant.outputs.all &#123;</span><br><span class="line">            <span class="comment">// 此处指定生成的apk文件名</span></span><br><span class="line">            outputFileName = <span class="string">"蔡佳泉大作业(状态模式).apk"</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    implementation <span class="keyword">fileTree</span>(dir: <span class="string">'libs'</span>, <span class="keyword">include</span>: [<span class="string">'*.jar'</span>])</span><br><span class="line">    implementation <span class="string">'com.android.support:appcompat-v7:28.0.0'</span></span><br><span class="line">    implementation <span class="string">'com.android.support.constraint:constraint-layout:1.1.3'</span></span><br><span class="line">    implementation <span class="string">'com.android.support:design:28.0.0'</span></span><br><span class="line">    implementation <span class="string">'com.android.support:support-vector-drawable:28.0.0'</span></span><br><span class="line">    testImplementation <span class="string">'junit:junit:4.12'</span></span><br><span class="line">    androidTestImplementation <span class="string">'com.android.support.test:runner:1.0.2'</span></span><br><span class="line">    androidTestImplementation <span class="string">'com.android.support.test.espresso:espresso-core:3.0.2'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//显示GifView模块</span></span><br><span class="line">    implementation <span class="string">'pl.droidsonroids.gif:android-gif-drawable:1.2.7'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">apply plugin: <span class="string">'com.android.application'</span></span><br><span class="line"></span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion <span class="number">28</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        applicationId <span class="string">"com.yuebanquan.statepattern"</span></span><br><span class="line">        minSdkVersion <span class="number">15</span></span><br><span class="line">        targetSdkVersion <span class="number">28</span></span><br><span class="line">        versionCode <span class="number">1</span></span><br><span class="line">        versionName <span class="string">"1.0"</span></span><br><span class="line">        testInstrumentationRunner <span class="string">"android.support.test.runner.AndroidJUnitRunner"</span></span><br><span class="line">        vectorDrawables.useSupportLibrary = <span class="keyword">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            proguardFiles getDefaultProguardFile(<span class="string">'proguard-android-optimize.txt'</span>), <span class="string">'proguard-rules.pro'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">android.applicationVariants.all &#123;</span><br><span class="line">    variant -&gt;</span><br><span class="line">        variant.outputs.all &#123;</span><br><span class="line">            <span class="comment">// 此处指定生成的apk文件名</span></span><br><span class="line">            outputFileName = <span class="string">"大作业(状态模式).apk"</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    implementation <span class="keyword">fileTree</span>(dir: <span class="string">'libs'</span>, <span class="keyword">include</span>: [<span class="string">'*.jar'</span>])</span><br><span class="line">    implementation <span class="string">'com.android.support:appcompat-v7:28.0.0'</span></span><br><span class="line">    implementation <span class="string">'com.android.support.constraint:constraint-layout:1.1.3'</span></span><br><span class="line">    implementation <span class="string">'com.android.support:design:28.0.0'</span></span><br><span class="line">    implementation <span class="string">'com.android.support:support-vector-drawable:28.0.0'</span></span><br><span class="line">    testImplementation <span class="string">'junit:junit:4.12'</span></span><br><span class="line">    androidTestImplementation <span class="string">'com.android.support.test:runner:1.0.2'</span></span><br><span class="line">    androidTestImplementation <span class="string">'com.android.support.test.espresso:espresso-core:3.0.2'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//显示GifView模块</span></span><br><span class="line">    implementation <span class="string">'pl.droidsonroids.gif:android-gif-drawable:1.2.7'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -524,11 +549,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
               </li>
              
               <li class="article-tag-list-item">
