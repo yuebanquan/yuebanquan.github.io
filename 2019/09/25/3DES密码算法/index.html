@@ -16,17 +16,17 @@
 <meta property="og:site_name" content="yuebanquan的博客">
 <meta property="og:description" content="DES算法的密钥长度已经被证明不能满足当前安全的要求，但为了充分利用现有的DES软件和硬件资源，人们开始提出针对DES的各种改进方案，最简单的方案是使用多重DES，使用多个不同的DES密钥利用DES加密算法对明文进行多次加密。这样可以增加密钥量，从而大大提高抵抗对密钥的穷举搜索攻击的能力。而最常用的多主要是三重DES算法。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/gs1.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/gs2.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%BA%8C.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%89.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/3DES密码算法/r.png">
-<meta property="og:updated_time" content="2019-09-25T11:19:58.778Z">
+<meta property="og:updated_time" content="2019-09-25T15:47:23.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3DES密码算法">
 <meta name="twitter:description" content="DES算法的密钥长度已经被证明不能满足当前安全的要求，但为了充分利用现有的DES软件和硬件资源，人们开始提出针对DES的各种改进方案，最简单的方案是使用多重DES，使用多个不同的DES密钥利用DES加密算法对明文进行多次加密。这样可以增加密钥量，从而大大提高抵抗对密钥的穷举搜索攻击的能力。而最常用的多主要是三重DES算法。">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.png">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -179,8 +179,7 @@
 </blockquote>
 <a id="more"></a>
 
-<p><strong>目录：</strong></p>
-<p>[TOC]</p>
+
 <h2><span id="实验目的">实验目的</span></h2><ul>
 <li>了解3DES的算法原理</li>
 <li>学习3DES算法的编程实现</li>
@@ -193,7 +192,7 @@
 <li>DES－EEE2模式：该模式中共使用2个不同密钥，顺序使用3次DES加密算法，其中第一次和第三次加密使用的密钥相同。</li>
 <li>DES－EDE2模式：该模式中共使用2个不同密钥，依次用加密一解密一加密，其中加密算法使用的密钥相同。</li>
 </ol>
-<p><img src="/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.jpg" alt="图一"></p>
+<p><img src="/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%80.png" alt="图一"></p>
 <p>前两种模式使用3个不同的密钥，每个密钥长度为56位，因此三重DES总的密钥长度达到168位。后2种模式使用2个不同的密钥，总的密钥长度为112位。以前两种模式为例，设$K_1$，$K_2$，$K_3$是三个长度为56位的密钥。给定明文$x$，则密文为</p>
 <p><img src="/2019/09/25/3DES密码算法/gs1.png" alt="gs1"></p>
 <p>给定密文，则明文为</p>
@@ -204,7 +203,7 @@
 <h3><span id="算法流程">算法流程</span></h3><p>根据在上文中叙述的有关算法的运行原理及加解密流程，我们给出了其用C语言实现的源代码，相关的程序流程图如图3所示。由于三重DES算法的代码以单重DES算法为基础，除了中间需要一步逆向的解密过程外，其他均是DES的单重加密。所以我们这里仅给出单重DES的加密流程图。</p>
 <p><img src="/2019/09/25/3DES密码算法/%E5%9B%BE%E4%B8%89.jpg" alt="图三"></p>
 <h2><span id="实验环境">实验环境</span></h2><p>Windows Sever 2012 R2</p>
-<h2><span id="实验步骤">实验步骤</span></h2><h3><span id="代码"><strong>代码：</strong></span></h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio."</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"des. h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"pub. h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key1[] = <span class="string">"12345678"</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key2[] = <span class="string">"abcdefgh"</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key33[] = <span class="number">12345678</span><span class="string">";	//如果只需要两组密钥,则本组密钥可以和密钥1一样。</span></span><br><span class="line"><span class="string">  unsigned char en_data[] = "</span>Cryptosystem lab<span class="string">";</span></span><br><span class="line"><span class="string">  unsigned char en_out_put[8];</span></span><br><span class="line"><span class="string">  printf("</span>\r\n++++++++<span class="number">3</span>ds加密实例++++++++<span class="string">");</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]明文<span class="string">", endata, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">1</span><span class="string">", key1, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">2</span><span class="string">", key2, 8);</span></span><br><span class="line"><span class="string">  printhex("</span><span class="number">3</span>des[输入]密钥<span class="number">3</span><span class="string">", key3, 8;</span></span><br><span class="line"><span class="string">  //3DE加密</span></span><br><span class="line"><span class="string">  des(en_data, key1, en_out_put, DES_ENCRYPT);</span></span><br><span class="line"><span class="string">  des(en_out_put, key2, en_data, DES_DECRYPT);</span></span><br><span class="line"><span class="string">  des(en_data, key3, en_out_put, DES_ENCRYPT);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输出]密文<span class="string">", enout_put, 8);</span></span><br><span class="line"><span class="string">  printf("</span>\r\n<span class="string">");</span></span><br><span class="line"><span class="string">  printf("</span>\n++++++++<span class="number">3</span>s解密示例++++++++<span class="string">");</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密文<span class="string">", enoutput, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">1</span><span class="string">", key1, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">2</span><span class="string">", key2, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">3</span><span class="string">", key3, 8);</span></span><br><span class="line"><span class="string"> //3DES加密</span></span><br><span class="line"><span class="string"> des(en_out_put, key3, en_data, DES_DECRYPT);</span></span><br><span class="line"><span class="string">  des(en_data, key2, en_out_put, DES_ENCRYPT); </span></span><br><span class="line"><span class="string">  des(en_out_put, key1, en_data, DES_DECRYPT); </span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>DEs[输出]明文<span class="string">", en_data, 8);</span></span><br><span class="line"><span class="string">  printf("</span>\r\n<span class="string">");</span></span><br><span class="line"><span class="string">  return;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2><span id="实验步骤">实验步骤</span></h2><h3><span id="代码"><strong>代码：</strong></span></h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio."</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"des. h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"pub. h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key1[] = <span class="string">"12345678"</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key2[] = <span class="string">"abcdefgh"</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">char</span> key33[] = <span class="number">12345678</span><span class="string">";	//如果只需要两组密钥,则本组密钥可以和密钥1一样。</span></span><br><span class="line"><span class="string">  unsigned char en_data[] = "</span>Cryptosystem lab<span class="string">";</span></span><br><span class="line"><span class="string">  unsigned char en_out_put[8];</span></span><br><span class="line"><span class="string">  printf("</span>\r\n++++++++<span class="number">3</span>ds加密实例++++++++<span class="string">");</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]明文<span class="string">", endata, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">1</span><span class="string">", key1, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">2</span><span class="string">", key2, 8);</span></span><br><span class="line"><span class="string">  printhex("</span><span class="number">3</span>des[输入]密钥<span class="number">3</span><span class="string">", key3, 8;</span></span><br><span class="line"><span class="string">  //3DE加密</span></span><br><span class="line"><span class="string">  des(en_data, key1, en_out_put, DES_ENCRYPT);</span></span><br><span class="line"><span class="string">  des(en_out_put, key2, en_data, DES_DECRYPT);</span></span><br><span class="line"><span class="string">  des(en_data, key3, en_out_put, DES_ENCRYPT);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输出]密文<span class="string">", enout_put, 8);</span></span><br><span class="line"><span class="string">  printf("</span>\r\n<span class="string">");</span></span><br><span class="line"><span class="string">  printf("</span>\n++++++++<span class="number">3</span>s解密示例++++++++<span class="string">");</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密文<span class="string">", enoutput, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">1</span><span class="string">", key1, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">2</span><span class="string">", key2, 8);</span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>des[输入]密钥<span class="number">3</span><span class="string">", key3, 8);</span></span><br><span class="line"><span class="string"> //3DES加密</span></span><br><span class="line"><span class="string">des(en_out_put, key3, en_data, DES_DECRYPT);</span></span><br><span class="line"><span class="string">  des(en_data, key2, en_out_put, DES_ENCRYPT); </span></span><br><span class="line"><span class="string">  des(en_out_put, key1, en_data, DES_DECRYPT); </span></span><br><span class="line"><span class="string">  print_hex("</span><span class="number">3</span>DEs[输出]明文<span class="string">", en_data, 8);</span></span><br><span class="line"><span class="string">  printf("</span>\r\n<span class="string">");</span></span><br><span class="line"><span class="string">  return;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <h3><span id="结果"><strong>结果：</strong></span></h3><p><img src="/2019/09/25/3DES密码算法/r.png" alt="r"></p>
 <h2><span id="实验思考">实验思考</span></h2><p><strong>问：3DES 算法与 DES 算法有什么区别？</strong></p>
@@ -302,8 +301,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2019/07/14/《计算机系统结构教程》笔记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">《计算机系统结构教程》笔记</div>
+    <a href="/2019/09/22/OpenCV的简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">OpenCV的简单使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -472,11 +471,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">信息安全导论</a>
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+                <a href="javascript:void(0)" class="js-tag color2">信息安全导论</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -484,19 +483,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Java单体应用合集</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">漫画算法——读书笔记</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color1">Java单体应用合集</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">漫画算法——读书笔记</a>
               </li>
              
               <li class="article-tag-list-item">
