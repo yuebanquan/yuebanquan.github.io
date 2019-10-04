@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="yuebanquan的博客">
 <meta property="og:description" content="RSA算法的安全性是基于数论中大素数分解的困难性，还有一些其它的公钥密码体制也是基于目前的一些数学难题，写出：什么公钥密码体制基于什么数学难题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-03T09:15:45.479Z">
+<meta property="og:updated_time" content="2019-10-04T13:26:13.732Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="公钥密码算法">
 <meta name="twitter:description" content="RSA算法的安全性是基于数论中大素数分解的困难性，还有一些其它的公钥密码体制也是基于目前的一些数学难题，写出：什么公钥密码体制基于什么数学难题">
@@ -204,18 +204,18 @@
 </ol>
 <h2><span id="3-eigamal算法离散对数难解性">3. EIGamal算法——离散对数难解性</span></h2><h3><span id="31-算法描述">3.1 算法描述</span></h3><h4><span id="311-密钥对生成">3.1.1 密钥对生成</span></h4><ol>
 <li>随机选择一个满足安全要求的大素数p，且要求p−1有大素数因子，$g∈Z_p^∗$（$Z_p$是一个有p个元素的有限域，$Z_p^∗$ 是$Z_p$中的非零元构成的乘法群）是一个本原元</li>
-<li>选一个随机数$x(1&lt;x&lt;p−1)$，计算$y≡g^x<del>mod</del>p$，则公钥为$(y,g,p)$，私钥为$x$</li>
+<li>选一个随机数$x(1&lt;x&lt;p−1)$，计算$y≡g^xmodp$，则公钥为$(y,g,p)$，私钥为$x$</li>
 </ol>
 <h4><span id="312-加密过程">3.1.2 加密过程</span></h4><ol>
 <li>得到接收方的公钥$(y,g,p)$</li>
 <li>把消息$m$分组位长度$L(L&lt;log_2p)$的消息分组，$t_m=m_1m_2…m_t$</li>
 <li>随机选择整数$r_i$ , $1&lt;r_i&lt;p−1(1≤i≤t)$</li>
-<li>计算$c_i≡g^{ri}<del>mod</del>p$ , $c_i′<del>≡</del>m_i<del>y^{ri}</del>mod~ ~p(1 ≤ i ≤ t_1 ≤ i ≤t)$</li>
+<li>计算$c_i≡g^{ri}modp$ , $c_i′<del>≡</del>m_i~y^{ri}modp(1 ≤ i ≤ t_1 ≤ i ≤t)$</li>
 <li>将密文$C=(c_1,c_1′),(c_2,c_2′),…,(c_t,c_t′)$发送给接收方</li>
 </ol>
 <h4><span id="313-解密过程">3.1.3 解密过程</span></h4><ol>
 <li>接收方收到$C=(c_1,c_1′),(c_2,c_2′),…,(c_t,c_t′)$</li>
-<li>使用私钥xx和解密算法$m_i=(c_i′<del>/</del>c_i^x)<del>mod</del>p~(1≤i≤t)$进行计算</li>
+<li>使用私钥xx和解密算法$m_i=(c_i′/c_i^x)modp(1≤i≤t)$进行计算</li>
 <li>得明文$m=m_1m_2…m_t$</li>
 </ol>
 <h3><span id="32-算法特点">3.2 算法特点</span></h3><ol>
@@ -238,7 +238,7 @@
 <h4><span id="413-解密过程">4.1.3 解密过程</span></h4><ol>
 <li>接收方B收到$C_m={kG,P_t+kP_B,C}$</li>
 <li>接收方B使用自己的私钥nBnB,作如下计算<br>$P_t+kP_B−n_B(kG)=P_t+k(n_BG)−n_B(kG)=P_t=(x_t,y_t)$</li>
-<li>B计算$(C−y_t)<del>/</del>x_t=m$，得出明文m</li>
+<li>B计算$(C−y_t)/x_t=m$，得出明文m</li>
 <li>A选择的随机数k和椭圆曲线点Pt是保密的</li>
 </ol>
 <h3><span id="42-算法安全性">4.2 算法安全性</span></h3><ol>
@@ -525,15 +525,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Java单体应用合集</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">英语</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -541,11 +537,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color1">Java单体应用合集</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">漫画算法——读书笔记</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -553,11 +549,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">漫画算法——读书笔记</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
