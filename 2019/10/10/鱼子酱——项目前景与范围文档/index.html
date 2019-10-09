@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/6 | yuebanquan的博客</title>
+  <title>鱼子酱——项目前景与范围文档 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yuebanquan的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/06/index.html">
+  <meta name="description" content="本篇博客为《软件工程导论》的实验一，我们设计了一款记账软件——鱼子酱，并为其编写项目前景与范围文档。">
+<meta name="keywords" content="随笔,作业,软件工程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鱼子酱——项目前景与范围文档">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/鱼子酱——项目前景与范围文档/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
+<meta property="og:description" content="本篇博客为《软件工程导论》的实验一，我们设计了一款记账软件——鱼子酱，并为其编写项目前景与范围文档。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/10/10/鱼子酱——项目前景与范围文档/1.png">
+<meta property="og:updated_time" content="2019-10-09T17:47:45.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yuebanquan的博客">
+<meta name="twitter:title" content="鱼子酱——项目前景与范围文档">
+<meta name="twitter:description" content="本篇博客为《软件工程导论》的实验一，我们设计了一款记账软件——鱼子酱，并为其编写项目前景与范围文档。">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/10/鱼子酱——项目前景与范围文档/1.png">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -142,120 +149,245 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-鱼子酱——项目前景与范围文档" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      鱼子酱——项目前景与范围文档
+    </h1>
+  
+
+        
+        <a href="/2019/10/10/鱼子酱——项目前景与范围文档/" class="archive-article-date">
+  	<time datetime="2019-10-09T17:44:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本篇博客为《软件工程导论》的实验一，我们设计了一款记账软件——鱼子酱，并为其编写项目前景与范围文档。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2><span id="1业务需求">1业务需求</span></h2><h3><span id="11应用背景">1.1应用背景</span></h3><p>​        近年来，移动支付以及网购盛行，花呗、白条等信用支付也在学生中越来越盛行。“买买买”以及“月光族”成为了年轻一代的代名词。据了解，很多同学没有养成理财的习惯，到了月末甚至月中的时候生活费就不够花了，也不知道自己使用在了什么地方，并且颇有冲动消费之风。纸质记账有着不易携带，不易保存和查询等缺陷，而市面上的记账软件启动就要弹出几秒的开启广告以及的理财产品广告，并且需要手动输入记账信息，同步方面也不是很完善。</p>
+<h3><span id="12业务机遇">1.2业务机遇</span></h3><p>​        本产品受众人群主要在于学生，尤其是每个月拿生活费的大学生以及小部分的父母不在身边，需要自己理财的大中小学生，那么本产品业务相关需求，主要会来自两个方面，第一是学校，第二则是家长，这两者前者为组织、集体，是我们可以获取到稳定且大量投资的投资方，后者主要为个体，其意义主要还是在于对我们产品的传播以及口碑方面有一定的影响。</p>
+<p>现阶段，学校不方便直接管理学生，家长由于地理位置也不方便，而可以说与学生相伴最多的，应该是移动电子设备，我们就从这个切入口出发，设计此款app来帮助学生理财。</p>
+<p>系统上下文图如下图所示：</p>
+<p><img src="/2019/10/10/鱼子酱——项目前景与范围文档/1.png" alt="1"></p>
+<h3><span id="13业务目标">1.3业务目标</span></h3><p><strong>BO-1：第一版应用之后的21 天后，使用该软件的学生养成记账习惯</strong></p>
+<p>度量标准：每日记账打卡记录</p>
+<p>计量方法：平均每个有效账号的打卡天数以及连续打卡天数</p>
+<p>理想标准：15-21天</p>
+<p>一般标准：10-15天</p>
+<p>最低标准：5-10天</p>
+<p><strong>BO-2：一版应用之后的1 个月后，使用该软件的学生掌握收支情况比例上升</strong></p>
+<p>度量标准：账号目标“违约情况”</p>
+<p>计量方法：统计平均每个有效账号的违约记录</p>
+<p>理想标准：低于20%</p>
+<p>一般标准：低于30%</p>
+<p>最低标准：低于40%</p>
+<p><strong>BO-3：第一版应用之后的3个月后，使用该软件的学生月赤字比例下降</strong></p>
+<p>度量标准：账号月末余额</p>
+<p>计量方法：拉取平均每个有效账号一个月的必须支出的波动情况</p>
+<p>理想标准：上下波动幅度低于10%</p>
+<p>一般标准：上下波动幅度低于20%</p>
+<p>最低标准：上下波动幅度低于30%</p>
+<p><strong>BO-4：第一版应用之后的6个月后，使用该软件的学生学会理财规划</strong></p>
+<p>度量标准：账号综合数据</p>
+<p>计量方法：对每个有效账号的综合数据进行分析，计算达标率</p>
+<p>理想标准：达标率80%</p>
+<p>一般标准：达标率70%</p>
+<p>最低标准：达标率60%</p>
+<h3><span id="14业务风险">1.4业务风险</span></h3><p><strong>RI-1：用该软件的学生太少，不能达到该系统开发的预期目标</strong></p>
+<p><strong>RI-2：上已有记账软件，有竞争风险</strong></p>
+<p><strong>RI-3：学生已经开始使用记账软件，迁移成本高</strong></p>
+<p><strong>RI-4:息泄露的隐私风险</strong></p>
+<p><strong>RI-5:银行、支付宝和微信的 API 比较难获取</strong></p>
+<p><strong>RI-6:学生们对该类软件内心具有抗拒心理</strong></p>
+<h2><span id="2项目前景">2项目前景</span></h2><h3><span id="21前景声明">2.1前景声明</span></h3><p>​        鱼子（资）酱记账软件的目标客户主要针对学生。这款记账软件的业务过程是学生通过手机使用这款软件进行日常记账和个人财务收支管理。业务目标是：在第一版应用之后的21<br>天后，使用该软件的学生养成记账习惯；在第一版应用之后的1<br>个月后，使用该软件的学生掌握收支情况比例上升；在第一版应用之后的3个月后，使用该软件的学生月赤字比例下降；在第一版应用之后的6个月后，使用该软件的学生学会理财规划。这款软件的主要竞争优势是有别于市面上的记账软件有开启广告和理财产品广告，这款软件无广告骚扰；市面上的记账软件需要手动输入，这款软件可以根据用户添加的账户进行数据实时同步，省时省力。主要竞争产品是网易有钱等记账软件。</p>
+<h3><span id="22主要特征">2.2主要特征</span></h3><p><strong>FE-1 与各大支付平台合作，获取相关API，同步余额以及消费记录</strong></p>
+<p><strong>FE-2 认证用户身份</strong></p>
+<p><strong>FE-3 收支记录的增删改查</strong></p>
+<p><strong>FE-4 根据账户进行数据同步</strong></p>
+<p><strong>FE-5 生成周账单、月账单及年账单，进行分类和可视化，归纳账户在各个类别中的比例</strong></p>
+<p><strong>FE-6 推送理财小贴士</strong></p>
+<p><strong>FE-7 外汇结算</strong></p>
+<p><strong>FE-8 心愿储蓄-设置心愿金额，提醒有规划的存钱；每日每月将设定好的金额存入账户冻结</strong></p>
+<p><strong>FE-9 笔笔攒-每次支出都进行一次小额扣款</strong></p>
+<p><strong>FE-10 语音输入收支信息</strong></p>
+<p><strong>FE-11 设置积分分段系统，激励用户使用软件以养成习惯</strong></p>
+<p><strong>FE-12 消费限额提醒</strong></p>
+<p><strong>FE-13 没有广告和推荐理财产品</strong></p>
+<p><strong>FE-14 添加入心愿单多的商品，和商家取得优惠折扣</strong></p>
+<p><strong>FE-15 积分换取鱼籽，孵化小鱼。若记账中断或心愿存钱中断，鱼会死亡</strong></p>
+<h3><span id="23假设与依赖">2.3假设与依赖</span></h3><p>1.用户主观上希望自己具有理财能力</p>
+<p>2.用户愿意实时记录</p>
+<p>3.用户使用此软件要处于能够上网的环境中</p>
+<h2><span id="3-项目范围">3 项目范围</span></h2><h3><span id="31-第一版及后续版本范围">3.1 第一版及后续版本范围</span></h3><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>版本1</th>
+<th>版本2</th>
+<th>版本3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FE-1</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-2</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-3</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-4</td>
+<td>仅限于安卓用户</td>
+<td>仅限于移动端（ios及安卓）</td>
+<td>Pc端与移动端完全实现</td>
+</tr>
+<tr>
+<td>FE-5</td>
+<td>生成账单，实现分类和可视化</td>
+<td>完全实现</td>
+<td></td>
+</tr>
+<tr>
+<td>FE-6</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-7</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-8</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-9</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-10</td>
+<td>不实现</td>
+<td>完全实现</td>
+<td></td>
+</tr>
+<tr>
+<td>FE-11</td>
+<td>不实现</td>
+<td>部分用户实现</td>
+<td>完全实现</td>
+</tr>
+<tr>
+<td>FE-12</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FE-13</td>
+<td>完全实现</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3><span id="32-限制与排除">3.2 限制与排除</span></h3><p><strong>L1-1：仅限学生使用。</strong></p>
+<p><strong>L1-2：无广告版仅限付费用户使用。</strong></p>
+<h2><span id="4项目环境">4项目环境</span></h2><h3><span id="41-操作环境">4.1 操作环境</span></h3><p>●该软件适用于10+年龄以上的年轻学生一族</p>
+<p>●所有用户在任何时间任何地点都能访问系统打开软件</p>
+<p>●数据在系统内自动或手动记录，运用于用户进行增删改查操作时</p>
+<p>●系统性能良好，响应时间不得超过30秒，且避免服务中断</p>
+<p>●软件在Android和iOS平台均可使用</p>
+<p>●可设置安全认证，以保护数据不被泄露</p>
+<h3><span id="42涉众">4.2涉众</span></h3><table>
+<thead>
+<tr>
+<th>涉众</th>
+<th>特征</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学生</td>
+<td>学生可将每一笔消费计入账本，来统计各项支出，同时也可以记录收入状况，通过软件可分析出一个月的消费与收入情况，可将收支记录进行分类和可视化，归纳收支在每个类别中的比例，设定当月消费限额，并根据情况进行提醒</td>
+</tr>
+<tr>
+<td>开发者</td>
+<td>进行软件开发与软件管理维护，根据用户的反馈来改进软件，提升软件使用满意度，定期检查系统稳定性，保证服务器不崩溃且能24小时运行</td>
+</tr>
+</tbody></table>
+<h3><span id="43项目属性">4.3项目属性</span></h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>执行者</th>
+<th>约束因素</th>
+<th>可调整因素</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>进度</td>
+<td></td>
+<td></td>
+<td>计划 2019.10完成第一版，2019.11月完成第二版，2019.12 月完成第三版；在不包括责任人评审的情况下，最多可超过期限一个月</td>
+</tr>
+<tr>
+<td>特性</td>
+<td></td>
+<td>第一、二版本中要求实现的特性必须完全可操作</td>
+<td></td>
+</tr>
+<tr>
+<td>质量</td>
+<td></td>
+<td>必须通过80%的用户 验收测试；必须通过全部安全测试；所有安全事务必须遵守软件安全标准</td>
+<td></td>
+</tr>
+<tr>
+<td>人员</td>
+<td>团队规模包括一名项目经理、两名开发人员、两名测试人员</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>费用</td>
+<td></td>
+<td></td>
+<td>在不包括责任人评审的情况下，财政预算最多可超支10%</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/08/Teenage-girl-kills-herself-after-Instagram-poll-in-Malaysia-19-6-8/" class="archive-article-date">
-  	<time datetime="2019-06-08T13:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/08/Teenage-girl-kills-herself-after-Instagram-poll-in-Malaysia-19-6-8/">Teenage girl kills herself &#39;after Instagram poll in Malaysia(19/6/8)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">英语</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/07/近日-19-6-7-领悟与总结/" class="archive-article-date">
-  	<time datetime="2019-06-07T15:59:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/07/近日-19-6-7-领悟与总结/">近日(19/6/7)领悟与总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/06/程序设计模式期末大作业——状态模式/" class="archive-article-date">
-  	<time datetime="2019-06-06T04:11:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/06/程序设计模式期末大作业——状态模式/">程序设计模式期末大作业——状态模式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -269,193 +401,125 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">软件工程</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/10/鱼子酱——项目前景与范围文档/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/04/《漫画算法》笔记——第一章 算法概述/" class="archive-article-date">
-  	<time datetime="2019-06-04T15:02:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/04/计算机网络-一、二章习题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络 一、二章习题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/04/《漫画算法》笔记——第一章 算法概述/">《漫画算法》笔记——第一章 算法概述</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">漫画算法——读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">1业务需求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.1.</span> <span class="toc-text">1.1应用背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.2.</span> <span class="toc-text">1.2业务机遇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.3.</span> <span class="toc-text">1.3业务目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.4.</span> <span class="toc-text">1.4业务风险</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">2项目前景</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.1.</span> <span class="toc-text">2.1前景声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.2.</span> <span class="toc-text">2.2主要特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.</span> <span class="toc-text">2.3假设与依赖</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">3 项目范围</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 第一版及后续版本范围</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 限制与排除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">4项目环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 操作环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.2.</span> <span class="toc-text">4.2涉众</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.</span> <span class="toc-text">4.3项目属性</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/03/简历技巧/" class="archive-article-date">
-  	<time datetime="2019-06-03T14:49:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-03</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/03/简历技巧/">简历技巧</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/02/Maven/" class="archive-article-date">
-  	<time datetime="2019-06-02T14:57:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/02/Maven/">Maven</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Java单体应用合集</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/01/程序员的玄学与佛学/" class="archive-article-date">
-  	<time datetime="2019-05-31T23:05:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/01/程序员的玄学与佛学/">程序员的玄学与佛学</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Java单体应用合集</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -479,8 +543,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
