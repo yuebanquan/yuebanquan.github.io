@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>yuebanquan的博客</title>
+  <title>鱼子酱——可行性分析报告文档 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yuebanquan的博客">
-<meta property="og:url" content="http://yoursite.com/page/4/index.html">
+  <meta name="description" content="本篇博客为《软件工程导论》的实验二，我们设计了一款记账软件——鱼子酱，并为其编写项目可行性分析报告。 项目文档目录：  项目前景文档">
+<meta name="keywords" content="随笔,作业,软件工程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鱼子酱——可行性分析报告文档">
+<meta property="og:url" content="http://yoursite.com/2019/10/15/鱼子酱——可行性分析报告文档/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
+<meta property="og:description" content="本篇博客为《软件工程导论》的实验二，我们设计了一款记账软件——鱼子酱，并为其编写项目可行性分析报告。 项目文档目录：  项目前景文档">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/10/15/鱼子酱——可行性分析报告文档/1.png">
+<meta property="og:updated_time" content="2019-10-15T01:04:08.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yuebanquan的博客">
+<meta name="twitter:title" content="鱼子酱——可行性分析报告文档">
+<meta name="twitter:description" content="本篇博客为《软件工程导论》的实验二，我们设计了一款记账软件——鱼子酱，并为其编写项目可行性分析报告。 项目文档目录：  项目前景文档">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/15/鱼子酱——可行性分析报告文档/1.png">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -142,22 +149,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-http性能测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-鱼子酱——可行性分析报告文档" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/17/http性能测试/">http性能测试</a>
+    <h1 class="article-title" itemprop="name">
+      鱼子酱——可行性分析报告文档
     </h1>
   
 
         
-        <a href="/2019/05/17/http性能测试/" class="archive-article-date">
-  	<time datetime="2019-05-17T12:12:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-17</time>
+        <a href="/2019/10/15/鱼子酱——可行性分析报告文档/" class="archive-article-date">
+  	<time datetime="2019-10-15T00:55:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
 </a>
         
       </header>
@@ -165,9 +170,99 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>此为《软件质量保障与测试》课程的作业。采用Badboy记录步骤，然后用JMeter测试工具对学校官网做负载测试，使用 JMeter图形结果和聚合图帮助测试系统在资源超负荷情况下的表现，以发现设计上的错误或验证系统的负载能力并估计系统瓶颈和并发阀值，以期得出的科学合理的测试结果。</p>
+<p>本篇博客为《软件工程导论》的实验二，我们设计了一款记账软件——鱼子酱，并为其编写项目可行性分析报告。</p>
+<p>项目文档目录：</p>
+<p> <a href="https://yuebanquan.github.io/2019/10/07/鱼子酱——项目前景与范围文档/" target="_blank" rel="noopener">项目前景文档</a></p>
 </blockquote>
-        
+<a id="more"></a>
+
+<h1><span id="1-编写目的">1 编写目的</span></h1><p>​        可行性研究的目的是为了对问题进行研究，以最小的代价在最短的时间内确定问题是否可解经过对此项目进行详细调查研究，初拟系统实现报告，对软件开发中将要<br>面临的问题及其解决方案进行初步设计及合理安排。明确开发风险及其所带来的<br>经济效益。本报告经审核后，交软件经理审查。</p>
+<h1><span id="2-可行性研究的前提">2 可行性研究的前提</span></h1><h2><span id="21-要求">2.1 要求</span></h2><ol>
+<li><p>主要功能：</p>
+<p>FE-1：与各大支付平台合作，获取相关 API，同步余额以及消费记录 FE-2<br>认证用户身份<br>FE-3：收支记录的增删改查<br>FE-4：根据账户进行数据同步<br>FE-5：生成周账单、月账单及年账单，进行分类和可视化，归纳账户在各个   类别中的比例<br>FE-6：推送理财小贴士<br>FE-7：外汇结算<br>FE-8：心愿储蓄-设置心愿金额，提醒有规划的存钱;每日每月将设定好的金额存入账户冻结 。<br>FE-9：笔笔攒-每次支出都进行一次小额扣款<br>FE-10：语音输入收支信息<br>FE-11：设置积分分段系统，激励用户使用软件以养成习惯<br>FE-12：消费限额提醒<br>FE-13：没有广告和推荐理财产品<br>FE-14：添加入心愿单多的商品，和商家取得优惠折扣<br>FE-15：积分换取鱼籽，孵化小鱼。若记账中断或心愿存钱中断，鱼会死亡</p>
+</li>
+<li><p>性能要求：用户资料必须及时备份至服务器上；用户账单信息必须及时无差错的同步；多台设备间信息必须不能出现混乱；</p>
+</li>
+<li><p>输入要求：数据完整、详实</p>
+</li>
+<li><p>输出要求：简捷，快速，实时。</p>
+</li>
+<li><p>安全与保密要求：用户账单信息其他人不见；银行账户信息只能本人获取；</p>
+</li>
+<li><p>完成期限：预计半年</p>
+</li>
+</ol>
+<h2><span id="22-目标">2.2 目标</span></h2><p>​        使用该软件的学生学会理财规划、掌握收支情况比例上升、月赤字比例下降、学会理财规划。</p>
+<h2><span id="23-条件-假定和限制">2.3 条件、假定和限制</span></h2><ol>
+<li><p>建议软件寿命：5 年</p>
+</li>
+<li><p>经济来源：合作的心愿商品经销商分红；</p>
+</li>
+<li><p>硬件条件：</p>
+<p>服务器：Linux工作站</p>
+<p>终端：运行 Android 或 iOS系统的手机</p>
+</li>
+<li><p>运行环境：</p>
+<p>服务器：Linux</p>
+<p>终端：Android 4.0以上或 iOS 8 以上</p>
+</li>
+<li><p>数据库：</p>
+<p>服务器：MySQL</p>
+<p>终端：SQLite</p>
+</li>
+</ol>
+<h1><span id="3技术可行性">3技术可行性</span></h1><h2><span id="31系统简要描述">3.1系统简要描述</span></h2><p>​        在我们的移动终端是安装了一款鱼子(资)酱APP软件，主要目的是向服务器端传递和接受数据。<br>​        当学生在记账本上查询时，终端向服务器发出查询请求，服务器根据用户信息库的实时数据，向终端发送数据，显示在终端手机屏幕上。当学生在记账本上记账时，终端向服务器发出详尽的一份账单，服务器核对后，存入信息库。用户账单等信息会保持着无差错的实时同步，确保用户的数据准确性。</p>
+<h2><span id="32系统流程">3.2系统流程</span></h2><p><img src="/2019/10/15/鱼子酱——可行性分析报告文档/1.png" alt="1"></p>
+<h1><span id="4经济可行性分析">4经济可行性分析</span></h1><h2><span id="41支出">4.1支出</span></h2><ol>
+<li><p>基础投资：<br>开发需要的2台服务器:2 * 1（万) = 2 万元</p>
+<p>​    开发需要的10台测试终端：10 * 0.3（万）= 3万元</p>
+<p>​    开发需要的6 台计算机：6 * 0.5（万元）= 3 万元</p>
+<p>​    员工培训费：5万</p>
+<p>共计：13万</p>
+</li>
+<li><p>经常性支出：</p>
+<p>​    人工费用：6（月）*10（人）*4000（元）=24万</p>
+<p>​    维护费用：6（月）*10000=6万</p>
+<p>​    其他不可知额外支出：10万</p>
+<p>共计：40万</p>
+</li>
+</ol>
+<p>支出共计：53万</p>
+<h2><span id="42效益">4.2效益</span></h2><ol>
+<li><p>一次性收益：0元</p>
+</li>
+<li><p>经常性收益：</p>
+<p>用户购物：6（月）* 200（人）* 700（元）= 84万元</p>
+</li>
+<li><p>不可定量收益：</p>
+<p>​    商品价格浮动：</p>
+<p>​        84万 * 5% = 42万元</p>
+<p>​    用户购物集中：</p>
+<p>​         6（月）* 200（人）* 100 = 12万元</p>
+</li>
+</ol>
+<p>收益共计：138万元</p>
+<h2><span id="43收益投资比">4.3收益/投资比</span></h2><p>138万 / 53万 = 260%</p>
+<h2><span id="44投资回收周期">4.4投资回收周期</span></h2><p>3.4年</p>
+<h2><span id="45敏感性分析">4.5敏感性分析</span></h2><p>产品推广周期为3年，估计最长可达5年。</p>
+<p>用户数目增长速率基本为105%</p>
+<h1><span id="5社会因素可行性分析">5社会因素可行性分析</span></h1><h2><span id="51法律因素">5.1法律因素</span></h2><ol>
+<li><p>所有软件都选用正版。</p>
+</li>
+<li><p>所有技术资料都有提出方保管。</p>
+</li>
+<li><p>本记账软件在真实安全的情况下未违反法律，潜在的危险在于用户个人信息泄露，软件在安全方面必须有保证。</p>
+</li>
+</ol>
+<h2><span id="52用户使用可行性">5.2用户使用可行性</span></h2><ol>
+<li><p>本记账软件操作简单，运行方便，用户一般不会出现使用上的困难。</p>
+</li>
+<li><p>管理人员经一般培训后会熟练使用本软件。</p>
+</li>
+</ol>
+<h1><span id="6其他可供选择的方案">6其他可供选择的方案</span></h1><h2><span id="61可选择的方案">6.1可选择的方案</span></h2><p>​        从技术上来说，使用纸质的线下记录与本app的线上记录结合，推出带有可识别并自动录入、形成账单信息的账本，解决了在极端情况下手机无法使用时却需要记账的情况，满足了部分用户的纸质记账需求，但对于图像文字识别的精确度没有保障，出错率高；且要设计账本，前期调研工作量大。</p>
+<h1><span id="7-结论意见">7 结论意见</span></h1><p>​        从以上分析可以看到，本记账软件——《鱼子酱》在技术、操作、经济都有可行性，可以进行研发。</p>
+
       
 
       
@@ -188,7 +283,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">软件工程</a>
         		</li>
       		
 		</ul>
@@ -197,16 +292,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/17/http性能测试/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/15/鱼子酱——可行性分析报告文档/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/12/RSA密码算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RSA密码算法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -221,345 +375,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-功能测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/16/功能测试/">功能测试</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/16/功能测试/" class="archive-article-date">
-  	<time datetime="2019-05-16T13:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>此为《软件质量保障与测试》课程的作业。测试<strong>淘宝网</strong>的一些主要功能：搜索商品、注册用户、购物功能等。</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/16/功能测试/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">1 编写目的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">2 可行性研究的前提</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 条件、假定和限制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">3技术可行性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.</span> <span class="toc-text">3.1系统简要描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">3.2.</span> <span class="toc-text">3.2系统流程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">4经济可行性分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.</span> <span class="toc-text">4.1支出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.2.</span> <span class="toc-text">4.2效益</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.</span> <span class="toc-text">4.3收益/投资比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.4.</span> <span class="toc-text">4.4投资回收周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.5.</span> <span class="toc-text">4.5敏感性分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">5社会因素可行性分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">5.1.</span> <span class="toc-text">5.1法律因素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">5.2.</span> <span class="toc-text">5.2用户使用可行性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">6其他可供选择的方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">6.1.</span> <span class="toc-text">6.1可选择的方案</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">7 结论意见</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-  
-    <article id="post-软件工程综合实践专题——第二次作业（结对编程）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/18/软件工程综合实践专题——第二次作业（结对编程）/">软件工程综合实践专题——第二次作业（结对编程）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/18/软件工程综合实践专题——第二次作业（结对编程）/" class="archive-article-date">
-  	<time datetime="2019-03-18T10:05:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、前言："><a href="#一、前言：" class="headerlink" title="一、前言："></a>一、前言：</h1><p>​    我们决定用c语言写一个在命令行窗口的四则运算练习的软件。xxx负责写代码，xxx负责审查与测试代码。</p>
-<p>​    我们预计第一版用时2小时开发出来，说干就干。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/18/软件工程综合实践专题——第二次作业（结对编程）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-等价类划分测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/09/等价类划分测试/">等价类划分测试</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/09/等价类划分测试/" class="archive-article-date">
-  	<time datetime="2019-03-09T13:05:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>此为《软件质量保障与测试》课程的作业——《等价类划分测试用例报告》 </p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/09/等价类划分测试/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-软件工程综合实践专题——第一次作业（阅读并运行他人代码）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/04/软件工程综合实践专题——第一次作业（阅读并运行他人代码）/">软件工程综合实践专题——第一次作业（阅读并运行他人代码）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/04/软件工程综合实践专题——第一次作业（阅读并运行他人代码）/" class="archive-article-date">
-  	<time datetime="2019-03-04T14:20:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、事情缘由："><a href="#一、事情缘由：" class="headerlink" title="一、事情缘由："></a>一、事情缘由：</h1><p>为了完成《软件工程综合实践专题》的第一次作业，我向同学要了一个他曾经做的一个python的程序。</p>
-<p>我：这程序的功能是什么呀？</p>
-<p>同学：就不告诉你，我就不告诉你，嘿嘿嘿，你自己研究吧。</p>
-<p>所以我只能一脸懵逼的看这个程序的代码。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/04/软件工程综合实践专题——第一次作业（阅读并运行他人代码）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -583,8 +424,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
