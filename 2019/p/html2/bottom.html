@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bottom</title>
+    <style type="text/css">
+        body{margin:0;}  /*只有 body{margin: 0;}这个设置时，html将变得和内容一样小，不会铺满，body边界=0，就是和body一样大了*/
+        .daoxiang{width:100%;padding-left:280px;background: rgb(36,48,66);}
+        .liucheng{color:white;font-size:15px;text-align:center;padding-top:15px;}
+        .dayline{text-align:center;height:80px;clear:none;}
+        .day_start,.day_mid,.day_ends,.day_now,.day_line{height:20px;float:left;clear:none;font-size:12px;color:#BABABA;padding-top:34px;text-align:center;}
+        .day_start{background-image:url(../img/day_start.png);width:68px;background-repeat:no-repeat;}
+        .day_mid{background-image:url(../img/day_mid.png);width:68px;background-repeat:no-repeat;}
+        .day_ends{background-image:url(../img/day_ends.png);width:68px;background-repeat:no-repeat;}
+        .day_now{background-image:url(../img/day_now1.png);background-repeat:no-repeat;width:66px;color:white;padding-top:17px;height:33px;font-size:12px;text-shadow: rgba(254,132,44,0.5) 0px 0px 1px;}
+        .day_line{background-image:url(../img/day_line.png);width:10px;background-repeat:no-repeat;}
+        .day_now span{color:white;font-size:9px;width:66px;text-align:center;height:16px;display:block;padding-bottom:12px;}
+         div{clear:none;float:left;}
+    </style>
+</head>
+<body>
+    <div class="daoxiang">
+        <div class="liucheng">养殖流程导向：</div>
+        <div class="dayline">
+            <div class="day_now"><span id="p_days" runat="server"></span>开始养殖</div>
+            <div class="day_line"></div>
+            <div class="day_mid">选塘</div>
+            <div class="day_line"></div>
+            <div class="day_mid">选苗</div>
+            <div class="day_line"></div>
+            <div class="day_mid">放养期准备</div>
+            <div class="day_line"></div>
+            <div class="day_mid">初始水位</div>
+            <div class="day_line"></div>
+            <div class="day_mid">投放苗种</div>
+            <div class="day_line"></div>
+            <div class="day_mid">放养设置</div>
+            <div class="day_line"></div>
+            <div class="day_mid">放养期日常操作</div>
+            <div class="day_line"></div>
+            <div class="day_mid">起捕设置</div>
+            <div class="day_line"></div>
+            <div class="day_mid">捕获管理</div>
+            <div class="day_line"></div>
+            <div class="day_ends">结束养殖</div>
+        </div>
+    </div>
+</body>
+</html>

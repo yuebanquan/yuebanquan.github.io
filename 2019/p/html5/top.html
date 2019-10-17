@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>top</title>
+    <style type="text/css">
+        body{margin: 0;}
+        .head{width:100%;background: rgb(36,48,66);background-image:url(../img/title.png);background-repeat:no-repeat;}
+        .user_buttom{float:right;width:50px;height:50px;cursor:pointer;text-decoration:none;background:url(../img/exit.png) no-repeat center;;}
+        .msg{height:20px;float:right;font-size:13px;margin:15px 10px;background-repeat:no-repeat;}
+        .msg-txt{ float:left; padding-left:20px; width:28px; background:url(../img/topmail.png) no-repeat left center; color:#fff; font-size:14px;text-decoration:none;}
+        .msg-num{ float:left; width:16px; height:9px; margin:6px 0 0 4px; background:url(../img/countbg.png); color:#fff; line-height:9px; font-size:9px; text-align: center;text-decoration:none;}
+        .user{height:20px;float:right;font-size:13px;margin:15px 10px;padding-left:18px;background-image:url(../img/topuser.png);background-repeat:no-repeat;color:#fff;}
+        #time1{height:20px;float:right;color:#fff;font-size:13px;font-size:13px;margin:15px 10px;}
+        .ul_1{padding:0;font-size:13px;color:white;background-color:#2E3E58;margin-top:50px;height:80px;}
+        .ul_1 li{float:left;clear:none;padding:50px 22px 5px 22px;margin:0;background-color:rgb(57,75,102);border:1px solid rgb(64,81,109);margin: 2px 1px;}
+        .ul_1 li:hover,.ul_1 li:active{background-color:rgba(57,75,102,0.5);color:white;cursor:pointer;}
+        #ul_2 li{width:72px;height:31px;padding:0;padding-top:11px;margin:0;margin-right:1px;display:block;text-align:center;}
+        li.ul_1_active,li.ul_1_active:hover,li.ul_1_active:active{background-color:rgb(46,62,88);color:white;border:1px solid #2E3E58;}
+        div{clear:none;float:left;}
+        ul{list-style: none;}
+    </style>
+</head>
+<body>
+<div class="head">
+    <a href="" class="user_buttom"> </a>
+    <div class="msg">
+        <a href="" class="msg-txt">消息</a>
+        <a href="" class="msg-num">1</a>
+    </div>
+    <div class="user">欢迎您,Yangzhi001</div>
+    <div id="time1">time</div>
+    <script>setInterval("document.getElementById('time1').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
+    <ul class="ul_1" id="ul_0">
+        <ul class="ul_1" id="ul_1" style="width:630px;float:left;clear:none;margin:0;">
+            <li id="head0" style="background-image: url(../img/t0.png);background-repeat: no-repeat">
+                工作流管理        <!--包含流程部署-->
+            </li>
+            <li id="head1" style="background-image: url(../img/t1.png);background-repeat: no-repeat">
+                养殖流程
+            </li>
+            <li id="head2" style="background-image: url(../img/t2.png);background-repeat: no-repeat">
+                养殖信息
+            </li>
+            <li id="head3" style="background-image: url(../img/t3.png);background-repeat: no-repeat">
+                规则库管理
+            </li>
+            <li id="head4" style="background-image: url(../img/t4.png);background-repeat: no-repeat"  class="ul_1_active">
+                疾病诊断
+            </li>
+            <li id="head5" style="background-image: url(../img/t5.png);background-repeat: no-repeat">
+                系统设置
+            </li>
+        </ul>
+       <!-- <ul class="ul_1" id="ul_2" style="width:390px;float:right;clear:none;margin:0;">
+            <div style="float:left;clear:none;margin:2px;background-color:rgb(57,75,102);border:1px solid rgb(64,81,109);width:100%;padding:0;height:74px;">
+                <div style="font-size:15px;margin:27px 22px;color:rgb(153,162,175);">报警</div>
+                <div style="height:45px;width:301px;margin-top:14px;background:#243042;border:1px solid #40516D;padding:2px 1px 1px 2px;font-size:14px;">
+                    <li>水位</li>
+                    <li>水质</li>
+                    <li>病害</li>
+                    <li>塘情</li>
+                </div>
+            </div>
+        </ul>-->
+    </ul>
+</div>
+</body>
+</html>

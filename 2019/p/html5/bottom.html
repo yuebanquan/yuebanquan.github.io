@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bottom</title>
+    <style type="text/css">
+        body{margin:0;}
+        .daoxiang{width:100%;padding-left:500px;background: rgb(36,48,66);}
+        .liucheng{color:white;font-size:15px;text-align:center;padding-top:15px;}
+        .dayline{text-align:center;height:80px;clear:none;}
+        .day_start,.day_mid,.day_ends,.day_now,.day_line{height:20px;float:left;clear:none;font-size:12px;color:#BABABA;padding-top:34px;text-align:center;}
+        .day_start{background-image:url(../img/day_start.png);width:68px;background-repeat:no-repeat;}
+        .day_mid{background-image:url(../img/day_mid.png);width:68px;background-repeat:no-repeat;}
+        .day_ends{background-image:url(../img/day_ends.png);width:68px;background-repeat:no-repeat;}
+        .day_now{background-image:url(../img/day_now.png);background-repeat:no-repeat;width:66px;color:white;padding-top:17px;height:33px;font-size:12px;text-shadow: rgba(254,132,44,0.5) 0px 0px 1px;}
+        .day_line{background-image:url(../img/day_line.png);width:10px;background-repeat:no-repeat;}
+        .day_now span{color:white;font-size:9px;width:66px;text-align:center;height:16px;display:block;padding-bottom:12px;}
+         div{clear:none;float:left;}
+    </style>
+</head>
+<body>
+    <div class="daoxiang">
+        <div class="liucheng">病症诊断流程导向：</div>
+        <div class="dayline">
+            <div class="day_start">接收诊断指令</div>  <!--一旦收到诊断指令，便要重新执行水质+虾情流程-->
+            <div class="day_line"></div>
+            <div class="day_mid">病源监测</div>
+            <div class="day_line"></div>
+            <div class="day_now"><span id="p_days" runat="server">第39天</span>综合指标病症诊断</div>   <!--诊断时要同时获得：水质+虾情+病源，三个窗口页面-->
+            <div class="day_line"></div>
+            <div class="day_mid">科学投药</div>
+            <div class="day_line"></div>
+            <div class="day_ends">结束诊断</div>
+        </div>
+    </div>
+</body>
+</html>

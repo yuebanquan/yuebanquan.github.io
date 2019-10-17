@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <style type="text/css">
+        html{height:100%;}
+        body{background: none repeat scroll 0 0 #EEEEEE;margin:0;padding:0;}
+        .title{line-height:33px;overflow:visible;margin-left:7px; padding-left:22px;font-weight:bold;font-family:'宋体';font-size:16px;color:#777777;
+               background:url(../img/titleico.png) no-repeat left center;}
+        .main{width:38%;margin-left:3%;margin-top:5px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .time{height:30px;text-align:center;width:100%;font-size:16px;color:#FE842C;clear:none;margin:10px 0 15px 0;border-bottom:1px solid rgb(200,200,200);}
+        .main p{ margin:10px 0px 0px 0px; padding:0px 0px 0px 31px; line-height:30px;}
+        .ue-clear:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号 */
+        .ue-clear{display:block;overflow:hidden;}
+        .main p label{ float:left; width:120px; text-align:left;color:#555555;font-size:15px;}
+        .main p input{ float:left;font-size:14px;}
+        .main p input[type="text"]{ width:90px; height:28px;line-height:28px\0;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; color:#555555; }
+        .main p span{float:left; margin-left:8px; font-size:14px; color:#959595;}
+        .main .select{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 31px;line-height:30px;}
+        .main .select label{float:left; width:120px; text-align:left;color:#555555;font-size:15px;}
+        .main .select .select-wrap{ float:left; position:relative;}
+        .main .select .select-wrap .select-title{width:60px; height:28px;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; cursor:pointer;color:#555555;}
+        .main .select .select-wrap .select-title span{ float:left;font-size:14px;}
+        .main .select .select-wrap .select-title .icon{ float:right; margin-right:3px; width:9px; height:28px; background:url(../img/selectxl.png) no-repeat center center;}
+        .select-wrap ul{ margin:0;padding:0;display:none; background:#fff;position:absolute; left:0; top:30px;  width:80px; border:1px solid rgb(172,172,172);border-top:none;z-index: 222;}
+        .select-wrap ul li{ padding-left:10px; line-height:28px; cursor:pointer;list-style:none;font-size:14px;color:#555555;}
+        .select-wrap ul li:hover{ background:url(../img/formbtnbg.png) repeat-x;}
+        .btn{padding:0px;margin:0px;float:left;display:inline-block;width:66px;height:29px;text-align:center;
+            line-height:29px;color:#fff; font-size:14px;vertical-align:top;text-decoration:none;background:url(../img/btn.png);}
+        .btn1{padding-top:18px; padding-bottom: 23px;margin-right:7px;float:right;}
+        .btn1 a{display:inline-block;width:126px;height:36px;text-align:center; line-height:36px;color:#fff; font-size:14px;
+            vertical-align:top;text-decoration:none;background:url(../img/btn1.png);}
+
+        .main1{width:48%;margin-left:3%;margin-top:5px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main1_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .time1{height:30px;text-align:center;width:100%;font-size:16px;color:#FE842C;clear:none;margin:10px 0 0 0;border-bottom:1px solid rgb(200,200,200);}
+        #MainArea{border-bottom:2px solid rgb(200,200,200);}
+        #MainArea table.MainArea_Content{border:medium none;color:#555555;width:100%;}
+        #MainArea #TableTitle{height:32px;}
+        #MainArea #TableTitle td {border-left:1px solid #D2D2D2;border-right:1px solid #FFFFFF;border-top:1px solid #D2D2D2;height:32px;
+            background-image: url("../img/TableTitle_bg.png");background-repeat: repeat-x;font-size:14px;font-weight:bold;}
+        #MainArea #TableData .TableDetail1 {background-color:#FFFFFF;height:30px;vertical-align:bottom;}
+        #MainArea #TableData .TableDetail1 td {border-top:1px solid #D2D2D2;height:30px;padding:3px 3px 3px 50px;vertical-align:middle;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div class="title">实时水质监控</div>
+    <div class="main">
+        <div class="main_title">&nbsp;水质实时传输</div>
+        <div class="time">最近一次获取数据时间：2019-05-24 10:00:00</div>
+        <div class="short-input select ue-clear">
+            <label>传输频率：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>1</span><i class="icon"></i></div>
+                <ul class="select-list">
+                    <li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>
+                </ul>
+            </div>
+            <span style="float:left; margin-left:8px; margin-right:8px;font-size:14px; color:#959595;">小时</span>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>0</span><i class="icon"></i></div>
+                <ul class="select-list">
+                    <li>0</li><li>10</li><li>20</li><li>30</li><li>40</li><li>50</li>
+                </ul>
+            </div>
+            <span style="float:left; margin-left:8px;margin-right:15px; font-size:14px; color:#959595;">分钟/次</span>
+            <a href=" " class="btn">确认</a>
+        </div>
+        <p class="short-input ue-clear">
+            <label>水温：</label>
+            <input type="text" placeholder="28.8"/>
+            <span>℃</span>
+        </p>
+        <p class="short-input ue-clear">
+            <label>PH值：</label>
+            <input type="text" placeholder="7.9"/>
+        </p>
+        <p class="short-input ue-clear">
+            <label>溶解氧含量：</label>
+            <input type="text" placeholder="3.8" />
+            <span>mg/L</span>
+        </p>
+        <p class="short-input ue-clear">
+            <label>氨氮含量：</label>
+            <input type="text" placeholder="0.13" />
+            <span>mg/L</span>
+        </p>
+        <p class="short-input ue-clear">
+            <label>亚硝酸盐含量：</label>
+            <input type="text" placeholder="0.05" />
+            <span>mg/L</span>
+        </p>
+        <p class="short-input ue-clear">
+            <label>硫化氢含量：</label>
+            <input type="text" placeholder="0.12" />
+            <span>mg/L</span>
+        </p>
+        <p class="short-input ue-clear">
+            <label>透明度：</label>
+            <input type="text" placeholder="20"/>
+            <span>cm</span>
+        </p>
+        <div class="btn1">
+            <a href=" " >刷新</a>
+        </div>
+        <div class="btn1">
+            <a href=" " >执行</a>
+        </div>
+    </div>
+
+    <div class="main1">
+        <div class="main1_title">&nbsp;水质结果分析</div>
+        <div class="time1">当前处于：放养中期</div>
+        <div id="MainArea">
+            <table class="MainArea_Content" align="center" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr align="center" valign="middle" id="TableTitle">
+                        <td style="width:10%;">参数编号</td>
+                        <td style="width:20%;">参数名称</td>
+                        <td style="width:20%;">结果</td>
+                        <td style="width:50%;">专家意见</td>
+                    </tr>
+                </thead>
+                <tbody id="TableData">
+                    <tr class="TableDetail1">
+                        <td>1&nbsp;</td><td>水温(℃)&nbsp;</td><td>正常&nbsp;</td><td>-&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1" style="color:#770c0f;">
+                        <td>2&nbsp;</td><td>PH值&nbsp;</td><td>偏低&nbsp;</td><td>可适当投入适量生石灰进行调节。正常PH在[8.0-8.8]之间！&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1" style="color:#770c0f;">
+                        <td>3&nbsp;</td><td>溶解氧含量(mg/L)&nbsp;</td><td>偏低&nbsp;</td><td>请增大氧含量！正常溶解氧含量>=4.0mg/l！&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1">
+                        <td>4&nbsp;</td><td>氨氮含量(mg/L)&nbsp;</td><td>正常&nbsp;</td><td>-&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1">
+                        <td>5&nbsp;</td><td>亚硝酸盐含量(mg/L)&nbsp;</td><td>正常&nbsp;</td><td>-&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1" style="color:#770c0f;">
+                        <td>6&nbsp;</td><td>硫化氢含量(mg/L)&nbsp;</td><td>偏高&nbsp;</td><td>请降低硫化氢含量，！正常硫化氢含量<=0.1mg/l!&nbsp;</td>
+                    </tr>
+                    <tr class="TableDetail1" style="color:#770c0f;">
+                        <td>7&nbsp;</td><td>透明度(cm)&nbsp;</td><td>偏低&nbsp;</td><td>请换水5%-10%！正常即透明度在[25.0，40.0]cm之间&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn1">
+            <a href=" " >刷新</a>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+        $(".select-title").on("click",function(){
+            $(".select-list").toggle();
+            return false;
+        });
+        $(".select-list").on("click","li",function(){
+            var txt = $(this).text();
+            $(".select-title").find("span").text(txt);
+        });
+        showRemind('input[type=text], textarea','placeholder');
+    </script>
+</html>
+

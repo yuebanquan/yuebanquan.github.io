@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <style type="text/css">
+        html{height:100%;}
+        body{background: none repeat scroll 0 0 #EEEEEE;margin:0;padding:0;}
+        .title{line-height:33px;overflow:visible;margin-left:7px; padding-left:22px;font-weight:bold;font-family:'宋体';font-size:15px;color:#777777;
+            background:url(../img/titleico.png) no-repeat left center;}
+
+
+
+        .main{width:38%;margin-left:50px;margin-top:10px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .ue-clear:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号 */
+        .ue-clear{display:block;overflow:hidden;}
+        .ue-clear{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 31px;line-height:30px;}
+        .ue-clear label{float:left; width:140px; text-align:left;color:#555555;font-size:18px;}
+        .time-select{ float:left; position:relative;}
+        .icon1{ position:absolute; right:6px; top:1px; width:16px; height:28px; background:url(../img/dateico.png) no-repeat center center; cursor:pointer;}
+        .time-select input{padding:0 6px 0 8px; width:155px; height:28px; border:1px solid rgb(172,172,172); outline:none;font-size:15px}
+        .time input{ float:left;font-size:15px;}
+        .time input[type="text"]{ width:90px; height:28px;line-height:28px\0;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; color:#555555; }
+        .time span{float:left; margin-left:8px; font-size:16px; color:#959595;}
+
+        .main1{width:38%;margin-left:50px;margin-top:10px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main1_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .ue-clear1:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号 */
+        .ue-clear1{display:block;overflow:hidden;}
+        .ue-clear1{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 31px;line-height:30px;}
+        .ue-clear1 label{float:left; width:140px; text-align:left;color:#555555;font-size:18px;}
+        .time-select1{ float:left; position:relative;}
+        .time-select1 input{ padding:0 6px 0 8px; width:155px; height:28px; border:1px solid rgb(172,172,172); outline:none;font-size:15px}
+        .time1 input{ float:left;font-size:14px;}
+        .time1 input[type="text"]{ width:90px; height:28px;line-height:28px\0;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; color:#555555; }
+        .time1 span{float:left; margin-left:8px; font-size:16px; color:#959595;}
+
+        .main2{width:38%;margin-left:50px;margin-top:30px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main2_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .ue-clear2:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号 */
+        .ue-clear2{display:block;overflow:hidden;}
+        .ue-clear2{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 31px;line-height:30px;}
+        .ue-clear2 label{float:left; width:140px; text-align:left;color:#555555;font-size:18px;}
+        .time2 input{ float:left;font-size:15px;}
+        .time2 input[type="text"]{ width:90px; height:28px;line-height:28px\0;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; color:#555555; }
+        .time2 span{float:left; margin-left:8px; font-size:16px; color:#959595;}
+
+        .main3{width:38%;margin-left:50px;margin-top:30px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main3_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .ue-clear3:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号 */
+        .ue-clear3{display:block;overflow:hidden;}
+        .ue-clear3{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 31px;line-height:30px;}
+        .ue-clear3 label{float:left; width:200px; text-align:left;color:#555555;font-size:18px;}
+        .shuizhi{background:#2E3E58;line-height:30px;margin:40px 0px 0px 70px;}
+        .shuizhi label{float:left; width:50px; text-align:left;color:#FFFFFF;font-size:15px;}
+        .title2{float:left; position:relative;width:55px; height:28px;padding:0 7px; border:1px solid rgb(172,172,172); outline:none; cursor:pointer;color:#555555;}
+        .title2 .icon{ float:right; width:9px; height:28px; background:url(../img/selectxl.png) no-repeat center center;}
+
+        .btn1{ padding-top:18px; padding-bottom: 23px;margin-right:7px;float:right;}
+        .btn1 a{display:inline-block;width:126px;height:36px;text-align:center; line-height:36px;color:#fff; font-size:13px;
+            vertical-align:top;text-decoration:none;background:url(../img/btn1.png);}
+    </style>
+</head>
+<body>
+    <div class="title">放养设置</div>
+
+    <div class="main">
+        <div class="main_title">&nbsp;设置放养信息</div>
+        <div class="ue-clear">
+            <label>开始放养日期：</label>
+            <div class="time-select">
+                <input type="text" placeholder="2017-07-17  08:20" />    <!--开始时间-->
+                <i class="icon1"></i>
+            </div>
+        </div>
+        <div class="ue-clear">
+            <label>标准放养期：</label>
+            <div class="time">
+                <input type="text" placeholder="90" />
+                <span>天</span>
+            </div>
+        </div>
+        <div class="btn1">
+            <a href=" " >确认</a>
+        </div>
+    </div>
+
+    <div class="main1">
+        <div class="main1_title">&nbsp;设置再次放养信息</div>
+        <div class="ue-clear1">
+            <label>再次放养日期：</label>
+            <div class="time-select1">
+                <input type="text" placeholder="" />    <!--开始时间-->
+                <i class="icon1"></i>
+            </div>
+        </div>
+        <div class="ue-clear1">
+            <label>再次放养期：</label>
+            <div class="time1">
+                <input type="text" placeholder="" />
+                <span>天</span>
+            </div>
+        </div>
+        <div class="btn1">
+            <a href=" " >确认</a>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="main2_title">&nbsp;放养结果</div>
+        <div class="ue-clear2">
+            <label>当前是放养第：</label>
+            <div class="time2">
+                <input type="text" placeholder="39" />
+                <span>天</span>
+            </div>
+        </div>
+        <div class="ue-clear2">
+            <label>当前放养时段：</label>
+            <div class="time2">
+                <input type="text" placeholder="放养中期" />
+            </div>
+        </div>
+        <div class="ue-clear2">
+            <label>预计起捕日期：</label>
+            <div class="time2">
+                <input type="text" placeholder="2018-10-14" />
+            </div>
+        </div>
+        <div class="btn1">
+            <a href=" " >刷新</a>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="main3_title">&nbsp;设置定时器触发时间</div>
+        <div class="ue-clear3">
+           <label>定时器触发时间为每天：</label>
+            <div class="shuizhi">
+                <div class="title2">
+                    <span style="float:left;font-size:15px;color:#959595;">00</span>
+                    <i class="icon"></i>
+                </div>
+                <span style="float:left; margin-left:8px; margin-right:8px;font-size:15px; color:#959595;">时</span>
+                <div class="title2">
+                    <span style="float:left;font-size:15px;color:#959595;">05</span>
+                    <i class="icon"></i>
+                </div>
+                <span style="float:left; margin-left:8px; margin-right:8px;font-size:15px; color:#959595;">分</span>
+            </div>
+        <div class="btn1">
+            <a href=" " >确认</a>
+        </div>
+    </div>
+
+
+</body>
+</html>

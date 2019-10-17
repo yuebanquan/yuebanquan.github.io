@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <style type="text/css">
+        html{height:100%;background: none repeat scroll 0 0 #EEEEEE;}
+        body{margin:0;}
+    </style>
+</head>
+<body>
+<div id="temp" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+  <!--  <button class="a1"  style="background:black">a1</button>-->
+    <div id="container1" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart1 = null;
+        $(function () {
+            $('#container1').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '水温变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: [ '21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'Temperature(℃)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 27,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'27℃',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: '℃'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [ 29.7, 29.5, 29.3, 29.2,
+                        29.0, 28.6, 28.3, 28.1, 27.9, 27.7,
+                        27.5, 27.9, 28.5, 28.7, 29.6, 29.9,
+                        30.5, 30.7, 31.3,31.1, 30.8, 30.4,
+                        30.2, 29.9]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#00BCD7'],  //折线图颜色
+            },function (c) {
+                chart1 = c;
+            });
+           /* $(".a1").click(function(){
+                chart1.yAxis[0].addPlotLine({             //在x轴上增加
+                    dashStyle: 'Dash',
+                    value: 30,
+                    width: 1,
+                    color: 'black',
+                    label:{
+                        text:'30℃',     //标签的内容
+                        align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                        x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                        style:{
+                            fontSize:'11px',
+                        }
+                    }
+                });
+            });*/
+        });
+    </script>
+</div>
+<div id="ph" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+   <!-- <button class="a2"  style="background:black">a2</button>-->
+    <div id="container2" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart2 = null;
+        $(function() {
+            $('#container2').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: 'PH值变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'ValuePH',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 7.80,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'7.80',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: ''
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [8.09, 8.01, 7.81, 7.80,
+                        7.79, 7.79, 7.78, 7.76, 7.73, 7.72,
+                        7.68, 7.71, 7.74, 7.75, 7.78, 8.10,
+                        8.19, 8.38, 8.44, 8.38, 8.43, 8.35,
+                        8.34, 8.26]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#009788'],  //折线图颜色
+            },function (c) {
+                chart2 = c;
+            });
+            $(".a2").click(function(){
+                chart2.yAxis[0].addPlotLine({             //在x轴上增加
+                    dashStyle: 'Dash',
+                    value: 8.50,
+                    width: 1,
+                    color: 'black',
+                    label:{
+                        text:'8.50',     //标签的内容
+                        align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                        x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                        style:{
+                            fontSize:'11px',
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</div>
+<div id="DO" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+    <div id="container3" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart3 = null;
+        $(function() {
+            $('#container3').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '溶解氧含量变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'ContentDO(mg/L)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 4.00,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'4.00mg/L',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: 'mg/L'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [7.48, 7.16, 5.18, 5.02,
+                        4.76, 3.48, 3.78, 3.50, 3.48, 3.45,
+                        3.40, 3.29, 3.72, 4.25, 4.76, 8.02,
+                        8.10, 8.20, 9.64, 8.68, 9.56, 8.92,
+                        9.22, 8.69]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#FEC200'],  //折线图颜色
+            },function (c) {
+                chart3=c;
+            });
+            /*$(".a").click(function(){
+                chart3.yAxis[0].addPlotLine({             //在x轴上增加
+                    value:25,                           //在值为2的地方
+                    width:2,                             //标示线的宽度为2px
+                    color: '#000',                       //标示线的颜色
+                    id: 'plot-line'                //标示线的id，在删除该标示线的时候需要该id标示
+                });
+            });*/
+        });
+    </script>
+</div>
+<div id="AN" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+    <div id="container4" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart4 = null;
+        $(function() {
+            $('#container4').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '氨氮含量变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                                '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                                '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                                '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                                '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'ContentNH3-N(mg/L)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 0.201,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'0.20mg/L',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: 'mg/L'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [0.017, 0.046, 0.077, 0.122,
+                           0.134, 0.147, 0.154, 0.168, 0.174, 0.186,
+                           0.213, 0.185, 0.142, 0.133, 0.144, 0.156,
+                           0.153, 0.167, 0.145, 0.128, 0.094, 0.034,
+                           0.028, 0.022]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#EC1562'],  //折线图颜色
+            },function (c) {
+                chart4=c;
+            });
+        });
+    </script>
+</div>
+<div id="N" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+    <div id="container5" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart5 = null;
+        $(function() {
+            $('#container5').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '亚硝酸盐含量变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'ContentNO2-N(mg/L)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 0.10,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'0.10mg/L',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: 'mg/L'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [0.031, 0.038, 0.041, 0.043,
+                        0.050, 0.052, 0.046, 0.043, 0.049, 0.053,
+                        0.057, 0.046, 0.049, 0.057, 0.059, 0.061,
+                        0.063, 0.062, 0.055, 0.046, 0.038, 0.026,
+                        0.029, 0.030]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#FF5608'],  //折线图颜色
+            },function (c) {
+                chart5=c;
+            });
+            /*$(".a").click(function(){
+                chart5.yAxis[0].addPlotLine({             //在x轴上增加
+                    value:25,                           //在值为2的地方
+                    width:2,                             //标示线的宽度为2px
+                    color: '#000',                       //标示线的颜色
+                    id: 'plot-line'                //标示线的id，在删除该标示线的时候需要该id标示
+                });
+            });*/
+        });
+    </script>
+</div>
+<div id="S" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+    <div id="container6" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart6 = null;
+        $(function() {
+            $('#container6').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '硫化氢含量变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'ContentH2S(mg/L)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 22,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'22℃',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: 'mg/L'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [0.032, 0.039, 0.044, 0.053,
+                        0.054, 0.057, 0.056, 0.049, 0.052, 0.053,
+                        0.056, 0.049, 0.052, 0.058, 0.057, 0.063,
+                        0.065, 0.067, 0.062, 0.053, 0.049, 0.036,
+                        0.031, 0.030]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#3F4DB8'],  //折线图颜色
+            },function (c) {
+                chart6=c;
+            });
+            /*$(".a").click(function(){
+                chart6.yAxis[0].addPlotLine({             //在x轴上增加
+                    value:25,                           //在值为2的地方
+                    width:2,                             //标示线的宽度为2px
+                    color: '#000',                       //标示线的颜色
+                    id: 'plot-line'                //标示线的id，在删除该标示线的时候需要该id标示
+                });
+            });*/
+        });
+    </script>
+</div>
+<div id="Y" style="margin-top:10px;margin-left:10px;border:1px solid #9A9A9A; width:32%; float:left; background:white">
+    <div id="container7" style="width:460px; height:270px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        var chart7 = null;
+        $(function() {
+            $('#container7').highcharts({
+                chart:{
+                    type:'line'
+                },
+                title:{
+                    text: '塘水透明度变化趋势图',
+                    align: 'center',
+                },
+                subtitle :{     //副标题
+                    text: ''
+                },
+                xAxis :{       //横坐标   步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    categories: ['21:00', '22:00', '23:00', '24:00',
+                        '1:00', '2:00', '3:00', '4:00', '5:00', '6:00',
+                        '7:00', '8:00', '9:00', '10:00', '11:00', '12:00',
+                        '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                        '19:00', '20:00'],
+                    tickColor: '#6398f9',
+                    labels: {
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    }
+                },
+                yAxis:{      //竖坐标  步长是根据公式和我们给的数字highcharts自己计算得出的。此处只能设计样式
+                    title:{
+                        text: 'Turbidity(cm)',
+                        color: '#255'
+                    },
+                    labels:{
+                        style: {
+                            color: '#255'//颜色
+                        }
+                    },
+                    plotLines:[{  //标示线
+                        dashStyle: 'Dash',
+                        value: 25.01,
+                        width: 1,
+                        color: 'black',
+                        label:{
+                            text:'25.0cm',     //标签的内容
+                            align:'right',                //标签的水平位置，水平居左,默认是水平居中center
+                            x:5,                         //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                            style:{
+                                fontSize:'11px',
+                            }
+                        }
+                    }]
+                },
+                tooltip:{     //数据提示框
+                    valueSuffix: 'cm'
+                },
+                legend:{     //图例
+                    enabled: false
+                },
+                series:[{   //数据列
+                    data: [29.3, 31.2, 31.5, 36.9,
+                        25.0, 25.1, 25.2, 25.3, 25.4, 26.4,
+                        26.8, 27.9, 28.5, 26.8, 24.5, 25.2,
+                        25.1, 25.9, 26.6, 25.1, 25.2, 28.8,
+                        25.1, 27.1]
+                }],
+                credits:{     //版权标签
+                    enabled: false
+                },
+                colors:['#607D8D'],  //折线图颜色
+            },function (c) {
+                chart7=c;
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <style type="text/css">
+        html{height:100%;background: none repeat scroll 0 0 #EEEEEE;}
+        body{margin:8px 10px;padding:0;}
+        .TitleArea{background: none repeat scroll 0 0 rgb(200, 200, 200);height:28px;width:100%;margin-bottom:2px;}
+        .TitleArea_Title {background:url(../img/title_arrow.png) no-repeat left center;color: rgb(49,49,46);float:left;font-family: 宋体;
+            font-size:13px;font-weight:bold;line-height:28px; margin-left:7px; padding-left:22px;}
+        .ue-clear{ margin:5px 0 0 0; line-height:30px;display:block;overflow:hidden;}
+        .ue-clear label{ float:left; width:70px; text-align:left;color:#004779;font-size:13px;font-family: 宋体;font-weight:bold;}
+        .ue-clear input{float:left; font-size:13px;}
+        .ue-clear input[type="text"]{ width:150px; height:23px;line-height:23px;padding:0 10px; border:1px solid rgb(172,172,172);
+            outline:none; color:#555555; }
+        .btn1{padding:0px;float:left;display:inline-block;width:56px;height:24px;line-height:24px;text-align:center;color:#ffffff;margin-left:10px;
+            font-size:12px;vertical-align:top;text-decoration:none;background:url(../img/btn2.png);}
+        .btn2{padding:0px;display:inline-block;width:126px;height:36px;line-height:36px;text-align:center;color:#ffffff;
+            font-size:13px;vertical-align:top;text-decoration:none;background:url(../img/btn1.png);}
+        .MainArea{border:1px solid rgb(200,200,200);background:white;}
+        .MainArea_Content{border:medium none;color:#004779;font-size:12px;width:100%;}
+        td{font-family: 宋体;font-size:15px;}
+        .TableTitle{height:28px;}
+        .TableTitle td {border-left:1px solid #D2D2D2;border-right:1px solid #FFFFFF;border-top:1px solid #D2D2D2;height:28px;
+                        background-image: url("../img/TableTitle_bg.png");background-repeat: repeat-x;font-size:14px;font-weight:bold;}
+        .TableDetail1 {background-color:#FFFFFF;height:24px;vertical-align:bottom;}
+        .TableDetail1 td {border-left:1px solid #D2D2D2;border-right:1px solid #FFFFFF;border-top:1px solid #D2D2D2;height:24px;
+            padding:3px 0px; vertical-align:middle; }
+        .btn3{padding:0px;float:left;display:inline-block;width:56px;height:24px;line-height:24px;text-align:center;color:#ffffff;
+            font-size:12px;vertical-align:top;text-decoration:none;background:url(../img/btn2.png);}
+        .hengtiao{height:60px;width:100%;background: none repeat scroll 0 0 #EEEEEE;border-top:1px solid #004779;margin-top:8px;}
+
+    </style>
+</head>
+<body>
+    <div class="TitleArea">
+        <div class="TitleArea_Title">部署流程定义</div>
+    </div>
+    <div class="zhuti">
+        <p class="ue-clear">
+            <label>流程名称：</label>
+            <input type="text" placeholder=""/>
+        </p>
+        <p class="ue-clear">
+            <label>流程文件：</label>
+            <input type="text" placeholder="" style="background:#E6E6E6"/>
+            <a href=" " class="btn1">浏览...</a>
+        </p>
+            <a href=" " class="btn2">上传流程</a>
+    </div>
+    <div class="hengtiao"></div>
+
+    <div class="TitleArea">
+        <div class="TitleArea_Title">部署信息管理列表</div>
+    </div>
+    <div class="MainArea">
+        <table class="MainArea_Content" align="center" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr align="center" valign="middle" class="TableTitle">
+                    <td style="width:10%;">ID</td>
+                    <td style="width:35%;">流程名称</td>
+                    <td style="width:35%;">发布时间</td>
+                    <td style="width:20%;">操作</td>
+                </tr>
+            </thead>
+            <tbody class="TableData">
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>1&nbsp;</td>
+                    <td>淡水珍珠蚌养殖流程&nbsp;</td>
+                    <td>2019-05-04 16:51:40&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn3" style="margin-left:115px;">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="hengtiao"></div>
+
+    <div class="TitleArea">
+        <div class="TitleArea_Title">流程定义/实例列表</div>
+    </div>
+    <div class="MainArea">
+        <table class="MainArea_Content" align="center" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr align="center" valign="middle" class="TableTitle">
+                <td style="width:10%;">ID</td>
+                <td style="width:10%;">名称</td>
+                <td style="width:12%;">流程定义的KEY</td>
+                <td style="width:12%;">流程定义的版本</td>
+                <td style="width:18%;">流程定义的资源文件名称</td>
+                <td style="width:18%;">流程定义的资源图片名称</td>
+                <td style="width:10%;">部署ID</td>
+                <td style="width:10%;">操作</td>
+            </tr>
+            </thead>
+            <tbody class="TableData">
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>Aquaculture:1:11&nbsp;</td>
+                    <td>AquacultureProcess&nbsp;</td>
+                    <td>Aquaculture&nbsp;</td>
+                    <td>1&nbsp;</td>
+                    <td>bpmn/yangzhi.bpmn&nbsp;</td>
+                    <td>bpmn/yangzhi.png&nbsp;</td>
+                    <td>1&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn3" style="margin-left:43px;">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="hengtiao"></div>
+</body>
+</html>

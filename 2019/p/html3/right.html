@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <style type="text/css">
+        html{height:100%;background: none repeat scroll 0 0 #EEEEEE;}
+        body{margin:8px 10px;padding:0;border:3px solid rgb(200,200,200);background:white;}
+        #TitleArea{background: none repeat scroll 0 0 rgb(200, 200, 200);height:33px;width:100%;margin:0;}
+        #TitleArea #TitleArea_Title {background:url(../img/title_arrow.png) no-repeat left center;color: rgb(49,49,46);float:left;font-family: 宋体;
+            font-size:14px;font-weight:bold;line-height:33px; margin-left:7px; padding-left:22px;}
+        #QueryArea{height:40px;border-bottom:2px solid #a5a5a5;border-top:2px solid #a5a5a5;padding:1px 1px 1px 480px;}
+        .conditions{ overflow:visible; float:left; line-height:30px; width:380px;margin-top:3px;}
+        .conditions label{ float:left; width:50px; color:#000; font-family: 宋体;font-size:12px;}
+        .time-select{ float:left; position:relative;}
+        .time-select input{ padding:0 6px 0 8px; width:130px; height:28px; border:1px solid rgb(172,172,172); outline:none;}
+        .icon{ position:absolute; right:6px; top:1px; width:16px; height:28px; background:url(../img/dateico.png) no-repeat center center; cursor:pointer;}
+        .line{ float:left; margin:0 2px; color:#000;}
+        .btn{padding:0px;margin-top:5px;float:left;display:inline-block;width:66px;height:29px;text-align:center;line-height:29px;color:#ffffff;
+            font-size:13px;vertical-align:top;text-decoration:none;background:url(../img/btn.png);}
+        #MainArea{border:1px solid rgb(200,200,200);}
+        #MainArea table.MainArea_Content{border:medium none;color:#004779;font-size:12px;width:100%;}
+        td{font-family: 宋体;font-size:12px;}
+        #MainArea #TableTitle{height:28px;}
+        #MainArea #TableTitle td {border-left:1px solid #D2D2D2;border-right:1px solid #FFFFFF;border-top:1px solid #D2D2D2;height:28px;
+            background-image: url("../img/TableTitle_bg.png");background-repeat: repeat-x;font-size:13px;font-weight:bold;}
+        #MainArea #TableData .TableDetail1 {background-color:#FFFFFF;height:24px;vertical-align:bottom;}
+        #MainArea #TableData .TableDetail1 td {border-top:1px solid #D2D2D2;height:24px; padding:3px 0px;vertical-align:middle;font-size:13px;}
+        .btn1{padding:0px;float:left;display:inline-block;width:56px;height:24px;text-align:center;line-height:24px;color:#ffffff;
+            font-size:12px;vertical-align:top;text-decoration:none;background:url(../img/btn2.png);}
+        .pagination{border-top:2px solid #a5a5a5;padding:10px;display:block;overflow:hidden;font:12px/1.5 Tahoma,'宋体';color:#000;}
+        .pagination span {display: block;float:left;line-height:24px;padding:0 9px;border-radius:2px;margin-right:5px;font-family:Arial, Helvetica, sans-serif !important;}
+        .pxofy{float:left;margin-left:5px;height:25px;color:#6c6c6c;}
+        .goto{float:right;margin-left:10px;}
+        .pagination .goto input[type=text]{float:left;width:25px;height:22px;border:1px solid #FE842C;outline:none; text-align:center;}
+        .pagination a {display: block;float:left;line-height:24px;padding:0 9px;border:1px solid #FE842C;margin-right:5px;
+            font-family:Arial, Helvetica, sans-serif !important;text-decoration: none;color:#000;background:#a5a5a5;}
+        .pagination a:hover{background:#fbf50d;}
+        .pagin-list{float:right;}
+        .prev{border:1px solid #FE842C;color:#B9B9B9;border-color:#D3D3D3;background:#fff;}
+        .current {cursor:default;border:1px solid #FE842C;color:#fff;background:#fab11d;}
+    </style>
+</head>
+<body>
+    <div id="TitleArea">
+        <div id="TitleArea_Title">水质信息管理</div>
+    </div>
+
+    <div id="QueryArea">
+        <div class="conditions">
+            <label>时&nbsp;间：</label>
+            <div class="time-select">
+                <input type="text" placeholder="2018-08-22 21:00" />    <!--开始时间-->
+                <i class="icon"></i>
+            </div>
+            <span class="line">-</span>
+            <div class="time-select">
+                <input type="text" placeholder="2018-08-23 24:00" />
+                <i class="icon"></i>
+            </div>
+        </div>
+        <a href=" " class="btn">搜索</a>
+    </div>
+
+    <div id="MainArea">
+        <table class="MainArea_Content" align="center" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr align="center" valign="middle" id="TableTitle">
+                    <td style="width:5%;">编号</td>
+                    <td style="width:8%;">水温(℃)</td>
+                    <td style="width:8%;">PH值</td>
+                    <td style="width:11%;">溶解氧含量(mg/L)</td>
+                    <td style="width:11%;">氨氮含量(mg/L)</td>
+                    <td style="width:11%;">亚硝酸盐含量(mg/L)</td>
+                    <td style="width:11%;">硫化氢含量(mg/L)</td>
+                    <td style="width:8%;">透明度(cm)</td>
+                    <td style="width:15%;">上传时间</td>
+                    <td style="width:12%;">操作</td>
+                </tr>
+            </thead>
+            <tbody id="TableData">
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>1&nbsp;</td>     <!--论文：基于物联网Android平台的水产养殖远程监控系统-->
+                    <td>29.7&nbsp;</td>
+                    <td>8.09&nbsp;</td>
+                    <td>7.48&nbsp;</td>
+                    <td>0.017&nbsp;</td>
+                    <td>0.031&nbsp;</td>
+                    <td>0.032&nbsp;</td>
+                    <td>29.3&nbsp;</td>
+                    <td>2018/8/22 21:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>2&nbsp;</td>
+                    <td>29.5&nbsp;</td>
+                    <td>8.01&nbsp;</td>
+                    <td>7.16&nbsp;</td>
+                    <td>0.046&nbsp;</td>
+                    <td>0.038&nbsp;</td>
+                    <td>0.039&nbsp;</td>
+                    <td>31.2&nbsp;</td>
+                    <td>2018/8/22 22:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>3&nbsp;</td>
+                    <td>29.3&nbsp;</td>
+                    <td>7.81&nbsp;</td>
+                    <td>5.18&nbsp;</td>
+                    <td>0.077&nbsp;</td>
+                    <td>0.041&nbsp;</td>
+                    <td>0.044&nbsp;</td>
+                    <td>31.5&nbsp;</td>
+                    <td>2018/8/22 23:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>4&nbsp;</td>
+                    <td>29.2&nbsp;</td>
+                    <td>7.80&nbsp;</td>
+                    <td>5.02&nbsp;</td>
+                    <td>0.122&nbsp;</td>
+                    <td>0.043&nbsp;</td>
+                    <td>0.053&nbsp;</td>
+                    <td>36.9&nbsp;</td>
+                    <td>2018/8/22 24:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>5&nbsp;</td>
+                    <td>29.0&nbsp;</td>
+                    <td>7.79&nbsp;</td>
+                    <td>4.76&nbsp;</td>
+                    <td>0.134&nbsp;</td>
+                    <td>0.050&nbsp;</td>
+                    <td>0.054&nbsp;</td>
+                    <td>25.0&nbsp;</td>
+                    <td>2018/8/23 01:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>6&nbsp;</td>
+                    <td>28.6&nbsp;</td>
+                    <td>7.79&nbsp;</td>
+                    <td>3.48&nbsp;</td>
+                    <td>0.147&nbsp;</td>
+                    <td>0.052&nbsp;</td>
+                    <td>0.057&nbsp;</td>
+                    <td>25.1&nbsp;</td>
+                    <td>2018/8/23 02:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>7&nbsp;</td>
+                    <td>28.3&nbsp;</td>
+                    <td>7.78&nbsp;</td>
+                    <td>3.78&nbsp;</td>
+                    <td>0.154&nbsp;</td>
+                    <td>0.046&nbsp;</td>
+                    <td>0.056&nbsp;</td>
+                    <td>25.2&nbsp;</td>
+                    <td>2018/8/23 03:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>8&nbsp;</td>
+                    <td>28.1&nbsp;</td>
+                    <td>7.76&nbsp;</td>
+                    <td>3.50&nbsp;</td>
+                    <td>0.168&nbsp;</td>
+                    <td>0.043&nbsp;</td>
+                    <td>0.049&nbsp;</td>
+                    <td>25.3&nbsp;</td>
+                    <td>2018/8/23 04:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>9&nbsp;</td>
+                    <td>27.9&nbsp;</td>
+                    <td>7.73&nbsp;</td>
+                    <td>3.48&nbsp;</td>
+                    <td>0.174&nbsp;</td>
+                    <td>0.049&nbsp;</td>
+                    <td>0.052&nbsp;</td>
+                    <td>25.4&nbsp;</td>
+                    <td>2018/8/23 05:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>10&nbsp;</td>
+                    <td>27.7&nbsp;</td>
+                    <td>7.72&nbsp;</td>
+                    <td>3.45&nbsp;</td>
+                    <td>0.186&nbsp;</td>
+                    <td>0.053&nbsp;</td>
+                    <td>0.053&nbsp;</td>
+                    <td>26.4&nbsp;</td>
+                    <td>2018/8/23 06:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>11&nbsp;</td>
+                    <td>27.5&nbsp;</td>
+                    <td>7.68&nbsp;</td>
+                    <td>3.40&nbsp;</td>
+                    <td>0.213&nbsp;</td>
+                    <td>0.057&nbsp;</td>
+                    <td>0.056&nbsp;</td>
+                    <td>26.8&nbsp;</td>
+                    <td>2018/8/23 07:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>12&nbsp;</td>
+                    <td>27.9&nbsp;</td>
+                    <td>7.71&nbsp;</td>
+                    <td>3.29&nbsp;</td>
+                    <td>0.185&nbsp;</td>
+                    <td>0.046&nbsp;</td>
+                    <td>0.049&nbsp;</td>
+                    <td>27.9&nbsp;</td>
+                    <td>2018/8/23 08:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>13&nbsp;</td>
+                    <td>28.5&nbsp;</td>
+                    <td>7.74&nbsp;</td>
+                    <td>3.72&nbsp;</td>
+                    <td>0.142&nbsp;</td>
+                    <td>0.049&nbsp;</td>
+                    <td>0.052&nbsp;</td>
+                    <td>28.5&nbsp;</td>
+                    <td>2018/8/23 09:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle" class="TableDetail1">
+                    <td>14&nbsp;</td>
+                    <td>28.7&nbsp;</td>
+                    <td>7.75&nbsp;</td>
+                    <td>4.25&nbsp;</td>
+                    <td>0.133&nbsp;</td>
+                    <td>0.057&nbsp;</td>
+                    <td>0.058&nbsp;</td>
+                    <td>26.8&nbsp;</td>
+                    <td>2018/8/23 10:00&nbsp;</td>
+                    <td>
+                        <a href=""  class="btn1" style="margin-left:27px;">删除</a>
+                        <a href=""  class="btn1">查看</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <div class="pxofy">显示第&nbsp;1&nbsp;条到&nbsp;14&nbsp;条记录，总共&nbsp;140&nbsp;条</div>
+        <div class="goto">
+            <span>转到第</span>
+            <input type="text">
+            <span>页</span>
+            <a href="" style="background: #fab11d">确定</a>
+        </div>
+        <div class="pagin-list">
+            <span class="prev"><&nbsp;上一页</span>
+            <span class="current">1</span>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span>...</span>
+            <a href="">9</a>
+            <a href="">10</a>
+            <a href="">下一页&nbsp;></a>
+        </div>
+    </div>
+</body>
+</html>
+
+

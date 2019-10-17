@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <style type="text/css">
+        html{height:100%;}
+        body{background: none repeat scroll 0 0 #EEEEEE;margin:0;padding:0;}
+        .title{line-height:33px;overflow:visible;margin-left:7px; padding-left:22px;font-weight:bold;font-family:'宋体';font-size:16px;color:#777777;
+               background:url(../img/titleico.png) no-repeat left center;}
+        .main{width:38%;margin-left:30%;margin-top:5px;float:left;clear:none;border:2px solid rgb(200,200,200);background:white;}
+        .main_title{height:26px;background:rgb(200, 200, 200);color: rgb(49,49,46);clear:both;width:100%;}
+        .ue-clear:after{content: "";display:block;height:0;clear:both;visibility:hidden;} /*相当于回车号*/
+        .ue-clear{display:block;overflow:hidden;}
+        .main .select{ overflow:visible;margin:10px 0px 0px 0px; padding:0px 0px 0px 60px;line-height:30px;}
+        .main .select label{float:left; width:120px; text-align:left;color:#555555;font-size:15px;}
+        .main .select .select-wrap{ float:left; position:relative;}
+        .main .select .select-wrap .select-title{width:280px; height:28px;padding:0 10px; border:1px solid rgb(172,172,172); outline:none; cursor:pointer;color:#555555;}
+        .main .select .select-wrap .select-title span{ float:left;font-size:14px;}
+        .main .select .select-wrap .select-title .icon{ float:right; margin-right:3px; width:9px; height:28px; background:url(../img/selectxl.png) no-repeat center center;}
+        .select-wrap ul{ margin:0;padding:0;display:none; background:#fff;position:absolute; left:0; top:30px;  width:80px; border:1px solid rgb(172,172,172);border-top:none;z-index: 222;}
+        .btn{padding:0px;margin-left:30px;float:left;display:inline-block;width:66px;height:29px;text-align:center;
+            line-height:29px;color:#fff; font-size:14px;vertical-align:top;text-decoration:none;background:url(../img/btn.png);}
+        .btn1{padding-top:18px; padding-bottom: 23px;margin-right:100px;float:right;}
+        .btn1 a{display:inline-block;width:126px;height:36px;text-align:center; line-height:36px;color:#fff; font-size:14px;
+            vertical-align:top;text-decoration:none;background:url(../img/btn1.png);}
+    </style>
+</head>
+<body>
+    <div class="title">综合病症诊断</div>
+    <div class="main">
+        <div class="main_title">&nbsp;南美白对虾病症诊断</div>
+        <div class="short-input select ue-clear">
+            <label style="width:140px;">已检测出病源类型：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear" style="width:80px;color:#77120d; background-color: #C8C8C8"><span>白班杆状病毒</span></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">体色：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>淡红色，甲壳内侧有白点，肝胰腺淡黄色</span><i class="icon"></i></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">行为：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>行动迟缓，漫游打转</span><i class="icon"></i></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">体表：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>头胸甲易剥离</span><i class="icon"></i></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">摄食情况：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"><span>减少或停止</span><i class="icon"></i></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">水质情况：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear"style="width:80px;"><span>正常</span><i class="icon"></i></div>
+                <ul class="select-list"></ul>
+            </div>
+            <a href=" " class="btn">查询</a>
+        </div>
+        <div class="short-input select ue-clear">
+            <label style="width:80px;">诊断结果：</label>
+            <div class="select-wrap">
+                <div class="select-title ue-clear" style="width:80px;color:#77120d; background-color: #C8C8C8;border:1px solid rgb(119,18,13);"><span>白斑病</span></div>
+                <ul class="select-list"></ul>
+            </div>
+        </div>
+        <div class="btn1">
+            <a href=" " >科学投药</a>
+        </div>
+
+        <div class="btn1">
+            <a href=" " >诊断</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
