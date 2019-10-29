@@ -16,19 +16,19 @@
 <meta property="og:site_name" content="yuebanquan的博客">
 <meta property="og:description" content="此为《数字图像处理》课程的实验三&amp;amp;四。使用OpenCV中的直方图、幂律变换、双线性插值缩放、直方图均衡化处理、均值滤波、中值滤波、拉普拉斯算子、Sobel算子对图像进行处理。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/convert.png">
-<meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step1.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/Convert.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step1.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step2.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step3.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step4.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step5.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/step6.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/main.PNG">
-<meta property="og:updated_time" content="2019-10-29T17:22:38.233Z">
+<meta property="og:updated_time" content="2019-10-29T17:31:46.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV空域图像增强">
 <meta name="twitter:description" content="此为《数字图像处理》课程的实验三&amp;amp;四。使用OpenCV中的直方图、幂律变换、双线性插值缩放、直方图均衡化处理、均值滤波、中值滤波、拉普拉斯算子、Sobel算子对图像进行处理。">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/convert.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/29/OpenCV空域图像增强/Convert.PNG">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -207,7 +207,7 @@
 </ul>
 <h2><span id="四-实验步骤">四、实验步骤</span></h2><h3><span id="1-将logooriginaljpg转为灰度图像logojpg">1. 将<code>logoOriginal.jpg</code>转为灰度图像<code>logo.jpg</code>;</span></h3><h4><span id="11-converth">1.1. Convert.h</span></h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/core/core.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/highgui/highgui.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 将图像转换为灰度图</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Convert</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="comment">//读取原图</span></span><br><span class="line">	Mat logoOriginal = imread(<span class="string">"J:\\课程\\数字图像处理\\实验三\\picture\\logoOriginal.jpg"</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//定义灰度图</span></span><br><span class="line">	Mat logo;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//转换</span></span><br><span class="line">	cvtColor(logoOriginal, logo, CV_BGR2GRAY, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//显示</span></span><br><span class="line">	imshow(<span class="string">"灰度图"</span>, logo);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//保存灰度图</span></span><br><span class="line">	imwrite(<span class="string">"J:\\课程\\数字图像处理\\实验三\\picture\\logo.jpg"</span>, logo);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4><span id="12-结果">1.2. 结果</span></h4><p><img src="/2019/10/29/OpenCV空域图像增强/convert.png" alt="Convert"></p>
+<h4><span id="12-结果">1.2. 结果</span></h4><p><img src="/2019/10/29/OpenCV空域图像增强/Convert.PNG" alt="Convert"></p>
 <h4><span id="13-讨论">1.3. 讨论</span></h4><ul>
 <li><code>Mat imread( const String&amp; filename*,int flags = IMREAD_COLOR );</code><ul>
 <li><code>flags = -1</code>：8位深度，原通道；</li>
@@ -226,7 +226,7 @@
 
 <h4><span id="23-结果部分">2.3. 结果(部分)</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">每个灰度级（0-255）的像素点数:</span><br><span class="line">灰度级 82：47个  灰度级 82：47个  灰度级 82：47个  灰度级 82：47个  灰度级 82：47个</span><br><span class="line">灰度级 83：52个  灰度级 83：52个  灰度级 83：52个  灰度级 83：52个  灰度级 83：52个</span><br><span class="line">灰度级 84：45个  灰度级 84：45个  灰度级 84：45个  灰度级 84：45个  灰度级 84：45个</span><br><span class="line">灰度级 85：43个  灰度级 85：43个  灰度级 85：43个  灰度级 85：43个  灰度级 85：43个</span><br><span class="line">灰度级 86：44个  灰度级 86：44个  灰度级 86：44个  灰度级 86：44个  灰度级 86：44个</span><br><span class="line">灰度级 87：54个  灰度级 87：54个  灰度级 87：54个  灰度级 87：54个  灰度级 87：54个</span><br><span class="line">灰度级 88：40个  灰度级 88：40个  灰度级 88：40个  灰度级 88：40个  灰度级 88：40个</span><br><span class="line">灰度级 89：49个  灰度级 89：49个  灰度级 89：49个  灰度级 89：49个  灰度级 89：49个</span><br><span class="line">灰度级 90：47个  灰度级 90：47个  灰度级 90：47个  灰度级 90：47个  灰度级 90：47个</span><br><span class="line">灰度级 91：46个  灰度级 91：46个  灰度级 91：46个  灰度级 91：46个  灰度级 91：46个</span><br><span class="line">灰度级 92：61个  灰度级 92：61个  灰度级 92：61个  灰度级 92：61个  灰度级 92：61个</span><br><span class="line">灰度级 93：76个  灰度级 93：76个  灰度级 93：76个  灰度级 93：76个  灰度级 93：76个</span><br><span class="line">灰度级 94：67个  灰度级 94：67个  灰度级 94：67个  灰度级 94：67个  灰度级 94：67个</span><br><span class="line">灰度级 95：87个  灰度级 95：87个  灰度级 95：87个  灰度级 95：87个  灰度级 95：87个</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2019/10/29/OpenCV空域图像增强/step1.png" alt="step1"></p>
+<p><img src="/2019/10/29/OpenCV空域图像增强/step1.PNG" alt="step1"></p>
 <h4><span id="24-讨论">2.4. 讨论</span></h4><ul>
 <li><p>访问图像中像素的三种方法</p>
 <ul>
@@ -709,6 +709,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">MacOS</a>
               </li>
              
@@ -717,23 +725,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -741,7 +733,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">组件开发</a>
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -750,6 +742,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">微观经济学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">组件开发</a>
               </li>
              
               <li class="article-tag-list-item">
