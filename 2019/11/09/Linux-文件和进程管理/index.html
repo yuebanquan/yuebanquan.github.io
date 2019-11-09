@@ -16,17 +16,28 @@
 <meta property="og:site_name" content="yuebanquan的博客">
 <meta property="og:description" content="此为《现代操作系统》课程的实验三。该博客叙述了Linux的文件管理以及进程管理相关指令。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ls-l.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E6%9D%83%E9%99%90.JPG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%901.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%902.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps%20u.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps%20x.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-a.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-l.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-e.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-f.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/psu.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/psx.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/doubleps.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-ef1.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ps-ef2.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E6%97%8F%E7%B3%BB%E5%85%B3%E7%B3%BB%E5%9B%BE.JPG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E5%88%9B%E5%BB%BAc.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/hello.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/gcc-o.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E6%B2%A1%E6%9C%89&.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/gcc-o&.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/find.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/psfind.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/kill.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/sleep.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/df.PNG">
@@ -37,11 +48,11 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/grep_man%E5%8E%8B%E7%BC%A9%E5%8C%85.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E8%A7%A3%E5%8E%8B.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/grep_man%E8%A7%A3%E5%8E%8B.PNG">
-<meta property="og:updated_time" content="2019-11-09T15:54:16.555Z">
+<meta property="og:updated_time" content="2019-11-09T18:10:46.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 文件和进程管理">
 <meta name="twitter:description" content="此为《现代操作系统》课程的实验三。该博客叙述了Linux的文件管理以及进程管理相关指令。">
-<meta name="twitter:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/%E6%9D%83%E9%99%90.JPG">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/09/Linux-文件和进程管理/ls-l.PNG">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -202,7 +213,7 @@
 </ul>
 <h2><span id="二-实验步骤">二、实验步骤</span></h2><h3><span id="1-p271-p271实验一11-12题">1. P271-P271：实验一——11-12题；</span></h3><h4><span id="11-运行ls-l理解各文件的权限的含义">11. 运行<code>ls -l</code>，理解各文件的权限的含义</span></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l</span><br></pre></td></tr></table></figure>
 
-<p>![ls -l](ls -l.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ls-l.PNG" alt="ls -l"></p>
 <blockquote>
 <p><strong>权限：</strong></p>
 <ul>
@@ -322,40 +333,37 @@
 <li><p><strong>显示系统中与终端相关的所有进程信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -a</span><br></pre></td></tr></table></figure>
 
-<p>![ps -a](ps -a.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-a.PNG" alt="ps-a"></p>
 </li>
 <li><p><strong>显示所有进程的信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -l</span><br><span class="line">ps -A</span><br></pre></td></tr></table></figure>
 
-<p>![ps -l](ps -l.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-l.PNG" alt="ps-l"></p>
 </li>
 <li><p><strong>显示进程的所有信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -e</span><br></pre></td></tr></table></figure>
 
-<p>![ps -e](ps -e.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-e.PNG" alt="ps-e"></p>
 </li>
 <li><p><strong>以长格式显示进程信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -f</span><br></pre></td></tr></table></figure>
 
-<p>![ps -f](ps -f.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-f.PNG" alt="ps-f"></p>
 </li>
 <li><p><strong>显示面向用户的格式（包括用户名、CPU 及内存使用情况等信息）</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps u</span><br></pre></td></tr></table></figure>
 
-<img src="/2019/11/09/Linux-文件和进程管理/ps u.PNG" alt="ps u">
+<p><img src="/2019/11/09/Linux-文件和进程管理/psu.PNG" alt="psu"></p>
 </li>
 <li><p><strong>显示所有非控制终端上的进程信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps x</span><br></pre></td></tr></table></figure>
 
-<img src="/2019/11/09/Linux-文件和进程管理/ps x.PNG">
-
-
-
+<p><img src="/2019/11/09/Linux-文件和进程管理/psx.PNG" alt="psx"></p>
 </li>
 </ul>
 <h4><span id="2-两次输入ps命令pid相同吗为什么">2. 两次输入<code>ps</code>命令,PID相同吗?为什么?</span></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps</span><br><span class="line">ps</span><br></pre></td></tr></table></figure>
 
-<p>![double ps](double ps.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/doubleps.PNG" alt="doubles"></p>
 <blockquote>
 <ul>
 <li><p>两次输入 <code>ps</code>，PID相同；</p>
@@ -368,8 +376,8 @@
 <li><p><strong>显示所有进程的所有信息</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef</span><br></pre></td></tr></table></figure>
 
-<p>![ps -ef1](ps -ef1.PNG)</p>
-<p>![ps -ef2](ps -ef2.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-ef1.PNG" alt="ps -ef1"></p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/ps-ef2.PNG" alt="ps -ef2"></p>
 </li>
 <li><p><strong>族系关系图</strong></p>
 <p><img src="/2019/11/09/Linux-文件和进程管理/%E6%97%8F%E7%B3%BB%E5%85%B3%E7%B3%BB%E5%9B%BE.JPG" alt="族系关系图"></p>
@@ -389,13 +397,13 @@
 <li><p><strong>编译</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc hello.c -o prog</span><br></pre></td></tr></table></figure>
 
-<p>![gcc -o](gcc -o.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/gcc-o.PNG" alt="gcc -o"></p>
 <p><img src="/2019/11/09/Linux-文件和进程管理/%E6%B2%A1%E6%9C%89&.PNG" alt="没有&amp;"></p>
 </li>
 <li><p><strong>第二次编译</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc hello.c -o prog&amp;</span><br></pre></td></tr></table></figure>
 
-<p>![gcc -o &amp;](gcc -o &amp;.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/gcc-o&.PNG" alt="gcc -o &amp;"></p>
 </li>
 </ul>
 <h4><span id="5-执行find-name-myfile-print-gtdevnull2gtamp1amp确认该进程运行最后杀死该进程">5. 执行``find /-name myfile -print &gt;/dev/null2&gt;&amp;1&amp;`，确认该进程运行,最后杀死该进程；</span></h4><ul>
@@ -407,7 +415,7 @@
 <li><p><strong>确认进程在运行</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps</span><br></pre></td></tr></table></figure>
 
-<p>![ps find](ps find.PNG)</p>
+<p><img src="/2019/11/09/Linux-文件和进程管理/psfind.PNG" alt="ps find"></p>
 </li>
 <li><p><strong>杀死该进程</strong></p>
 <p><img src="/2019/11/09/Linux-文件和进程管理/kill.PNG" alt="kill"></p>
@@ -458,7 +466,6 @@
 <p><img src="/2019/11/09/Linux-文件和进程管理/grep_man%E8%A7%A3%E5%8E%8B.PNG" alt="grep_man解压"></p>
 </li>
 </ul>
-<p>####</p>
 
       
 
@@ -729,15 +736,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Web开发</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -753,11 +760,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
              
               <li class="article-tag-list-item">
