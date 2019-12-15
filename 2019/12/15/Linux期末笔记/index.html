@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | yuebanquan的博客</title>
+  <title>Linux期末笔记 | yuebanquan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yuebanquan的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/page/3/index.html">
+  <meta name="description" content="本博客为Linux的期末复习笔记">
+<meta name="keywords" content="随笔,Linux,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux期末笔记">
+<meta property="og:url" content="http://yoursite.com/2019/12/15/Linux期末笔记/index.html">
 <meta property="og:site_name" content="yuebanquan的博客">
+<meta property="og:description" content="本博客为Linux的期末复习笔记">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-15T15:01:06.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yuebanquan的博客">
+<meta name="twitter:title" content="Linux期末笔记">
+<meta name="twitter:description" content="本博客为Linux的期末复习笔记">
   
     <link rel="alternative" href="/atom.xml" title="yuebanquan的博客" type="application/atom+xml">
   
@@ -142,485 +147,1238 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Linux期末笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Linux期末笔记
+    </h1>
+  
+
+        
+        <a href="/2019/12/15/Linux期末笔记/" class="archive-article-date">
+  	<time datetime="2019-12-15T14:59:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本博客为Linux的期末复习笔记</p>
+</blockquote>
+<a id="more"></a>
+
+<h2><span id="第-1-章-linux-系统概述">第 1 章 Linux 系统概述</span></h2><h3><span id="系统三种接口">系统三种接口</span></h3><ul>
+<li>图形用户接口（GUI）：图形界面</li>
+<li>命令行接口：命令行</li>
+<li>程序接口：C语言程序</li>
+</ul>
+<h3><span id="linux-的历史">Linux 的历史</span></h3><ul>
+<li>GUN（GUN is Not UNIX）——自由软件的软件体系计划</li>
+<li>Linux<ul>
+<li>具有全部 UNIX 特性</li>
+<li>Linus Torvalds 发明</li>
+</ul>
+</li>
+</ul>
+<h3><span id="linux-系统的特点">Linux 系统的特点</span></h3><blockquote>
+<p>选择题</p>
+</blockquote>
+<ul>
+<li>与 UNIX 兼容</li>
+<li>自由软件，源码公开</li>
+<li>性能高，安全性强</li>
+<li>便于定制和再开发</li>
+<li>互操作性强</li>
+<li>全面的多任务和真正的 32 位操作系统</li>
+</ul>
+<h3><span id="linux-的用户">Linux 的用户</span></h3><ul>
+<li><p>软件分类（是否盈利为目的）：</p>
+<ul>
+<li>商业软件（Commercial Software）</li>
+<li>共享软件（Sharware）</li>
+<li>自由软件（Freeware Software）</li>
+</ul>
+</li>
+<li><p>Linux 用户分类（用户性质）：</p>
+<ul>
+<li><p>个人用户</p>
+<blockquote>
+<p>业余用户，如：学生等</p>
+</blockquote>
+</li>
+<li><p>专业用户</p>
+<blockquote>
+<p>如：UNIX的使用者等</p>
+</blockquote>
+</li>
+<li><p>商业用户</p>
+<blockquote>
+<p>向客户提供商业服务，如：IPS、ICP等</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="linux-的常用版本">Linux 的常用版本</span></h3><blockquote>
+<p><strong>给版本号进行辨别</strong></p>
+</blockquote>
+<ul>
+<li><p>内核版本：Linux 的内核版本</p>
+<ul>
+<li>形式：主版本号.次版本号.修订次数</li>
+<li>次版本号：<ul>
+<li>奇数：不稳定版本</li>
+<li>偶数：稳定版本</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Linux 2.4.2</p>
+<p>主版本号：2</p>
+<p>次版本号：4（稳定版本）</p>
+<p>修订次数：2</p>
+</blockquote>
+</li>
+<li><p>发行版本：各个公司发行的版本</p>
+</li>
+</ul>
+<h2><span id="第-2-章-常用命令及文件操作">第 2 章 常用命令及文件操作</span></h2><h3><span id="进入退出命令行">进入退出命令行</span></h3><ul>
+<li>进入<ul>
+<li>开始 -&gt; 系统终端</li>
+</ul>
+</li>
+<li>退出<ul>
+<li>右上角“关闭”</li>
+<li>shell 提示符输入：<code>exit</code></li>
+<li><code>Ctrl + D</code></li>
+</ul>
+</li>
+</ul>
+<h3><span id="提示符">提示符</span></h3><ul>
+<li><code>~</code>：默认用户主目录</li>
+<li><code>$</code>：当前用户——普通用户</li>
+<li><code>#</code>：当前用户——超级用户（root）</li>
+</ul>
+<h3><span id="简单命令">简单命令</span></h3><h4><span id="who">who</span></h4><blockquote>
+<p>系统的用户名    所用终端名    注册到系统的时间</p>
+<p>caijiaquan        console            Dec 10 13:22 </p>
+</blockquote>
+<h4><span id="echo">echo（*）</span></h4><blockquote>
+<p>输出到屏幕（如同printf）</p>
+<ul>
+<li><blockquote>
+<p>$ echo hello!</p>
+<p>hello!</p>
+</blockquote>
+</li>
+<li><p><code>-n</code>输出后不换行</p>
+<blockquote>
+<p>$ echo -n hello!</p>
+<p>hello!caijiaquandeMacBook-Air:~ caijiaquan$ </p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="date">date（*）</span></h4><blockquote>
+<ul>
+<li><p>显示时间</p>
+<blockquote>
+<p>$ date</p>
+<p>2019年12月12日 星期四 19时38分39秒 CST</p>
+</blockquote>
+</li>
+<li><p>显示现在的日期和时间</p>
+<blockquote>
+<p>$ date ’+Today is %D, and now is %r‘</p>
+<p>Today is 12/12/19, and now is 下午 07 时 59 分 19 秒</p>
+</blockquote>
+<ul>
+<li><code>%D</code>：用 mm/dd/yy 表示</li>
+<li><code>%r</code>：用 hh:mm:ss AM(PM) 表示</li>
+</ul>
+</li>
+<li><p>显示当天时间</p>
+<blockquote>
+<p>$ date -u –date=’2 days ago’</p>
+<p>2019年 12 月 12 日星期四 20：00：11 UTC</p>
+</blockquote>
+<ul>
+<li><code>-u</code>：显示或设定格林时间</li>
+<li><code>--date</code>：显示由字符串指定的时间</li>
+</ul>
+</li>
+<li><p>设置系统时间</p>
+<blockquote>
+<p>$ date –set = ‘15:30:00’</p>
+<p>$ date -s 15:30:00</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="cal">cal</span></h4><blockquote>
+<p>显示日历</p>
+<ul>
+<li>$ cal                            显示当月日历</li>
+<li>$ cal [年份]                显示那一年的日历</li>
+<li>$ cal [月份] [年份]    显示那一月的日历            </li>
+</ul>
+</blockquote>
+<h4><span id="clear">clear</span></h4><blockquote>
+<p>清空屏幕</p>
+</blockquote>
+<h4><span id="passwd">passwd</span></h4><blockquote>
+<p>修改密码</p>
+</blockquote>
+<h4><span id="ls">ls（*）</span></h4><blockquote>
+<p>显示当前目录内容</p>
+<ul>
+<li><code>-l</code>：长格式显示详细信息</li>
+<li><code>-a</code>：显示隐藏文件</li>
+</ul>
+</blockquote>
+<h4><span id="pwd">pwd（*）</span></h4><blockquote>
+<p>显示当前目录路径</p>
+</blockquote>
+<h4><span id="su">su（*）</span></h4><blockquote>
+<p>更改用户身份</p>
+</blockquote>
+<h3><span id="文件概念">文件概念</span></h3><h4><span id="文件">文件</span></h4><ul>
+<li>文件是被命名的相关信息的集合体</li>
+</ul>
+<h4><span id="文件的成分">文件的成分</span></h4><ul>
+<li>索引节点：文件权限、文件主、文件大小、存放位置、建立日期等</li>
+<li>数据：文件的实际内容</li>
+</ul>
+<h4><span id="文件的通配符">文件的通配符</span></h4><blockquote>
+<p>为了处理多个文件（<strong>正则表达式</strong>）</p>
+</blockquote>
+<ul>
+<li><code>*</code><ul>
+<li>与 0 或多个字符相匹配，如：le* -&gt; letter、lease、le……</li>
+<li>.文件（隐藏文件）除外</li>
+</ul>
+</li>
+<li><code>?</code><ul>
+<li>匹配单个字符，如：file? -&gt; file1、file2、file3……</li>
+<li>可以用多个<code>?</code>，如：file?? -&gt; file01、file02……</li>
+</ul>
+</li>
+<li><code>[]</code><ul>
+<li>与单个字符相匹配，范围为<code>[]</code>内的字符，如：file[12] -&gt; file1、file2</li>
+<li><code>-</code>代表范围（升序、可多个范围），如：file[1-9]、file[a-zA-Z]</li>
+<li><code>!</code>或<code>^</code>表示不在范围内</li>
+</ul>
+</li>
+<li>组合用<ul>
+<li><code>[!A-Z]*.?</code>：开头不为大写字母，倒数第二个字符为<code>.</code></li>
+</ul>
+</li>
+</ul>
+<h4><span id="文件类型">文件类型</span></h4><ul>
+<li>普通文件</li>
+<li>目录文件</li>
+<li>设备文件</li>
+<li>符号链接文件（类似 Windows 的快捷方式）</li>
+</ul>
+<h3><span id="文件显示命令">文件显示命令</span></h3><h4><span id="cat">cat（*）</span></h4><blockquote>
+<p>连接文件并打印到标准输出设备上</p>
+<ul>
+<li><p>显示 m1 的内容</p>
+<blockquote>
+<p>$ cat m1</p>
+</blockquote>
+</li>
+<li><p>同时显示 m1 和 m2 的内容</p>
+<blockquote>
+<p>$ cat m1 m2</p>
+</blockquote>
+</li>
+<li><p>将m1 和 m2 合并后放入mfile 中</p>
+<blockquote>
+<p>$ cat m1 m2 &gt; mfile</p>
+</blockquote>
+</li>
+<li><p>对m1 的各行编号并输出</p>
+<blockquote>
+<p>$ cat -n m1</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="more">more</span></h4><blockquote>
+<p>显示文件内容，每次显示<strong>一屏</strong>，<strong>只能向前浏览</strong></p>
+</blockquote>
+<h4><span id="less">less</span></h4><blockquote>
+<p>显示文件内容，每次显示<strong>一屏</strong>，<strong>可以方向键向前向后浏览</strong></p>
+</blockquote>
+<h4><span id="head">head</span></h4><blockquote>
+<p>显示指定文件的<strong>开头若干行</strong></p>
+</blockquote>
+<h4><span id="tail">tail</span></h4><blockquote>
+<p>显示指定文件的<strong>尾部</strong></p>
+</blockquote>
+<h3><span id="匹配-排序及显示指定内容命令">匹配、排序及显示指定内容命令</span></h3><h4><span id="grep">grep（*）</span></h4><blockquote>
+<p>查找文件，并输出相应行</p>
+<blockquote>
+<p>grep [选项] [模式] [文件]</p>
+</blockquote>
+<ul>
+<li><p>在密码文件/etc/passwd 中查找包含 mengqc 的所有行</p>
+<blockquote>
+<p>$ grep mengqc /etc/passwd</p>
+</blockquote>
+</li>
+<li><p>在 mengqc及其子目录下所有文件中查找 print</p>
+<blockquote>
+<p>$ grep -r ’print‘ mengqc</p>
+</blockquote>
+<ul>
+<li>-r：<strong>递归</strong>方式查找<strong>所有</strong>子目录中文件</li>
+</ul>
+</li>
+<li><p>在子目录 dir 下与<code>f?.c</code>相匹配的文件中查找包含 main 或 printf 的所有行，不管大小写</p>
+<blockquote>
+<ul>
+<li>$ grep -E ‘[Mm]ain | [Pp]rint’ ~/dir/f?.c</li>
+<li>$ grep -i ‘main | print’ ~/dir/f?.c</li>
+</ul>
+</blockquote>
+<ul>
+<li><code>-E</code>：将<strong>模式（匹配的字符）</strong>解释成正则表达式</li>
+<li><code>-i</code>：不区分大小写</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4><span id="sort">sort</span></h4><blockquote>
+<p>对文本文件的各行进行排序</p>
+</blockquote>
+<h4><span id="uniq">uniq</span></h4><blockquote>
+<p>从排序好的文件中去除重复行</p>
+</blockquote>
+<h3><span id="复制-删除和移动文件命令">复制、删除和移动文件命令</span></h3><h4><span id="cp">cp（*）</span></h4><blockquote>
+<p>复制</p>
+<blockquote>
+<p>cp [选项] <strong>源</strong>文件或目录 <strong>目标</strong>文件或目录    <strong>（注意顺序）</strong></p>
+</blockquote>
+<ul>
+<li><code>-r</code>：递归复制，复制指定目录及子目录</li>
+<li><code>-i</code>：交互式复制（问你 Y/N）</li>
+</ul>
+</blockquote>
+<h4><span id="rm">rm</span></h4><blockquote>
+<p>删除</p>
+<blockquote>
+<p>rm [选项] 文件</p>
+</blockquote>
+<ul>
+<li><code>-r</code>：递归删除，删除指定目录及子目录</li>
+<li><code>-i</code>：交互式删除（问你 Y/N）</li>
+</ul>
+</blockquote>
+<h4><span id="mv">mv</span></h4><blockquote>
+<p>重命名 / 移动</p>
+<blockquote>
+<p>mv [选项] <strong>源</strong>文件或目录 <strong>目标</strong>文件或目录    <strong>（注意顺序）</strong></p>
+</blockquote>
+<ul>
+<li><p>将 ex3 改名为 new1</p>
+<blockquote>
+<p>$ mv ex3 new1</p>
+</blockquote>
+</li>
+<li><p>将目录/home/mengqc中所有文件移至当前目录</p>
+<blockquote>
+<p>$ mv /home/mengqc/*</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3><span id="文件内容统计命令">文件内容统计命令</span></h3><h4><span id="wc">wc（*）</span></h4><blockquote>
+<p>统计指定文件的字节数、字数、行数并显示</p>
+<ul>
+<li><p>将<code>cat f1</code>的执行结果给 <code>wc</code>（指定f1的字节数、字数、行数并显示）</p>
+<blockquote>
+<p>$ Cat f1 | wc</p>
+</blockquote>
+<ul>
+<li><code>|</code>：管道符，把前面一个命令的执行结果，作为后面的命令的参数</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2><span id="第3章-目录及其操作">第3章 目录及其操作</span></h2><h3><span id="目录概念">目录概念</span></h3><h4><span id="目录结构">目录结构</span></h4><ul>
+<li><strong>树型</strong>目录结构（填空）</li>
+</ul>
+<h4><span id="重要的目录">重要的目录</span></h4><ul>
+<li><p>bin</p>
+<ul>
+<li>二进制文件的可执行程序（Linxu命令）</li>
+</ul>
+</li>
+<li><p>etc</p>
+<ul>
+<li>包含Linux系统文件</li>
+<li>密码文件：/etc/passwd</li>
+<li>配置文件：/etc/profile</li>
+</ul>
+</li>
+<li><p>mnt</p>
+<ul>
+<li>存放安装文件系统的安装点</li>
+</ul>
+</li>
+<li><p>home</p>
+<ul>
+<li>包含用户主目录（/home/yuebanquan）</li>
+</ul>
+</li>
+</ul>
+<h3><span id="路径">路径</span></h3><ul>
+<li>当前目录：<code>./</code></li>
+<li>当前父目录：<code>../</code></li>
+</ul>
+<h3><span id="存取权限">存取权限</span></h3><ul>
+<li>用户类型<ul>
+<li>owner——文件主</li>
+<li>group——同组用户</li>
+<li>other——可访问系统的其他用户</li>
+<li>root——超级用户</li>
+</ul>
+</li>
+<li>权限<ul>
+<li>r——读</li>
+<li>w——写</li>
+<li>x——可执行或查找</li>
+</ul>
+</li>
+</ul>
+<h3><span id="常用目录命令">常用目录命令</span></h3><h4><span id="mkdir">mkdir（*）</span></h4><blockquote>
+<p>创建目录</p>
+<ul>
+<li><p>创建目录test，并且u有r，w，x权限，其他无法访问</p>
+<blockquote>
+<ul>
+<li>mkdir –mode=700 /home/yuebanquan/test</li>
+<li>mkdir -m 700 /home/yuebanquan/test</li>
+</ul>
+</blockquote>
+</li>
+<li><p>在当前目录建立bin和其下os_1目录，u有r，w，x，g有w，x，其他用户无权访问</p>
+<blockquote>
+<p>mkdir -p -m 750 bin/os_1</p>
+</blockquote>
+<ul>
+<li>-m， –mode=MODE：设置权限，八进制数</li>
+<li>-p， –parents：创建多个目录（父子一起创建）</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4><span id="ln">ln（*）</span></h4><blockquote>
+<p>创建链接（类似Windows的快捷方式）</p>
+<blockquote>
+<p>ln [选项] 源文件 目标文件</p>
+</blockquote>
+<ul>
+<li><p>将/home/yuebanquan/mub1/m2.c 链接到/home/cjq/a2.c （硬链接）</p>
+<blockquote>
+<p># cd /home/yuebanquan</p>
+<p># ln mub1/m2.c /home/cjq/a2.c</p>
+</blockquote>
+</li>
+<li><p>建立符号链接/home/yuebanquan/abc，指向/home/yuebanqauan/mub1（符号链接）</p>
+<blockquote>
+<p>ln -s /home/yuebanqauan/mub1 /home/yuebanquan/abc</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="chmod">chmod（*）</span></h4><blockquote>
+<p>改变权限</p>
+<blockquote>
+<ul>
+<li><p>符号模式</p>
+<p>chmod [u/g/o/a] [+/-/=] [r/w/x/u/g/o] 文件</p>
+</li>
+<li><p>绝对方式</p>
+<p>chmod [选项] 八进制数 文件</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>ex1改为所有用户都有x</p>
+<blockquote>
+<p>chmod a + x ex1</p>
+</blockquote>
+</li>
+<li><p>ex1改为u有w，x，g有x，o无权</p>
+<blockquote>
+<p>chmod u=wx, g=x ex1</p>
+</blockquote>
+</li>
+<li><p>ex1， u和g有rw， o有r</p>
+<blockquote>
+<p>rw- rw- r– =&gt; 110 110 100 =&gt; 664</p>
+<p>chmod 0664 ex1</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3><span id="链接">链接</span></h3><ul>
+<li><p>硬链接</p>
+<ul>
+<li><p>链接数为0，文件才删除</p>
+</li>
+<li><p>限制</p>
+<ul>
+<li><p>不能对目录文件</p>
+</li>
+<li><p>不能在不同文件系统做（硬链接需要在同一个文件系统)</p>
+<blockquote>
+<p>如：</p>
+<ul>
+<li>FAT</li>
+<li>NTFS</li>
+<li>exFAt</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>符号链接</p>
+<ul>
+<li><p>特点</p>
+<ul>
+<li><p>删除源文件或目录，只删除数据，<strong>不会删除链接</strong>（类似指针），一旦以同样文件名创建源文件，链接继续指向该文件的新数据</p>
+</li>
+<li><p><code>ls -l</code>中作为特殊文件类型显示，第一个字母是<code>l</code></p>
+</li>
+<li><p>大小是连接文件的路径名字节数</p>
+</li>
+<li><p><code>ls -l</code>显示</p>
+<blockquote>
+<p><strong>l</strong>rwxrwxrew （省略） 14（省略）  /etc/motd -&gt; /original_file</p>
+</blockquote>
+<ul>
+<li>14：/original_file有14个字符</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="联机帮助命令">联机帮助命令</span></h3><h4><span id="man">man</span></h4><blockquote>
+<p>显示<strong>联机</strong>帮助手册</p>
+</blockquote>
+<h4><span id="help">help</span></h4><blockquote>
+<p>显示<strong>内置</strong>帮助信息</p>
+</blockquote>
+<h2><span id="第4章-进程及其管理">第4章 进程及其管理</span></h2><h3><span id="进程管理相关命令">进程管理相关命令</span></h3><h4><span id="ps">ps（*）</span></h4><blockquote>
+<p>监视<strong>活动进程</strong>的状态</p>
+<ul>
+<li><p>列出每个与<strong>当前</strong>shell有关的进程基本信息</p>
+<blockquote>
+<p>ps</p>
+<p>​        PID            TTY                    TIME                            CMD</p>
+<p>进程识别号    对应终端    累计使用CPU时间    执行进程的命令名</p>
+</blockquote>
+</li>
+<li><p>显示<strong>系统</strong>中所有进程(-e)的全面信息(-f)</p>
+<blockquote>
+<p>ps -ef</p>
+</blockquote>
+<ul>
+<li>PPID——父进程ID</li>
+</ul>
+</li>
+<li><p>显示所有<strong>终端</strong>上所有<strong>用户</strong>的有关进程的所有信息</p>
+<blockquote>
+<p>ps aux</p>
+</blockquote>
+<ul>
+<li>STAT——进程运行状态<ul>
+<li>&lt;——高优先级的进程</li>
+<li>N——低优先级的进程</li>
+<li>L——有锁入内存页面</li>
+<li>s——会话组长</li>
+<li>l——多线程</li>
+<li>+——在前台的进程组</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4><span id="kill">kill</span></h4><blockquote>
+<p>终止进程</p>
+</blockquote>
+<h4><span id="sleep">sleep</span></h4><blockquote>
+<p>暂停进程</p>
+<ul>
+<li><p>暂停进程100s，查看用户yuebanquan是否在系统中</p>
+<blockquote>
+<p>sleep 100; who | grep ‘yuebanquan’</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="nice">nice（*）</span></h4><blockquote>
+<p>降低进程优先级（增加优先数nice）</p>
+<ul>
+<li><p>将T1转为后台程序，并降低优先级</p>
+<blockquote>
+<p>nice -n sh./T1&amp;</p>
+</blockquote>
+<ul>
+<li>-n，adjustment=N：优先值增加N，默认10</li>
+<li>sh./T1&amp;：在后台（&amp;表示）执行任务——调用shell解释并执行T1</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4><span id="nuhup">nuhup</span></h4><blockquote>
+<p>运行挂起、阻塞、注销后继续运行进程</p>
+</blockquote>
+<h4><span id="wait">wait</span></h4><blockquote>
+<p>等待指定进程，并返回终止状态</p>
+</blockquote>
+<h3><span id="进程优先级">进程优先级</span></h3><ul>
+<li>因素：<ul>
+<li>进程剩余时间配额，用完 -&gt; 0</li>
+<li>进程的优先数nice<ul>
+<li>优先数nice越<strong>小</strong>，优先级越<strong>高</strong></li>
+<li>nice取值：-20 ~ 19</li>
+<li><strong>一般用户</strong>只能设置<strong>正值</strong></li>
+<li><strong>特权用户</strong>才可设置<strong>负值</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="其他命令">其他命令</span></h3><h4><span id="df">df</span></h4><blockquote>
+<p>报告文件中<strong>未使用</strong>磁盘空间的情况</p>
+</blockquote>
+<h4><span id="du">du</span></h4><blockquote>
+<p>每个目录<strong>占用</strong>磁盘空间的情况</p>
+</blockquote>
+<h4><span id="gzip">gzip</span></h4><blockquote>
+<p>压缩&amp;解压</p>
+<p>.gz</p>
+</blockquote>
+<h4><span id="unzip">unzip</span></h4><blockquote>
+<p>解压</p>
+<p>.zip </p>
+</blockquote>
+<h2><span id="第5章-文本编辑">第5章 文本编辑</span></h2><h3><span id="进入amp退出vi">进入&amp;退出Vi</span></h3><ul>
+<li><p>进入</p>
+<p><code>vi [fileName]</code></p>
+</li>
+<li><p>退出</p>
+<ul>
+<li><code>:w [fileName]</code>：保存为 flieName；</li>
+<li><code>w</code>：保存；</li>
+<li><code>:wq</code>：保存并退出；</li>
+<li><code>:q!</code>：不保存强制退出；</li>
+</ul>
+</li>
+</ul>
+<h3><span id="状态转换">状态转换</span></h3><ul>
+<li><p>命令方式 -&gt; 插入方式：</p>
+<ul>
+<li><code>i</code>：从光标<strong>目前位置</strong>开始输入；</li>
+<li><code>a</code>：从光标<strong>下一位置</strong>开始输入；</li>
+<li><code>o</code>：<strong>光标下面新一行</strong>开始输入；</li>
+<li><code>O</code>:<strong>光标上面新一行</strong>开始输入；</li>
+</ul>
+</li>
+<li><p>插入方式 -&gt; 命令行方式：<code>ESC</code>；</p>
+</li>
+<li><p>命令行方式 -&gt; ex转义方式：<code>:</code>；</p>
+</li>
+</ul>
+<h3><span id="文本修改命令">文本修改命令</span></h3><h4><span id="删除">删除</span></h4><ul>
+<li>删除字符<ul>
+<li><code>x</code>：每按一次，删除光标所在位置的”后面”一个字符；</li>
+<li><code>X</code>：大写的X，每按一次，删除光标所在位置的”前面”一个字符；</li>
+</ul>
+</li>
+<li>删除文本对象<ul>
+<li><code>dd</code>：删除光标所在行；</li>
+<li><code>D</code>：从光标位置删除到尾行</li>
+</ul>
+</li>
+</ul>
+<h4><span id="复原">复原</span></h4><ul>
+<li><code>u</code>：如果您误执行一个命令，可以马上按下「u」，回到上一个操作。按多次”u”可以执行多次回复。（类似Ctrl + z）</li>
+<li><code>U</code>：恢复被编辑前的状态</li>
+</ul>
+<h4><span id="重复">重复</span></h4><ul>
+<li><code>.</code>：重复实现刚刚的插入或删除命令（类似office中的Alt + Enter）</li>
+</ul>
+<h3><span id="字符串检索">字符串检索</span></h3><ul>
+<li>向前检索<ul>
+<li><code>:/关键字</code>：按<code>n</code>找到想要的关键字为止</li>
+</ul>
+</li>
+<li>向后检索<ul>
+<li><code>?/关键字</code>：按<code>n</code>找到想要的关键字为止</li>
+</ul>
+</li>
+</ul>
+<h2><span id="第6章-c程序编译工具">第6章 C程序编译工具</span></h2><h3><span id="看书amp实验报告">看书&amp;实验报告</span></h3><h2><span id="第7章-shell程序设计">第7章 shell程序设计</span></h2><h3><span id="执行shell脚本">执行shell脚本</span></h3><h4><span id="bash">bash</span></h4><blockquote>
+<p>bash 脚本名 [参数]</p>
+</blockquote>
+<h4><span id="设置权限为可执行直接执行">设置权限为可执行，直接执行</span></h4><blockquote>
+<p>chmod a+x ex2</p>
+<p>./ex2</p>
+</blockquote>
+<h4><span id="p121例71">P121：例7.1</span></h4><h5><span id="脚本代码功能">脚本代码功能</span></h5><p>显示当前目录（pwd），显示今天日期（date）</p>
+<h5><span id="步骤">步骤</span></h5><ul>
+<li><p>创建 exam1</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi exam1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑 exam1</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"My working directory is "</span></span><br><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Today is "</span></span><br><span class="line">date</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示 exam1 代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat exam1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>赋予可执行权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x exam1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行脚本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./exam1</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h5><span id="结果">结果</span></h5><p>![7.1](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.1.PNG)</p>
+<h4><span id="p121-122例72">P121-122：例7.2</span></h4><h5><span id="脚本代码功能">脚本代码功能</span></h5><p>如果命令行上参数个数为 0，列出当前目录；</p>
+<p>否则，显示其包含的子目录；</p>
+<h5><span id="步骤">步骤</span></h5><ul>
+<li><p>编辑脚本代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi exam2</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># If no arguments, then listing the current directory.</span></span><br><span class="line"><span class="comment"># Otherwise, listing each subdirectory.</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$#</span> = 0</span><br><span class="line"><span class="keyword">then</span> ls</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	<span class="keyword">for</span> i</span><br><span class="line">	<span class="keyword">do</span></span><br><span class="line">	  ls -l $ i | grep <span class="string">'^d'</span></span><br><span class="line">	<span class="keyword">done</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看脚本代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat exam2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>赋予权限并执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x exam2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行脚本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./exam2</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h5><span id="结果">结果</span></h5><p>![7.2](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.2.PNG)</p>
+<h3><span id="shell-变量和算数运算">shell 变量和算数运算</span></h3><h4><span id="简单赋值">简单赋值</span></h4><blockquote>
+<ul>
+<li><p>变量名=字符串</p>
+<p>myfile=/home/yuebanquan/ff/m1.c</p>
+</li>
+<li><p><code>=</code>两边<strong>没有空格</strong></p>
+</li>
+</ul>
+</blockquote>
+<h4><span id="引用变量值">引用变量值</span></h4><blockquote>
+<p>$变量名</p>
+</blockquote>
+<h4><span id="p123例73">P123：例7.3</span></h4><h5><span id="脚本代码">脚本代码</span></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dir=/usr/meng/ff</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$dir</span></span><br><span class="line"><span class="built_in">echo</span> dir</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$Dir</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name=<span class="string">"yuebanquan 1711216"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$name</span></span><br><span class="line">Name=yuebanquan 1711216</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$Name</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s=“ing the file”</span><br><span class="line"><span class="built_in">echo</span> <span class="built_in">read</span><span class="variable">$s</span> and writ<span class="variable">$s</span></span><br></pre></td></tr></table></figure>
+
+<h5><span id="结果">结果</span></h5><p>![7.3.1](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.3.1.PNG)</p>
+<blockquote>
+<ul>
+<li><p>引用变量名时：<code>$变量名</code></p>
+</li>
+<li><p>显示变量名时：<code>变量名</code></p>
+</li>
+</ul>
+</blockquote>
+<p>![7.3.2](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.3.2.PNG)</p>
+<blockquote>
+<ul>
+<li><p>如果需要赋的值含：<strong>空格、制表符、换行符</strong>，用<code>&quot;&quot;</code></p>
+</li>
+<li><p>变量<strong>区分大小写</strong></p>
+</li>
+<li><p><code>=</code>左右<strong>不能有空格</strong></p>
+</li>
+</ul>
+</blockquote>
+<p>![7.3.3](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.3.3.PNG)</p>
+<blockquote>
+<p>一个变量可以作为长字符串的<strong>一部分</strong></p>
+</blockquote>
+<h3><span id="数组">数组</span></h3><h4><span id="声明数组">声明数组</span></h4><blockquote>
+<ul>
+<li>一般形式<ul>
+<li>数组名[index]=数值</li>
+</ul>
+</li>
+<li>显式声明<ul>
+<li>declare -a 数组名</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4><span id="读取数组">读取数组</span></h4><blockquote>
+<p>${数组名[index]}</p>
+<p>echo ${city[0]}</p>
+</blockquote>
+<h3><span id="位置参数">位置参数（*）</span></h3><h4><span id="p125例-74">P125：例 7.4</span></h4><h5><span id="脚本代码">脚本代码</span></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!bin/bash</span></span><br><span class="line"><span class="comment"># exam3:shell script to demonstrate the shift commmand</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$0</span> <span class="variable">$1</span> <span class="variable">$2</span> <span class="variable">$3</span> <span class="variable">$4</span> <span class="variable">$5</span> <span class="variable">$6</span> <span class="variable">$7</span> <span class="variable">$8</span> <span class="variable">$9</span></span><br><span class="line"><span class="built_in">shift</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$0</span> <span class="variable">$1</span> <span class="variable">$2</span> <span class="variable">$3</span> <span class="variable">$4</span> <span class="variable">$5</span> <span class="variable">$6</span> <span class="variable">$7</span> <span class="variable">$8</span> <span class="variable">$9</span></span><br><span class="line"><span class="built_in">shift</span> 4</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$0</span> <span class="variable">$1</span> <span class="variable">$2</span> <span class="variable">$3</span> <span class="variable">$4</span> <span class="variable">$5</span> <span class="variable">$6</span> <span class="variable">$7</span> <span class="variable">$8</span> <span class="variable">$9</span></span><br><span class="line"><span class="comment"># end</span></span><br></pre></td></tr></table></figure>
+
+<h5><span id="结果">结果</span></h5><p>![7.4](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.4.PNG)</p>
+<blockquote>
+<p><code>shift</code>如果位置参数不超过 9 个，可将参数向左移动</p>
+</blockquote>
+<h4><span id="p126例75">P126：例7.5</span></h4><h5><span id="脚本代码">脚本代码</span></h5><p>meng1.c</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">int</span> r;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Enter an integer,please!\\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;r);</span><br><span class="line">	squsre(r);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>meng2.c</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">square</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The square = %d\\n"</span>, x * x);</span><br><span class="line">	<span class="keyword">return</span> (x * x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>exam4</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># exam4:shell script to combine files and count lines</span></span><br><span class="line"><span class="comment"># using command set to set positional parameters</span></span><br><span class="line"><span class="built_in">set</span> meng1.c meng2.c</span><br><span class="line">cat <span class="variable">$1</span> <span class="variable">$2</span> <span class="variable">$3</span> | wc -l</span><br><span class="line"><span class="comment"># end</span></span><br></pre></td></tr></table></figure>
+
+<h5><span id="结果">结果</span></h5><p>![7.5](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.5.PNG)</p>
+<blockquote>
+<ul>
+<li><p><code>$1</code>为 meng1.c，<code>$</code>为 meng2.c</p>
+</li>
+<li><p>统计有多少行数</p>
+</li>
+</ul>
+</blockquote>
+<h3><span id="预先定义的特殊变量">预先定义的特殊变量</span></h3><ul>
+<li><p><code>$#</code>：位置参数的个数</p>
+<blockquote>
+<p>例如：</p>
+<p>exam3 A B C D</p>
+<p><code>$#</code>的值为4</p>
+</blockquote>
+</li>
+<li><p><code>$*</code>：位置参数组成的<strong>字符串</strong></p>
+<blockquote>
+<p>例如：</p>
+<p>exam3 A B C D E F G H I J K</p>
+<p><code>$*</code>为A B C D E F G H I J K</p>
+<p><code>&quot;$*&quot;</code>为”$1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 “</p>
+</blockquote>
+</li>
+<li><p><code>$@</code>：位置参数组成的<strong>列表</strong>（注意与<code>$*</code>区分）</p>
+<blockquote>
+<p>例如：</p>
+<p>exam3 A B C D E F G H I J K</p>
+<p><code>$@</code>为”A” “B” “C” “D” “E” “F” “G” “H” “I” ”J“ ”K”</p>
+<p><code>&quot;$@&quot;</code>为”$1” “$2” “$3” “$4” “$5” “$6” “$7” “$8” “$9” “$10” “$11 “</p>
+</blockquote>
+</li>
+<li><p><code>$!</code>：是一个后台命令的PID</p>
+</li>
+<li><p><code>$0</code>：获取当前执行脚本的文件名，包括路径</p>
+</li>
+</ul>
+<h3><span id="环境变量">环境变量</span></h3><h4><span id="path">PATH</span></h4><ul>
+<li><p>shell查找命令的路径列表，用<code>:</code>隔开</p>
+<blockquote>
+<p>PATH = $PATH:$PWD</p>
+</blockquote>
+</li>
+</ul>
+<h3><span id="算数运算">算数运算</span></h3><h4><span id="let">let</span></h4><blockquote>
+<p>整数运算</p>
+<p>let arg</p>
+</blockquote>
+<h4><span id="p130例-76">P130：例 7.6</span></h4><h5><span id="脚本代码">脚本代码</span></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Input 3 integers."</span></span><br><span class="line"><span class="built_in">read</span> a b c</span><br><span class="line"><span class="built_in">let</span> <span class="string">"rs=a+b+c"</span></span><br><span class="line"><span class="built_in">let</span> <span class="string">"rp=(a*b*c)/(a*b+a*c+b*c)"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"The series value is <span class="variable">$rs</span>"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"The parallel value is <span class="variable">$rp</span>"</span></span><br></pre></td></tr></table></figure>
+
+<h5><span id="结果">结果</span></h5><p>![7.6](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.6.PNG)</p>
+<blockquote>
+<ul>
+<li>用户输入 3 个电阻值的整数，然后计算并输出它们的串联值和并联值</li>
+</ul>
+</blockquote>
+<h3><span id="输出输入及重定向命令">输出/输入及重定向命令</span></h3><h4><span id="read">read</span></h4><blockquote>
+<p>read：从键盘上读取数据，然后赋给制指定的变量。</p>
+</blockquote>
+<ul>
+<li>如果变量和输入的数据个数相同，<strong>一一对应</strong>赋值</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> x y z</span><br><span class="line">today is Monday</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$z</span> <span class="variable">$x</span> <span class="variable">$y</span></span><br></pre></td></tr></table></figure>
+
+<p>![7.7.1](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.7.1.PNG)</p>
+<ul>
+<li>如果变量个数小于输入数据个数，从<strong>左到右</strong>赋值，最后<strong>剩余的所有数据</strong>都赋值到<strong>最后一个变量</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> n1 n2 n3</span><br><span class="line">First Second Third 1234 abcd</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$n1</span> <span class="variable">$n2</span></span><br></pre></td></tr></table></figure>
+
+<p>![7.7.2](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.7.2.PNG)</p>
+<ul>
+<li>如果变量大于输入个数，对应赋值，没有的<strong>取空</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> n1 n2 n3</span><br><span class="line">12</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$n3</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$n1</span> <span class="variable">$n2</span></span><br></pre></td></tr></table></figure>
+
+<p>![7.7.3](J:/课程/大三上/Linux/实验五 Shell编程/截图/7.7.3.PNG)</p>
+<h4><span id="echo">echo</span></h4><ul>
+<li><code>-n</code>：在参数被显示后光标不换行</li>
+</ul>
+<h4><span id="lt输入重定向符">&lt;——输入重定向符</span></h4><blockquote>
+<p>将文件的数据输入命令</p>
+<p>命令&lt;文件名</p>
+</blockquote>
+<h4><span id="gt-输出重定向符">&gt;—— 输出重定向符</span></h4><blockquote>
+<p>将命令的结果输出到文件，会<strong>冲掉</strong>原来文件内容</p>
+<p>命令&gt;文件名</p>
+</blockquote>
+<h4><span id="gtgt输出附加定向符">&gt;&gt;——输出附加定向符</span></h4><blockquote>
+<p>将命令的结果附加输出到文件<strong>后面</strong>，原数据<strong>不被破坏</strong></p>
+<p>命令&gt;&gt;文件名</p>
+</blockquote>
+<h3><span id="特殊字符和命令语法">特殊字符和命令语法</span></h3><h4><span id="单引号">单引号</span></h4><blockquote>
+<p>单引号内的<strong>所有字符</strong>以<strong>普通字符</strong>出现</p>
+<p>‘   ‘</p>
+</blockquote>
+<h4><span id="双引号">双引号</span></h4><blockquote>
+<p>双引号以内的除<strong>$、`、\、</strong>外，都作为<strong>普通字符</strong>出现</p>
+</blockquote>
+<h4><span id="倒引号">倒引号</span></h4><blockquote>
+<p>命令替换</p>
+<p>变量名=`命令表`</p>
+<blockquote>
+<p>例如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> &gt; users=`who | wc -l`</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> &gt; <span class="built_in">echo</span> The number of users is <span class="variable">$users</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> &gt; </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> &gt;</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>输出：The number of users is 3</p>
+</blockquote>
+<p>可嵌套：内层  \`  ` \    （需要转义）</p>
+</blockquote>
+<h4><span id="管道">管道</span></h4><blockquote>
+<p>前一命令输出正好是后一命令的输入</p>
+<p>前一命令 | 后一命令</p>
+</blockquote>
+<h4><span id="顺序执行">顺序执行</span></h4><blockquote>
+<p>同一行多条命令，使用<code>;</code>分隔开</p>
+</blockquote>
+<h4><span id="复合命令">复合命令</span></h4><ul>
+<li><code>{ ;}</code>形式<ul>
+<li><code>{</code>后需要一个<strong>空格</strong></li>
+<li><code>}</code>前需要一个<code>;</code></li>
+</ul>
+</li>
+<li><code>()</code>形式</li>
+</ul>
+<h3><span id="程序控制结构">程序控制结构</span></h3><h4><span id="if语句">if语句</span></h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if 条件测试</span><br><span class="line">then 命令1</span><br><span class="line">else 命令2</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<h4><span id="条件测试">条件测试</span></h4><ul>
+<li>有关<strong>文件</strong>方面的测试<ul>
+<li><code>-r</code>：若用户<strong>可读</strong>，为true</li>
+<li><code>-w</code>：若用户<strong>可写</strong>，为true</li>
+<li><code>-x</code>：若用户<strong>可执行</strong>，为true</li>
+<li><code>-f</code>：若文件<strong>存在</strong>并是<strong>普通文件</strong>，为true</li>
+<li><code>-d</code>：若文件<strong>存在</strong>并是<strong>目录文件</strong>，为true</li>
+</ul>
+</li>
+<li>有关<strong>字符</strong>方面的测试<ul>
+<li><code>-z s1</code>：若s1的长度为0，true</li>
+<li><code>-n s1</code>：若是s1的长度大于0，true</li>
+<li><code>s1</code>：若s1不是空字符串，true</li>
+<li><code>s1 = s2</code>：等于，true</li>
+<li><code>s1 != s2</code>：不等，true</li>
+<li><code>s1 &lt; s2</code>：按照字典顺序s1在s2之前，true</li>
+<li><code>s1 &gt; s2</code>：按照字典顺序s1在s2之后，true</li>
+</ul>
+</li>
+<li>有关<strong>数值</strong>方面的测试<ul>
+<li><code>n1 -eq n2</code>：等于</li>
+<li><code>n1 -ne n2</code>：不等于</li>
+<li><code>n1 -lt n2</code>：小于</li>
+<li><code>n1 -le n2</code>：小于等于</li>
+<li><code>n1 -gt n2</code>：大于</li>
+<li><code>n1 -ge n2</code>：大于等于</li>
+</ul>
+</li>
+<li>逻辑运算符<ul>
+<li><code>!</code>：逻辑非</li>
+<li><code>-a</code>：逻辑与（And）</li>
+<li><code>-o</code>：逻辑或（OR）</li>
+</ul>
+</li>
+</ul>
+<h4><span id="while语句">While语句</span></h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">while 测试条件</span><br><span class="line">do</span><br><span class="line">	命令表</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h4><span id="for语句">for语句</span></h4><ul>
+<li><p>值表达方式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for 变量 [ in 值表 ]</span><br><span class="line">do</span><br><span class="line">	命令表</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>算数表达式方式（与C语言类似）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for ((e1;e2;e3))</span><br><span class="line">do</span><br><span class="line">	命令表</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4><span id="break">break</span></h4><blockquote>
+<p>跳出整个循环</p>
+</blockquote>
+<h4><span id="continue">continue</span></h4><blockquote>
+<p>跳出当层循环</p>
+</blockquote>
+<h4><span id="exit">exit</span></h4><blockquote>
+<p>退出正在执行的脚本</p>
+</blockquote>
+<h3><span id="shell内置命令">shell内置命令</span></h3><h4><span id="eval">eval</span></h4><blockquote>
+<p>把相应变量或命令替换</p>
+<p>eval [ arg ]</p>
+<blockquote>
+<p>例如：</p>
+<p>PIPE=“|”</p>
+<p>eval date $PIPE wc -c</p>
+</blockquote>
+</blockquote>
+<h3><span id="解决脚本错误">解决脚本错误</span></h3><ul>
+<li><p>追踪模式下运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -x exam17</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>-x</code>：设置成追踪模式</li>
+</ul>
+</li>
+</ul>
+<h2><span id="第8章-安装linux系统">第8章 安装Linux系统</span></h2><h3><span id="硬盘分区">硬盘分区</span></h3><ul>
+<li>主分区<ul>
+<li>建立主分区安装操作系统（Windows的c盘）</li>
+<li>多个主分区，只有一个可以设置为活动分区</li>
+</ul>
+</li>
+<li>扩展分区</li>
+<li>逻辑分区</li>
+</ul>
+<h3><span id="安装linux需要两个分区">安装Linux需要两个分区</span></h3><ul>
+<li>根文件系统分区（类型：ext3、ext2或reiserfs）</li>
+<li>交换分区（类型：swap）</li>
+</ul>
+<h3><span id="登陆和退出系统">登陆和退出系统</span></h3><ul>
+<li>重启<ul>
+<li>reboot</li>
+</ul>
+</li>
+<li>关机<ul>
+<li>poweroff</li>
+<li>halt</li>
+<li>shatdown</li>
+</ul>
+</li>
+</ul>
+<h2><span id="第9章-linux桌面系统及其配置">第9章 Linux桌面系统及其配置</span></h2><h3><span id="快捷键">快捷键</span></h3><ul>
+<li>弹出主菜单——<code>Alt + F1</code></li>
+<li>关闭当前工作窗口——<code>Alt + F4</code></li>
+</ul>
+<h2><span id="第10章-linux系统管理">第10章 Linux系统管理</span></h2><h3><span id="与用户账户相关的文件">与用户账户相关的文件</span></h3><h4><span id="passwd文件">passwd文件</span></h4><ul>
+<li><p>用户关键信息的存放</p>
+</li>
+<li><p><code>/etc/passwd</code></p>
+</li>
+<li><blockquote>
+<p>root : x : 0 : 0 : root : /root : /bin/bash</p>
+<p>注册名：密码：用户标识号：组标识号：用户名：用户主目录：命令解释程序</p>
+</blockquote>
+</li>
+</ul>
+<h4><span id="shadow文件">shadow文件</span></h4><ul>
+<li>存放用户加密密码信息和密码的有效信息</li>
+<li><code>/etc/shadow</code></li>
+</ul>
+<h3><span id="添加amp删除用户">添加&amp;删除用户</span></h3><h4><span id="useradd">useradd</span></h4><blockquote>
+<p>添加用户</p>
+<ul>
+<li><p>建立yuebanquan新用户,设置用户密码</p>
+<blockquote>
+<p>useradd yuebanquan</p>
+<p>passwd yuebanquan</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h4><span id="userdel">userdel</span></h4><blockquote>
+<p>删除用户</p>
+<p>userdel [-r] 用户名</p>
+<ul>
+<li><p>删除用户yuebanquan</p>
+<blockquote>
+<p>userdel -r yuebanquan</p>
+</blockquote>
+<ul>
+<li><code>-r</code>：把用户主目录的所有内容删除</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3><span id="建立文件系统">建立文件系统</span></h3><blockquote>
+<p>mkfs [选项] 文件系统名 [硬盘块数量]</p>
+<ul>
+<li><p>在/dev/hda1上建立文件系统，并检查坏块数</p>
+<blockquote>
+<p>mkfs -c /dev/hda1</p>
+</blockquote>
+<ul>
+<li><code>-c</code>：检查坏块数</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/04/计算机网络-一、二章习题/" class="archive-article-date">
-  	<time datetime="2019-10-04T13:14:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/04/计算机网络-一、二章习题/">计算机网络 一、二章习题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/03/Ubuntu-Linux-文件和目录操作/" class="archive-article-date">
-  	<time datetime="2019-10-03T09:10:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/03/Ubuntu-Linux-文件和目录操作/">Ubuntu(Linux)文件和目录操作</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/02/公钥密码算法/" class="archive-article-date">
-  	<time datetime="2019-10-02T03:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/02/公钥密码算法/">公钥密码算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">信息安全导论</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/01/Ubuntu-Linux-桌面环境应用/" class="archive-article-date">
-  	<time datetime="2019-10-01T06:01:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/01/Ubuntu-Linux-桌面环境应用/">Ubuntu(Linux)桌面环境应用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/30/《微观经济学》笔记（四）/" class="archive-article-date">
-  	<time datetime="2019-09-30T10:17:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/30/《微观经济学》笔记（四）/">《微观经济学》笔记（四）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微观经济学</a>
-        		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/15/Linux期末笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/30/《微观经济学》笔记（三）/" class="archive-article-date">
-  	<time datetime="2019-09-30T10:13:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/26/Linux-shell编程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux shell编程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/30/《微观经济学》笔记（三）/">《微观经济学》笔记（三）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微观经济学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">第 1 章 Linux 系统概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.1.</span> <span class="toc-text">系统三种接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.2.</span> <span class="toc-text">Linux 的历史</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.3.</span> <span class="toc-text">Linux 系统的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.4.</span> <span class="toc-text">Linux 的用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.5.</span> <span class="toc-text">Linux 的常用版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">第 2 章 常用命令及文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.1.</span> <span class="toc-text">进入退出命令行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.2.</span> <span class="toc-text">提示符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.</span> <span class="toc-text">简单命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.1.</span> <span class="toc-text">who</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.2.</span> <span class="toc-text">echo（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.3.</span> <span class="toc-text">date（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.4.</span> <span class="toc-text">cal</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.5.</span> <span class="toc-text">clear</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.6.</span> <span class="toc-text">passwd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.7.</span> <span class="toc-text">ls（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.8.</span> <span class="toc-text">pwd（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.9.</span> <span class="toc-text">su（*）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.</span> <span class="toc-text">文件概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.1.</span> <span class="toc-text">文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.2.</span> <span class="toc-text">文件的成分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.3.</span> <span class="toc-text">文件的通配符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.4.</span> <span class="toc-text">文件类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.</span> <span class="toc-text">文件显示命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.1.</span> <span class="toc-text">cat（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.2.</span> <span class="toc-text">more</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.3.</span> <span class="toc-text">less</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.4.</span> <span class="toc-text">head</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.5.5.</span> <span class="toc-text">tail</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.6.</span> <span class="toc-text">匹配、排序及显示指定内容命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.6.1.</span> <span class="toc-text">grep（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.6.2.</span> <span class="toc-text">sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.6.3.</span> <span class="toc-text">uniq</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.7.</span> <span class="toc-text">复制、删除和移动文件命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.7.1.</span> <span class="toc-text">cp（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.7.2.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.7.3.</span> <span class="toc-text">mv</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.8.</span> <span class="toc-text">文件内容统计命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.8.1.</span> <span class="toc-text">wc（*）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">第3章 目录及其操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.</span> <span class="toc-text">目录概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.1.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.1.2.</span> <span class="toc-text">重要的目录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.2.</span> <span class="toc-text">路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.3.</span> <span class="toc-text">存取权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.4.</span> <span class="toc-text">常用目录命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.4.1.</span> <span class="toc-text">mkdir（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.4.2.</span> <span class="toc-text">ln（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.4.3.</span> <span class="toc-text">chmod（*）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.5.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.6.</span> <span class="toc-text">联机帮助命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.6.1.</span> <span class="toc-text">man</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">3.6.2.</span> <span class="toc-text">help</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">第4章 进程及其管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.</span> <span class="toc-text">进程管理相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.1.</span> <span class="toc-text">ps（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.2.</span> <span class="toc-text">kill</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.3.</span> <span class="toc-text">sleep</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.4.</span> <span class="toc-text">nice（*）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.5.</span> <span class="toc-text">nuhup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.1.6.</span> <span class="toc-text">wait</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.2.</span> <span class="toc-text">进程优先级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.</span> <span class="toc-text">其他命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.1.</span> <span class="toc-text">df</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.2.</span> <span class="toc-text">du</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.3.</span> <span class="toc-text">gzip</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">4.3.4.</span> <span class="toc-text">unzip</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">第5章 文本编辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">5.1.</span> <span class="toc-text">进入&amp;退出Vi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">5.2.</span> <span class="toc-text">状态转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">5.3.</span> <span class="toc-text">文本修改命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">5.3.1.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">5.3.2.</span> <span class="toc-text">复原</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">5.3.3.</span> <span class="toc-text">重复</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">5.4.</span> <span class="toc-text">字符串检索</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">第6章 C程序编译工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">6.1.</span> <span class="toc-text">看书&amp;实验报告</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">第7章 shell程序设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.</span> <span class="toc-text">执行shell脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.1.</span> <span class="toc-text">bash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.2.</span> <span class="toc-text">设置权限为可执行，直接执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.3.</span> <span class="toc-text">P121：例7.1</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.3.1.</span> <span class="toc-text">脚本代码功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.3.2.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.3.3.</span> <span class="toc-text">结果</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.4.</span> <span class="toc-text">P121-122：例7.2</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.4.1.</span> <span class="toc-text">脚本代码功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.4.2.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.1.4.3.</span> <span class="toc-text">结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.</span> <span class="toc-text">shell 变量和算数运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.1.</span> <span class="toc-text">简单赋值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.2.</span> <span class="toc-text">引用变量值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.3.</span> <span class="toc-text">P123：例7.3</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.3.1.</span> <span class="toc-text">脚本代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.2.3.2.</span> <span class="toc-text">结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.3.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.3.1.</span> <span class="toc-text">声明数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.3.2.</span> <span class="toc-text">读取数组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.</span> <span class="toc-text">位置参数（*）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.1.</span> <span class="toc-text">P125：例 7.4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.1.1.</span> <span class="toc-text">脚本代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.1.2.</span> <span class="toc-text">结果</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.2.</span> <span class="toc-text">P126：例7.5</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.2.1.</span> <span class="toc-text">脚本代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.4.2.2.</span> <span class="toc-text">结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.5.</span> <span class="toc-text">预先定义的特殊变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.6.</span> <span class="toc-text">环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.6.1.</span> <span class="toc-text">PATH</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.7.</span> <span class="toc-text">算数运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.7.1.</span> <span class="toc-text">let</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.7.2.</span> <span class="toc-text">P130：例 7.6</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.7.2.1.</span> <span class="toc-text">脚本代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-number">7.7.2.2.</span> <span class="toc-text">结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.</span> <span class="toc-text">输出/输入及重定向命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.1.</span> <span class="toc-text">read</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.2.</span> <span class="toc-text">echo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.3.</span> <span class="toc-text">&lt;——输入重定向符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.4.</span> <span class="toc-text">&gt;—— 输出重定向符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.8.5.</span> <span class="toc-text">&gt;&gt;——输出附加定向符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.</span> <span class="toc-text">特殊字符和命令语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.1.</span> <span class="toc-text">单引号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.2.</span> <span class="toc-text">双引号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.3.</span> <span class="toc-text">倒引号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.4.</span> <span class="toc-text">管道</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.5.</span> <span class="toc-text">顺序执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.9.6.</span> <span class="toc-text">复合命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.</span> <span class="toc-text">程序控制结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.1.</span> <span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.2.</span> <span class="toc-text">条件测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.3.</span> <span class="toc-text">While语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.4.</span> <span class="toc-text">for语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.5.</span> <span class="toc-text">break</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.6.</span> <span class="toc-text">continue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.10.7.</span> <span class="toc-text">exit</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.11.</span> <span class="toc-text">shell内置命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">7.11.1.</span> <span class="toc-text">eval</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.12.</span> <span class="toc-text">解决脚本错误</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">8.</span> <span class="toc-text">第8章 安装Linux系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">8.1.</span> <span class="toc-text">硬盘分区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">8.2.</span> <span class="toc-text">安装Linux需要两个分区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">8.3.</span> <span class="toc-text">登陆和退出系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">9.</span> <span class="toc-text">第9章 Linux桌面系统及其配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">9.1.</span> <span class="toc-text">快捷键</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">10.</span> <span class="toc-text">第10章 Linux系统管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.1.</span> <span class="toc-text">与用户账户相关的文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">10.1.1.</span> <span class="toc-text">passwd文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">10.1.2.</span> <span class="toc-text">shadow文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.2.</span> <span class="toc-text">添加&amp;删除用户</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">10.2.1.</span> <span class="toc-text">useradd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">10.2.2.</span> <span class="toc-text">userdel</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">10.3.</span> <span class="toc-text">建立文件系统</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/30/《微观经济学》笔记（二）/" class="archive-article-date">
-  	<time datetime="2019-09-30T10:10:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/30/《微观经济学》笔记（二）/">《微观经济学》笔记（二）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微观经济学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/30/《微观经济学》笔记（一）/" class="archive-article-date">
-  	<time datetime="2019-09-30T10:02:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/30/《微观经济学》笔记（一）/">《微观经济学》笔记（一）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微观经济学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/29/TCP-IP协议及配置/" class="archive-article-date">
-  	<time datetime="2019-09-29T06:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/29/TCP-IP协议及配置/">TCP/IP协议及配置</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/27/Ubuntu-Linux-安装/" class="archive-article-date">
-  	<time datetime="2019-09-27T09:51:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/27/Ubuntu-Linux-安装/">Ubuntu(Linux)安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><a class="page-number" href="/archives/2019/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/2019/page/4/">4</a><a class="page-number" href="/archives/2019/page/5/">5</a><a class="page-number" href="/archives/2019/page/6/">6</a><a class="extend next" rel="next" href="/archives/2019/page/4/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -645,8 +1403,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
